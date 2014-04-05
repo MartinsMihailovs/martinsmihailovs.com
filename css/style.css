@@ -624,7 +624,7 @@ a {
 	text-decoration: none;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	border-bottom-color: #fff;
+	border-bottom-color: transparent;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
