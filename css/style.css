@@ -9,7 +9,7 @@
 **********************************************************************************/
 
 
-/* ==========================================================================
+ /* ==========================================================================
 
    Basic page setup
 
@@ -24,7 +24,7 @@
 body { 
 	margin: 0 auto;
 	color: #444444;
-	font: normal 400 18px/1.7777777777777778 'Noticia Text', Georgia, serif; /* Magic number: 1.7777777777777778em or 32; all line heights and margin bottoms have to be a multiples of 32px */
+	font: normal 400 19px/1.6842105263157895 Lora, Georgia, serif; /* Magic number: 1.6842105263157895em or 32; all line heights and margin bottoms have to be a multiples of 32px */
 	background: #fff;
 }
 
@@ -963,7 +963,176 @@ p {
 
 /* ==========================================================================
 
-   Project specific styles here
+   Site header + navigation
    
    ========================================================================== */
 
+.site-head {
+	margin-top: 1.5em;
+	margin-bottom: 2.5em;
+}
+
+.site-head-beta {
+	margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+	.site-head-beta {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.site-head-beta .site-logo {
+		display: none;
+	}
+}
+
+.site-logo {
+	position: relative;
+	top: 0.4318em;
+}
+
+.site-head-content {
+	position: relative;
+}
+
+.site-logo:hover {
+	border: none;
+}
+
+.martins-logo {
+	vertical-align: bottom;
+}
+
+.nav-primary {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+}
+
+.nav-trigger {
+	position: absolute;
+	top: 1.5em;
+	right: 0;
+	z-index: 20;
+	text-transform: uppercase;
+	font-size: 1.0526315789473684em;
+	font-weight: 400;
+	cursor: pointer;
+	letter-spacing: -1px;
+	color: #e6e6e6;
+	text-align: right;
+	background-image: url("../img/icons/navicon-primary.gif");
+	background-repeat: no-repeat;
+	background-position: right 1px;
+	padding-right: 1.5em;
+	line-height: 1;
+	height: 1.5em;
+}
+
+@media (min-width: 768px) {
+	.nav-trigger {
+		background-image: url("../img/icons/navicon-secondary.gif");
+	}
+
+	.site-head-beta .nav-trigger {
+		top: 3em;
+	}
+}
+
+.expanded .nav-trigger {
+	background-image: url("../img/icons/navicon-primary-close.gif");
+}
+
+@media (min-width: 768px) {
+	.expanded .nav-trigger {
+		background-image: url("../img/icons/navicon-secondary-close.gif");
+	}
+}
+
+.nav-trigger span {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.nav-trigger span {
+		display: inline;
+	}
+}
+
+.nav-list {
+	border-top: 1px solid #e6e6e6;
+	font-size: 1.1578em; /*22/19*/
+	font-weight: 300;
+	text-align: center;
+	line-height: 2em;
+}
+
+@media (min-width: 768px) {
+	.nav-list {
+		position: absolute;
+		right: 0;
+		top: 3.5em;
+		z-index: 10;
+		padding-top: 0.5em;
+		border-top: none;
+		font-size: 1em;
+		text-align: right;
+		line-height: 1.5em;
+		width: 11.5789em;
+	}
+
+	.site-head-beta .nav-list {
+		top: 5em;
+	}
+}
+
+.nav-list > li {
+	border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: 768px) {
+	.nav-list > li {
+		display: inline-block;
+		*display: inline;
+		zoom: 1;
+		border-bottom: none;
+		margin-right: 0.5em;
+	}
+}
+
+.nav-list a {
+	display: block;
+	color: #636363;
+}
+
+@media (min-width: 768px) {
+	.nav-list a {
+		display: inline-block;
+		color: #cbcbcb;
+	}
+}
+
+.nav-list .nav-current {
+	color: #c6870a;
+}
+
+.responsive-nav li {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.expanded .nav-list {
+	    border-top: 1px solid #E6E6E6;
+	}
+}
+
+.expanded li {
+   display: list-item;
+}
+
+@media (min-width: 768px) {
+	.expanded li {
+	   display: inline-block;
+	}
+}
