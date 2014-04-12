@@ -62,7 +62,86 @@ hr {
    Typography
    
    ========================================================================== */
+
+
+p {
+	margin-bottom: 1.7em;
+}
 	
+/* Headings */
+   
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.3;
+}
+	
+h1, .h1 {
+
+}
+
+h2, .h2{
+	font-size: 1.210em; /*23/19*/
+}
+
+h3, .h3 {
+	font-size: 0.9473em; /*18/19*/
+	text-transform: uppercase;
+}
+
+h4, .h4 {
+
+}
+
+h5, .h5 {
+
+}
+
+h6, .h6 {
+
+}
+
+.kilo{ }
+.mega{ }
+.giga{ }
+
+.post-title {
+	font: normal 2em/1.2 "Playfair Display", Lora, Georgia, serif;
+	
+}
+
+.post-title:after {
+	content: "";
+	display: block;
+	width: 70%;
+	margin: .5em auto .3em;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: 500px) {
+	.post-title {
+		font-size: 2.5em;
+	}
+}
+
+@media (min-width: 900px) {
+	.post-title {
+		font-size: 2.8em;
+	}
+}
+
+.post-entry h2, .post-entry h3 {
+	margin-bottom: .8em;
+}
+
+.post-entry p+h2, .post-entry p+h3  {
+	margin-top: 2em;
+}
+
+@media (min-width: 600px) {
+	.post-entry p+h2, .post-entry p+h3  {
+		margin-top: 2.1em;
+	}
+}
+
 /* Classes */
 
 .txt-center {
@@ -92,40 +171,6 @@ hr {
 .txt-white {
 	color: #ffffff;
 }
-	
-/* Headings */
-   
-h1, h2, h3, h4, h5, h6 {
-	line-height: 1.3;
-}
-	
-h1, .h1 {
-
-}
-
-h2, .h2{
-	font-size: 1.1578947368421053em; /*22/19*/
-}
-
-h3, .h3 {
-
-}
-
-h4, .h4 {
-
-}
-
-h5, .h5 {
-
-}
-
-h6, .h6 {
-
-}
-
-.kilo{ }
-.mega{ }
-.giga{ }
 
 .page-title {
 	font-family: "Source sans pro", Arial, sans-serif;
@@ -136,11 +181,66 @@ h6, .h6 {
 	margin-bottom: 0.25em;
 }
 
-
 /* Blockquotes */
 
 blockquote {
+	margin-bottom: 2.3em;
+}
 
+@media (min-width: 900px) {
+	blockquote {
+		margin-bottom: 3.2em;;
+	}
+}
+
+blockquote > p {
+	font-size: 1.1578em;
+	line-height: 1.5;
+	font-style: italic;
+	padding-top: 1em;
+	margin-bottom: .4em;
+}
+
+@media (min-width: 600px) {
+	blockquote > p {
+		font-size: 1.2631em;
+	}
+}
+
+@media (min-width: 900px) {
+	blockquote > p {
+		font-size: 1.3684em;
+	}
+}
+
+blockquote:before {
+	display: block;
+	width: 1em;
+	content: "\201D";
+	font-family: Georgia;
+	font-size: 8em;
+	line-height: .1;
+	border-bottom: 1px solid #636363;
+	color: #636363;
+	margin: .45em auto .1em;
+}
+
+@media (min-width: 900px) {
+	blockquote:before {
+		margin-top: .5em;
+	}
+}
+
+@media (min-width: 1000px) {
+	blockquote:before {
+		margin-top: .6em;
+	}
+}
+
+blockquote cite {
+	font-size: 0.8947em;
+	color: #636363;
+	font-style: normal;
 }
 
 /* Other typographical elements */
@@ -362,7 +462,7 @@ strong {
     margin-right: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	.medium-1 {
 	    width: 8.3333333333333333%;
 	}
@@ -478,7 +578,7 @@ strong {
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
 	.large-1{
 	    width: 8.3333333333333333%;
 	}
@@ -705,10 +805,6 @@ iframe {
 	vertical-align: bottom;
 }
 
-.twitter-tweet-rendered {
-	max-width: 100% !important; /* Override the Twitter embed fixed width */
-}
-
 
 /* ==========================================================================
 
@@ -717,12 +813,25 @@ iframe {
    ========================================================================== */
 
 figure {
-	margin: 30px 0 25px;
+	margin: .5em 0 1.5em;
+}
+
+@media (min-width: 600px) {
+	figure {
+		margin-top: .7em;
+	}
+}
+
+@media (min-width: 900px) {
+	figure {
+		margin-top: 1em;
+		margin-bottom: 2.5em;
+	}
 }
 
 figcaption {
-	font-size: 14px;
-	margin-top: 5px;
+	font-size: 0.8947em; /* 17/19 */
+	margin-top: .2em;
 	color: #cbcbcb;
 	font-style: italic;
 }
@@ -751,6 +860,25 @@ figcaption {
   padding-left: 5px;
 }
 
+.post-entry ul, .post-entry ol {
+	margin-bottom: 2em;
+}
+
+.post-entry p+ul, .post-entry p+ol {
+	margin-top: 2em;
+}
+
+.post-entry ul {
+	margin-left: 1em;
+}
+
+.post-entry ol {
+	margin-left: 1.3em;
+}
+
+.post-entry ul>li, .post-entry ol>li {
+	margin-bottom: .2em;
+}
 
 /* ==========================================================================
 
@@ -976,13 +1104,13 @@ p {
 	margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	.site-head-beta {
 		margin-top: 0;
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	.site-head-beta .site-logo {
 		display: none;
 	}
@@ -1030,7 +1158,7 @@ p {
 	height: 1.5em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	.nav-trigger {
 		background-image: url("../img/icons/navicon-secondary.gif");
 	}
@@ -1044,7 +1172,7 @@ p {
 	background-image: url("../img/icons/navicon-primary-close.gif");
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	.expanded .nav-trigger {
 		background-image: url("../img/icons/navicon-secondary-close.gif");
 	}
@@ -1054,7 +1182,7 @@ p {
 	display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	.nav-trigger span {
 		display: inline;
 	}
@@ -1068,7 +1196,7 @@ p {
 	line-height: 2em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	.nav-list {
 		position: absolute;
 		right: 0;
@@ -1091,7 +1219,7 @@ p {
 	border-bottom: 1px solid #e6e6e6;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	.nav-list > li {
 		display: inline-block;
 		*display: inline;
@@ -1106,7 +1234,7 @@ p {
 	color: #636363;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	.nav-list a {
 		display: inline-block;
 		color: #cbcbcb;
@@ -1121,7 +1249,7 @@ p {
 	display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	.expanded .nav-list {
 	    border-top: 1px solid #E6E6E6;
 	}
@@ -1131,8 +1259,76 @@ p {
    display: list-item;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	.expanded li {
 	   display: inline-block;
 	}
 }
+
+
+/* ==========================================================================
+
+   Single post
+   
+   ========================================================================== */
+
+.post-header {
+	margin-bottom: 2.5em;
+}
+
+@media (min-width: 600px) {
+	.post-header {
+		margin-bottom: 3em;
+	}
+}
+
+@media (min-width: 900px) {
+	.post-header {
+		margin-bottom: 4em;
+	}
+}
+
+ .post-cover {
+ 	margin-bottom: 1em;
+ }
+
+ @media (min-width: 600px) {
+ 	 .post-cover {
+	 	margin-bottom: 2em;
+	 }
+ }
+
+  @media (min-width: 900px) {
+ 	 .post-cover {
+	 	margin-bottom: 2.5em;
+	 }
+ }
+
+.post-pubdate {
+	font-size: 0.9473em;
+	color: #cbcbcb;
+}
+
+.post-entry {
+	margin-bottom: 2em;
+}
+
+@media (min-width: 600px) {
+	.post-entry {
+		margin-bottom: 3em;
+	}
+}
+
+.post-footer > a {
+	border: none;
+}
+
+.post-footer-content {
+	padding: 1.5em 0 2em;
+	border-top: 1px solid #e6e6e6;
+	font-family: "Source Sans pro", Arial, sans-serif;
+	vertical-align: middle;
+}
+
+
+
