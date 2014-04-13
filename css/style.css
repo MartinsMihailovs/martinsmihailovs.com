@@ -1513,3 +1513,57 @@ p {
 .archive-item-snippet > a {
 	border-bottom-width: 0;
 }
+
+/* ==========================================================================
+
+   Portfolio page
+   
+   ========================================================================== */
+
+.portfolio-list {
+	list-style: none;
+}
+
+.portfolio-item {
+	margin-bottom: 1.8em;
+}
+
+@media (min-width: 600px) {
+	.portfolio-item {
+		margin-bottom: 2em;
+	}
+}
+
+.portfolio-item > a {
+	border-bottom: none;
+}
+
+.portfolio-item + a {
+	border-bottom: none;
+}
+
+.portfolio-item:hover .portfolio-item-title > a {
+	border-bottom-color: #c6870a;
+}
+
+.portfolio-item-meta {
+	margin-top: .3em;
+	letter-spacing: 1px;
+}
+
+@media (min-width: 900px) {
+	.portfolio-item-meta {
+		margin-top: .4em;
+	}
+}
+
+.portfolio-item-title {
+	font-size: .9473em;
+	font-weight: 400;
+}
+
+.portfolio-item-desc {
+	font-size: 0.8421em;
+	line-height: 1.3;
+	color: #cbcbcb;
+}
