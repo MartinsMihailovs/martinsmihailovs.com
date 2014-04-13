@@ -9,9 +9,9 @@
 -->
 
 	<meta charset="UTF-8" />
-	<title>Page title goes here</title>
-	<meta name="description" content="Description for page" />
-	<meta name="keywords" content="Page keywords"/>
+	<title>Vēstules | Mārtiņš Mihailovs</title>
+	<meta name="description" content="Mārtiņš Mihailovs" />
+	<meta name="keywords" content="Mārtiņš Mihailovs" />
 	<meta name="author" content="www.martinsmihailovs.com" />
 
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
@@ -31,11 +31,13 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	
 	<!-- Fonts-->
-	<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900,600,700,400,300&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	
 	<!-- Scripts-->
 	<script src="js/lib/jquery-1.10.2.min.js"></script>
+	<script src="js/responsive-nav.js"></script>
 	<!--Emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8-->
 	<!--[if (gte IE 6)&(lte IE 9)]>
 	<script type="text/javascript" src="js/lib/selectivizr-min.js"></script>
@@ -65,8 +67,70 @@
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
-	
-	
+	<header class="site-head cfix">
+		<div class="page-width">
+			<div class="small-12">
+				<div class="site-head-content cfix">
+					<a href="index.html" class="site-logo" title="Atgriezties galvenajā lapā">
+						<img src="img/martins-logo.jpg" alt="Mārtiņš Mihailovs" class="martins-logo">
+					</a>
+					<nav class="nav-primary">
+						<h3 class="nav-trigger"><span>Menu</span></h3>
+						<ul class="nav-list">
+							<li><a class="nav-current" href="index.html">Vēstules</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="bio.html">Bio</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div> <!-- Page width -->
+	</header> <!-- Site head -->
+	<section class="page">
+		<div class="page-width">
+			<div class="medium-10 large-8">
+				<header class="page-header">
+					<h1 class="page-title">Vēstules</h1>
+					<p class="page-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, fugit, provident, sit perspiciatis sequi voluptate placeat repellendus ab inventore illum ea aperiam quidem qui! Vel, dolorem eius quaerat labore repudiandae error expedita dolore sed eum illum similique aperiam molestias velit.</p>
+				</header> <!-- Page header -->
+			</div>
+		</div> <!-- Page width -->
+		<section class="archive">
+			<div class="page-width">
+				<div class="large-11">
+					<h2 class="archive-heading">Tavas paskatkastes saturs:</h2>
+					<ul class="archive-list">
+						<li class="archive-item">
+							<h3 class="archive-item-title"><a href="#" title="Atvērt vēstuli">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+							<a href="#"><p class="archive-item-snippet"><em>Lorem ipsum dolor sit amet, consectetur adipisicing</em></p></a>
+							<time datetime="2013-12-06">06.12.2013</time>
+						</li>
+						<li class="archive-item">
+							<h3 class="archive-item-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+							<a href="#"><p class="archive-item-snippet"><em>Lorem ipsum dolor sit amet, consectetur adipisicing</em></p></a>
+							<time datetime="2013-12-06">06.12.2013</time>
+						</li>
+						<li class="archive-item">
+							<h3 class="archive-item-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+							<a href="#"><p class="archive-item-snippet"><em>Lorem ipsum dolor sit amet, consectetur adipisicing</em></p></a>
+							<time datetime="2013-12-06">06.12.2013</time>
+						</li>
+						<li class="archive-item">
+							<h3 class="archive-item-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+							<a href="#"><p class="archive-item-snippet"><em>Lorem ipsum dolor sit amet, consectetur adipisicing</em></p></a>
+							<time datetime="2013-12-06">06.12.2013</time>
+						</li>
+						<li class="archive-item">
+							<h3 class="archive-item-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+							<a href="#"><p class="archive-item-snippet"><em>Lorem ipsum dolor sit amet, consectetur adipisicing</em></p></a>
+							<time datetime="2013-12-06">06.12.2013</time>
+						</li>
+					</ul> 
+				</div>
+			</div> <!-- Page width -->
+		</section> <!-- Archive -->
+	</section> <!-- Page -->
+
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 	<script>
 		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
