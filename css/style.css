@@ -136,6 +136,10 @@ h6, .h6 {
 	}
 }
 
+.page-desc-heading {
+	margin-bottom: .6em;
+}
+
 .post-title {
 	font: normal 2em/1.2 "Playfair Display", Lora, Georgia, serif;
 	
@@ -1809,3 +1813,29 @@ p {
 	margin-top: .2em;
 }
 
+
+/* ==========================================================================
+
+   404 page
+   
+   ========================================================================== */
+
+@media (min-width: 900px) {
+	.page-404 .page-header {
+		margin-bottom: 1.5em;
+	}
+}
+
+.hellip-divider {
+	position: relative;
+	top: -.5em;
+	font-size: 2.5em;
+	line-height: 1;
+}
+
+@media (min-width: 900px) {
+	.hellip-divider {
+		position: static;
+		margin-bottom: 1.2em;
+	}
+}
