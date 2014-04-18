@@ -165,20 +165,20 @@ h6, .h6 {
 	}
 }
 
-.post-entry p, .bio-entry p {
+.post-entry p {
 	margin-bottom: 1.7em;
 }
 
-.post-entry h2, .post-entry h3, .bio-entry h2 {
+.post-entry h2, .post-entry h3 {
 	margin-bottom: .8em;
 }
 
-.post-entry p+h2, .post-entry p+h3, .bio-entry p+h2  {
+.post-entry p+h2, .post-entry p+h3 {
 	margin-top: 2em;
 }
 
 @media (min-width: 600px) {
-	.post-entry p+h2, .post-entry p+h3, .bio-entry p+h2  {
+	.post-entry p+h2, .post-entry p+h3 {
 		margin-top: 2.1em;
 	}
 }
@@ -1491,13 +1491,13 @@ p {
 	color: #cbcbcb;
 }
 
-.post-entry {
-	margin-bottom: 2em;
+.post-footer {
+	margin-top: 2em;
 }
 
 @media (min-width: 600px) {
-	.post-entry {
-		margin-bottom: 3em;
+	.post-footer {
+		margin-top: 3em;
 	}
 }
 
