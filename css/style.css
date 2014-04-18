@@ -52,7 +52,6 @@ hr {
    
    ========================================================================== */
 
-
 p {
 	
 }
@@ -61,10 +60,6 @@ p {
    
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.3;
-}
-	
-h1, .h1 {
-
 }
 
 h2, .h2{
@@ -75,108 +70,7 @@ h3, .h3 {
 	font-size: .9473em; /*18/19*/
 }
 
-h4, .h4 {
-
-}
-
-h5, .h5 {
-
-}
-
-h6, .h6 {
-
-}
-
-.kilo{ }
-.mega{ }
-.giga{ }
-
-.page-title {
-	font-family: "Source sans pro", Arial, sans-serif;
-	font-weight: 900;
-	font-size: 2.7368em;
-	letter-spacing: -.04em;
-	line-height: 1;
-	margin-bottom: .25em;
-}
-
-@media (min-width: 600px) {
-	.page-title {
-		position: absolute;
-		top: 1.5em;
-		font-size: 3.2em;
-		letter-spacing: -.06em;
-		margin-bottom: 0;
-		color: #c6870a;
-	}
-}
-
-@media (min-width: 750px) {
-	.page-title {
-		top: 1.2em;
-		font-size: 3.8em;
-	}
-}
-
-@media (min-width: 900px) {
-	.page-title {
-		top: 1.3em;
-		font-size: 3.9em;
-	}
-}
-
-.page-desc-heading {
-	margin-bottom: .6em;
-}
-
-.post-title {
-	font: normal 2em/1.2 "Playfair Display", Lora, Georgia, serif;
-	
-}
-
-.post-title:after {
-	content: "";
-	display: block;
-	width: 70%;
-	margin: .5em auto .3em;
-	border-bottom: 1px solid #e6e6e6;
-}
-
-@media (min-width: 500px) {
-	.post-title {
-		font-size: 2.5em;
-	}
-}
-
-@media (min-width: 900px) {
-	.post-title {
-		font-size: 2.8em;
-	}
-}
-
-.post-entry p {
-	margin-bottom: 1.7em;
-}
-
-.post-entry h2, .post-entry h3 {
-	margin-bottom: .8em;
-}
-
-.post-entry p+h2, .post-entry p+h3 {
-	margin-top: 2em;
-}
-
-@media (min-width: 600px) {
-	.post-entry p+h2, .post-entry p+h3 {
-		margin-top: 2.1em;
-	}
-}
-
-.post-entry h3 {
-	text-transform: uppercase;
-}
-
-/* Classes */
+/* Text styling classes */
 
 .txt-center {
     text-align: center;
@@ -206,67 +100,6 @@ h6, .h6 {
 	color: #ffffff;
 }
 
-/* Blockquotes */
-
-.post-entry blockquote {
-	margin-bottom: 2.3em;
-}
-
-@media (min-width: 900px) {
-	.post-entry blockquote {
-		margin-bottom: 3.2em;;
-	}
-}
-
-.post-entry blockquote > p {
-	font-size: 1.1578em;
-	line-height: 1.5;
-	font-style: italic;
-	padding-top: 1em;
-	margin-bottom: .4em !important;
-}
-
-@media (min-width: 600px) {
-	.post-entry blockquote > p {
-		font-size: 1.2631em;
-	}
-}
-
-@media (min-width: 900px) {
-	.post-entry blockquote > p {
-		font-size: 1.3684em;
-	}
-}
-
-.post-entry blockquote:before {
-	display: block;
-	width: 1em;
-	content: "\201D";
-	font-family: Georgia;
-	font-size: 8em;
-	line-height: .1;
-	border-bottom: 1px solid #636363;
-	color: #636363;
-	margin: .45em auto .1em;
-}
-
-@media (min-width: 900px) {
-	.post-entry blockquote:before {
-		margin-top: .5em;
-	}
-}
-
-@media (min-width: 1000px) {
-	.post-entry blockquote:before {
-		margin-top: .6em;
-	}
-}
-
-.post-entry blockquote cite {
-	font-size: .8947em;
-	color: #636363;
-	font-style: normal;
-}
 
 /* Other typographical elements */
 
@@ -335,6 +168,268 @@ small {
 strong {
 	font-weight: 700;
 	font-family: Open Sans Semibold;
+}
+
+
+/* ==========================================================================
+
+   Links
+   
+   ========================================================================== */
+
+a { 
+	color: #c6870a;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+a:hover { 
+	outline: 0;
+	border-bottom-color: #c6870a;
+}
+
+
+/* ==========================================================================
+
+   Images
+   
+   ========================================================================== */
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+
+.img--right {
+    float: right;
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+.img--left {
+    float: left;
+    margin-bottom: 24px;
+    margin-right: 24px;
+}
+.img--center {
+    display: block;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+img.size-full,
+img.size-large,
+img.header-image,
+img.wp-post-image {
+	max-width: 100%;
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+/* Make sure images with WordPress-added height and width attributes are scaled correctly */
+.oldie img.attachment-page-cover-image {
+	width: 100%; 
+	height: auto;
+}
+
+/* ==========================================================================
+
+   Figures
+   
+   ========================================================================== */
+
+figure {
+	margin: .5em 0 1.5em;
+}
+
+@media (min-width: 600px) {
+	figure {
+		margin-top: .7em;
+	}
+}
+
+@media (min-width: 900px) {
+	figure {
+		margin-top: 1em;
+		margin-bottom: 2.5em;
+	}
+}
+
+figcaption {
+	font-size: .8947em; /* 17/19 */
+	margin-top: .2em;
+	color: #cbcbcb;
+	font-style: italic;
+}
+
+
+/* ==========================================================================
+
+   Embeds
+   
+   ========================================================================== */
+
+embed,
+object,
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+/* ==========================================================================
+
+   Lists
+   
+   ========================================================================== */
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+
+.list-inline > li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.post-entry ul, .post-entry ol {
+	margin-bottom: 2em;
+}
+
+.post-entry p+ul, .post-entry p+ol {
+	margin-top: 2em;
+}
+
+.post-entry ul {
+	margin-left: 1em;
+}
+
+.post-entry ol {
+	margin-left: 1.3em;
+}
+
+.post-entry ul>li, .post-entry ol>li {
+	margin-bottom: .2em;
+}
+
+
+/* ==========================================================================
+
+   Forms
+   
+   ========================================================================== */
+
+input { 
+	line-height: normal; 
+	*overflow: visible;
+}
+
+button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] { 
+	cursor: pointer; 
+}
+
+input[type="search"],
+input[type="text"],
+input[type="email"] {
+	padding-left: 6px;  /*padding for input text or placeholder*/
+	height: 35px;
+	border: 1px solid #c1c1c1;
+	color: #6c6c6c;
+	font-size: 16px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	-webkit-appearance: none; 
+}
+
+input[type="search"] {
+	float: left;
+	width: 87%;
+}
+
+textarea {
+	padding: 6px;  /*padding for input text or placeholder*/
+	max-width: 100%;
+	width: 100%;
+	border: 1px solid #c1c1c1;
+	color: #8d8d8d;
+	font-size: 14px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	-webkit-appearance: none; 
+}
+
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+ textarea:focus {
+	outline: 0;
+	border-color: #0070ae;
+	-webkit-box-shadow:  0px 0px 4px 0px #0070ae;
+    box-shadow:  0px 0px 4px 0px #0070ae;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* ==========================================================================
+
+   Tables
+   
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+
+   Buttons
+   
+   ========================================================================== */
+
+.btn {
+	
+}
+
+.btn:hover {
+	
+}
+
+.btn:active {
+	
+}
+
+.btn-large {
+	
 }
 
 
@@ -856,269 +951,6 @@ strong {
 
 /* ==========================================================================
 
-   Links
-   
-   ========================================================================== */
-
-a { 
-	color: #c6870a;
-	text-decoration: none;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: transparent;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-}
-
-a:hover { 
-	outline: 0;
-	border-bottom-color: #c6870a;
-}
-
-
-/* ==========================================================================
-
-   Images
-   
-   ========================================================================== */
-
-img {
-	max-width: 100%;
-	height: auto;
-	border: 0;
-}
-
-.img--right {
-    float: right;
-    margin-bottom: 24px;
-    margin-left: 24px;
-}
-.img--left {
-    float: left;
-    margin-bottom: 24px;
-    margin-right: 24px;
-}
-.img--center {
-    display: block;
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-img[class*="align"],
-img[class*="wp-image-"],
-img[class*="attachment-"] {
-	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
-}
-
-img.size-full,
-img.size-large,
-img.header-image,
-img.wp-post-image {
-	max-width: 100%;
-	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
-}
-
-/* Make sure images with WordPress-added height and width attributes are scaled correctly */
-.oldie img.attachment-page-cover-image {
-	width: 100%; 
-	height: auto;
-}
-
-
-/* ==========================================================================
-
-   Embeds
-   
-   ========================================================================== */
-
-embed,
-object,
-video {
-	max-width: 100%;
-	height: auto;
-}
-
-iframe {
-	max-width: 100%;
-	vertical-align: bottom;
-}
-
-
-/* ==========================================================================
-
-   Figures
-   
-   ========================================================================== */
-
-figure {
-	margin: .5em 0 1.5em;
-}
-
-@media (min-width: 600px) {
-	figure {
-		margin-top: .7em;
-	}
-}
-
-@media (min-width: 900px) {
-	figure {
-		margin-top: 1em;
-		margin-bottom: 2.5em;
-	}
-}
-
-figcaption {
-	font-size: .8947em; /* 17/19 */
-	margin-top: .2em;
-	color: #cbcbcb;
-	font-style: italic;
-}
-
-
-/* ==========================================================================
-
-   Lists
-   
-   ========================================================================== */
-
-.list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-
-.list-inline {
-  padding-left: 0;
-  margin-left: -5px;
-  list-style: none;
-}
-
-.list-inline > li {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-.post-entry ul, .post-entry ol {
-	margin-bottom: 2em;
-}
-
-.post-entry p+ul, .post-entry p+ol {
-	margin-top: 2em;
-}
-
-.post-entry ul {
-	margin-left: 1em;
-}
-
-.post-entry ol {
-	margin-left: 1.3em;
-}
-
-.post-entry ul>li, .post-entry ol>li {
-	margin-bottom: .2em;
-}
-
-/* ==========================================================================
-
-   Forms
-   
-   ========================================================================== */
-
-input { 
-	line-height: normal; 
-	*overflow: visible;
-}
-
-button, 
-input[type="button"], 
-input[type="reset"], 
-input[type="submit"] { 
-	cursor: pointer; 
-}
-
-input[type="search"],
-input[type="text"],
-input[type="email"] {
-	padding-left: 6px;  /*padding for input text or placeholder*/
-	height: 35px;
-	border: 1px solid #c1c1c1;
-	color: #6c6c6c;
-	font-size: 16px;
-	font-family: 'Open Sans', Arial, sans-serif;
-	-webkit-appearance: none; 
-}
-
-input[type="search"] {
-	float: left;
-	width: 87%;
-}
-
-textarea {
-	padding: 6px;  /*padding for input text or placeholder*/
-	max-width: 100%;
-	width: 100%;
-	border: 1px solid #c1c1c1;
-	color: #8d8d8d;
-	font-size: 14px;
-	font-family: 'Open Sans', Arial, sans-serif;
-	-webkit-appearance: none; 
-}
-
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="email"]:focus,
- textarea:focus {
-	outline: 0;
-	border-color: #0070ae;
-	-webkit-box-shadow:  0px 0px 4px 0px #0070ae;
-    box-shadow:  0px 0px 4px 0px #0070ae;
-}
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: none;
-}
-
-/* ==========================================================================
-
-   Tables
-   
-   ========================================================================== */
-
-
-
-/* ==========================================================================
-
-   Buttons
-   
-   ========================================================================== */
-
-.btn {
-	
-}
-
-.btn:hover {
-	
-}
-
-.btn:active {
-	
-}
-
-.btn-large {
-	
-}
-
-
-/* ==========================================================================
-
    Helpes classes
    
    ========================================================================== */
@@ -1439,71 +1271,6 @@ p {
 
 /* ==========================================================================
 
-   Single post
-   
-   ========================================================================== */
-
-.post-header {
-	margin-bottom: 2.5em;
-}
-
-@media (min-width: 600px) {
-	.post-header {
-		margin-bottom: 3em;
-	}
-}
-
-@media (min-width: 900px) {
-	.post-header {
-		margin-bottom: 4em;
-	}
-}
-
- .post-cover {
- 	margin-bottom: 1em;
- }
-
- @media (min-width: 600px) {
- 	 .post-cover {
-	 	margin-bottom: 2em;
-	 }
- }
-
-  @media (min-width: 900px) {
- 	 .post-cover {
-	 	margin-bottom: 2.5em;
-	 }
- }
-
-.post-pubdate {
-	font-size: .9473em;
-	color: #cbcbcb;
-}
-
-.post-footer {
-	margin-top: 2em;
-}
-
-@media (min-width: 600px) {
-	.post-footer {
-		margin-top: 3em;
-	}
-}
-
-.post-footer > a {
-	border: none;
-}
-
-.post-footer-content {
-	padding: 1.5em 0 2em;
-	border-top: 1px solid #e6e6e6;
-	font-family: "Source Sans pro", Arial, sans-serif;
-	vertical-align: middle;
-}
-
-
-/* ==========================================================================
-
    Page template
    
    ========================================================================== */
@@ -1557,16 +1324,223 @@ p {
 	}
 }
 
+.page-title {
+	font-family: "Source sans pro", Arial, sans-serif;
+	font-weight: 900;
+	font-size: 2.7368em;
+	letter-spacing: -.04em;
+	line-height: 1;
+	margin-bottom: .25em;
+}
+
+@media (min-width: 600px) {
+	.page-title {
+		position: absolute;
+		top: 1.5em;
+		font-size: 3.2em;
+		letter-spacing: -.06em;
+		margin-bottom: 0;
+		color: #c6870a;
+	}
+}
+
+@media (min-width: 750px) {
+	.page-title {
+		top: 1.2em;
+		font-size: 3.8em;
+	}
+}
+
+@media (min-width: 900px) {
+	.page-title {
+		top: 1.3em;
+		font-size: 3.9em;
+	}
+}
+
+.page-desc-heading {
+	margin-bottom: .6em;
+}
+
+
+/* ==========================================================================
+
+   Single post
+   
+   ========================================================================== */
+
+.post-header {
+	margin-bottom: 2.5em;
+}
+
+@media (min-width: 600px) {
+	.post-header {
+		margin-bottom: 3em;
+	}
+}
+
+@media (min-width: 900px) {
+	.post-header {
+		margin-bottom: 4em;
+	}
+}
+
+ .post-cover {
+ 	margin-bottom: 1em;
+ }
+
+ @media (min-width: 600px) {
+ 	 .post-cover {
+	 	margin-bottom: 2em;
+	 }
+ }
+
+  @media (min-width: 900px) {
+ 	 .post-cover {
+	 	margin-bottom: 2.5em;
+	 }
+ }
+
+ .post-title {
+	font: normal 2em/1.2 "Playfair Display", Lora, Georgia, serif;
+}
+
+.post-title:after {
+	content: "";
+	display: block;
+	width: 70%;
+	margin: .5em auto .3em;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: 500px) {
+	.post-title {
+		font-size: 2.5em;
+	}
+}
+
+@media (min-width: 900px) {
+	.post-title {
+		font-size: 2.8em;
+	}
+}
+
+.post-pubdate {
+	font-size: .9473em;
+	color: #cbcbcb;
+}
+
+.post-entry p {
+	margin-bottom: 1.7em;
+}
+
+.post-entry h2, .post-entry h3 {
+	margin-bottom: .8em;
+}
+
+.post-entry p+h2, .post-entry p+h3 {
+	margin-top: 2em;
+}
+
+@media (min-width: 600px) {
+	.post-entry p+h2, .post-entry p+h3 {
+		margin-top: 2.1em;
+	}
+}
+
+.post-entry h3 {
+	text-transform: uppercase;
+}
+
+/* Blockquotes */
+
+.post-entry blockquote {
+	margin-bottom: 2.3em;
+}
+
+@media (min-width: 900px) {
+	.post-entry blockquote {
+		margin-bottom: 3.2em;;
+	}
+}
+
+.post-entry blockquote > p {
+	font-size: 1.1578em;
+	line-height: 1.5;
+	font-style: italic;
+	padding-top: 1em;
+	margin-bottom: .4em !important;
+}
+
+@media (min-width: 600px) {
+	.post-entry blockquote > p {
+		font-size: 1.2631em;
+	}
+}
+
+@media (min-width: 900px) {
+	.post-entry blockquote > p {
+		font-size: 1.3684em;
+	}
+}
+
+.post-entry blockquote:before {
+	display: block;
+	width: 1em;
+	content: "\201D";
+	font-family: Georgia;
+	font-size: 8em;
+	line-height: .1;
+	border-bottom: 1px solid #636363;
+	color: #636363;
+	margin: .45em auto .1em;
+}
+
+@media (min-width: 900px) {
+	.post-entry blockquote:before {
+		margin-top: .5em;
+	}
+}
+
+@media (min-width: 1000px) {
+	.post-entry blockquote:before {
+		margin-top: .6em;
+	}
+}
+
+.post-entry blockquote cite {
+	font-size: .8947em;
+	color: #636363;
+	font-style: normal;
+}
+
+.post-footer {
+	margin-top: 2em;
+}
+
+@media (min-width: 600px) {
+	.post-footer {
+		margin-top: 3em;
+	}
+}
+
+.post-footer > a {
+	border: none;
+}
+
+.post-footer-content {
+	padding: 1.5em 0 2em;
+	border-top: 1px solid #e6e6e6;
+	font-family: "Source Sans pro", Arial, sans-serif;
+	vertical-align: middle;
+}
+
 
 /* ==========================================================================
 
    Letters page
    
    ========================================================================== */
-
-.archive-heading {
-	margin-bottom: 1em;
-}
 
 @media (min-width: 750px) {
 	.archive-heading {
@@ -1634,6 +1608,7 @@ p {
 	border-bottom-width: 0;
 }
 
+
 /* ==========================================================================
 
    Portfolio page
@@ -1687,6 +1662,7 @@ p {
 	line-height: 1.3;
 	color: #cbcbcb;
 }
+
 
 /* ==========================================================================
 
