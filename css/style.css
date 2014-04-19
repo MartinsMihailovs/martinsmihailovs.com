@@ -103,73 +103,47 @@ h3, .h3 {
 
 /* Other typographical elements */
 
-b {
-	font-weight: 700;
-	font-family: Open Sans Semibold;
+pre, code, kbd, samp {
+    font: .9473em/1.5 'andale mono', 'lucida console', monospace;
 }
 
-cite {
-
-}
-
-code {
-
-}
-
-dd {
-
-}
-
-del {
-
+pre {
+    background-color: #333333;
+    border-radius: 2px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .25) inset;
+    color: #fff;
+    overflow: auto;
+    padding: 1em;
+    white-space: pre;
+    word-wrap: normal;
+    margin-bottom: 2em;
 }
 
 dfn {
-
+	font-style: italic;
 }
 
 dl {
-
+	margin-bottom: 2em;
 }
 
 dt {
-
+	font-weight: bold;
+	margin-bottom: 1em;
+	border-bottom: 1px dotted #cbcbcb;
+	padding-bottom: .4em;
+}
+dd {
+	margin-left: 8.3333333333333333%;
 }
 
 em {
 	font-style: italic;
 }
 
-i {
-
-}
-
-ins {
-
-}
-
 mark {
 	background: #ff0;
-    color: #000;
 }
-
-pre {
-
-}
-
-q {
-
-}
-
-small {
-	font-size: 80%;
-}
-
-strong {
-	font-weight: 700;
-	font-family: Open Sans Semibold;
-}
-
 
 /* ==========================================================================
 
