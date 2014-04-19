@@ -70,37 +70,6 @@ h3, .h3 {
 	font-size: .9473em; /*18/19*/
 }
 
-/* Text styling classes */
-
-.txt-center {
-    text-align: center;
-}
-
-.txt-right {
-    text-align: right;
-}
-
-.txt-primary {
-	color: #c6870a;
-}
-
-.txt-base {
-	color: #444444;
-}
-
-.txt-dimmed {
-	color: #636363;
-}
-
-.txt-light {
-	color: #cbcbcb;
-}
-
-.txt-white {
-	color: #ffffff;
-}
-
-
 /* Other typographical elements */
 
 pre, code, kbd, samp {
@@ -1308,6 +1277,7 @@ p {
 
 .post-header {
 	margin-bottom: 2.5em;
+	text-align: center;
 }
 
 @media (min-width: 600px) {
@@ -1392,6 +1362,7 @@ p {
 /* Blockquotes */
 
 .post-entry blockquote {
+	text-align: center;
 	margin-bottom: 2.3em;
 }
 
@@ -1453,6 +1424,7 @@ p {
 
 .post-footer {
 	margin-top: 2em;
+	text-align: center;
 }
 
 @media (min-width: 600px) {
@@ -1581,6 +1553,7 @@ p {
 .portfolio-item-meta {
 	margin-top: .3em;
 	letter-spacing: 1px;
+	text-align: center;
 }
 
 @media (min-width: 900px) {
@@ -1634,6 +1607,7 @@ p {
 .bio-header {
 	position: relative;
 	margin-bottom: 2.5em;
+	text-align: center;
 }
 
 @media (min-width: 600px) {
