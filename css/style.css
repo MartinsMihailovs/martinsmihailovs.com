@@ -181,43 +181,6 @@ img {
 	border: 0;
 }
 
-.img--right {
-    float: right;
-    margin-bottom: 24px;
-    margin-left: 24px;
-}
-.img--left {
-    float: left;
-    margin-bottom: 24px;
-    margin-right: 24px;
-}
-.img--center {
-    display: block;
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-img[class*="align"],
-img[class*="wp-image-"],
-img[class*="attachment-"] {
-	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
-}
-
-img.size-full,
-img.size-large,
-img.header-image,
-img.wp-post-image {
-	max-width: 100%;
-	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
-}
-
-/* Make sure images with WordPress-added height and width attributes are scaled correctly */
-.oldie img.attachment-page-cover-image {
-	width: 100%; 
-	height: auto;
-}
-
 /* ==========================================================================
 
    Figures
