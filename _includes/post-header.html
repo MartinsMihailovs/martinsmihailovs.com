@@ -1,0 +1,9 @@
+			<header class="post-header">
+				<img class="post-cover" src="{{ site.url }}/img/posts/{{ page.feature-image }}" alt="{{ page.title }}">
+				<h1 class="post-title">{{ page.title }}</h1>
+				<time class="post-pubdate" pubdate="" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+				{% assign m = page.date | date: "%-m" %}
+				{{ page.date | date: "%-d." }}
+				{% case m %} {% when '1' %}janvāris{% when '2' %}februāris{% when '3' %}marts{% when '4' %}aprīlis{% when '5' %}maijs{% when '6' %}jūnijs{% when '7' %}jūlijs{% when '8' %}augusts{% when '9' %}septembris{% when '10' %}oktobris{% when '11' %}novembris{% when '12' %}decembris{% endcase %}, {{ page.date | date: "%Y" }}
+				</time>
+			</header>

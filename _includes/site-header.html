@@ -1,0 +1,24 @@
+{% if page.url == "/bio/" %}
+	<div class="page-width bio-bg-img">
+		<div class="small-12">
+{% endif %}
+	<header class="site-head {% if page.url == "/bio/" %}site-head-bio {% elsif page.layout == "post" %}site-head-beta {% endif %} cfix">
+		<div class="page-width">
+			<div class="small-12">
+				<div class="site-head-content cfix">
+					<a href="/" class="site-logo" title="Atgriezties galvenajā lapā">
+						<img src="{{ site.baseurl }}/img/martins-logo.jpg" alt="Mārtiņš Mihailovs" class="martins-logo">
+					</a>
+					<nav class="nav-primary">
+						<h3 class="nav-trigger"><span>Menu</span></h3>
+						<ul class="nav-list">
+						{% assign url = page.url | remove:'index.html' %}
+						{% for link in site.data.navigation %}
+						<li><a href="{{ site.baseurl }}{{ link.url }}" {% if url == link.url or page.layout == link.layout %}class="nav-current"{% endif %}>{{ link.text }}</a></li>
+						{% endfor %}
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div> <!-- Page width -->
+	</header> <!-- Site head -->

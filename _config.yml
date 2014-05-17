@@ -1,0 +1,23 @@
+# Site settings
+title: Mārtiņš Mihailovs
+tagline: Vēstules
+description: "Describe your website."
+#Comment out url when working locally to resolve base urls correctly
+#url: http://martinsmihailovs.github.io
+baseurl: /martinsmihailovs.com
+
+# Owner/author information
+owner:
+  name: Mārtiņš Mihailovs
+  occupation: Designer
+  email: m.mihailovs@gmail.com
+  twitter: Mar7ins
+  github: MartinsMihailovs
+  location: "Rīga, Latvija"
+
+tools:
+  standards: "HTML, CSS, JavaScript, Jekyll"
+  software: "git"
+
+markdown: redcarpet
+permalink: /:categories/:title

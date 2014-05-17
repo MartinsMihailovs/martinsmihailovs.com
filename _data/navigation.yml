@@ -1,0 +1,8 @@
+- text: Vēstules
+  url: /
+  layout: post
+- text: Portfolio
+  url: /portfolio/
+  layout: portfolio
+- text: Bio
+  url: /bio/
