@@ -19,7 +19,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditat
 					<ul class="archive-list">
 						{% for letter in site.categories.vestules %}
 						<li class="archive-item">
-							<h3 class="archive-item-title"><a href="{{ letter.url }}" title="Atvērt vēstuli">{{ letter.title }}</a></h3>
+							<h3 class="archive-item-title"><a href="{{ site.baseurl }}{{ letter.url }}" title="Atvērt vēstuli">{{ letter.title }}</a></h3>
 							<a href="{{ letter.url }}"><p class="archive-item-snippet"><em>{{ letter.excerpt | remove: '<p>' | remove: '</p>' }}</em></p></a>
 							<time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ letter.date | date: "%d.%m.%Y" }}</time>
 						</li>
