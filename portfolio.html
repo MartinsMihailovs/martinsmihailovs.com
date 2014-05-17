@@ -17,7 +17,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditat
 			<ul class="portfolio-list cfix">
 				{% for project in site.categories.portfolio %}
 				<li class="portfolio-item medium-6 large-4">
-					<a href="{{ project.url }}"><img src="{{ site.url }}/img/portfolio/{{ project.thumb }}" alt="{{ project.title }}"></a>
+					<a href="{{ project.url }}"><img src="{{ site.baseurl }}/img/portfolio/{{ project.thumb }}" alt="{{ project.title }}"></a>
 					<div class="portfolio-item-meta">
 						<h2 class="portfolio-item-title"><a href="{{ project.url }}">{{ project.title }}</a></h2>
 						<p class="portfolio-item-tags">{{ project.tags | join: '. ' | append: "." }}</p>
