@@ -1,27 +1,17 @@
 ---
 layout: page
 title: Vēstules
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, fugit, provident, sit perspiciatis sequi voluptate placeat repellendus ab inventore illum ea aperiam quidem qui! Vel, dolorem eius quaerat labore repudiandae error expedita dolore sed eum illum similique aperiam molestias velit.
 ---
 	<section class="page letters">
-		<div class="page-width">
-			<div class="medium-10 large-8">
-				<header class="page-header">
-					<h1 class="page-title">{{ page.title }}</h1>
-					<p class="page-desc">{{ page.description }}</p>
-				</header> <!-- Page header -->
-			</div>
-		</div> <!-- Page width -->
 		<section class="archive">
 			<div class="page-width">
-				<div class="large-11">
-					<h2 class="archive-heading">Tavas paskatkastes saturs:</h2>
+				<div class="medium-10 large-8">
 					<ul class="archive-list">
 						{% for letter in site.categories.vestules %}
 						<li class="archive-item">
-							<h3 class="archive-item-title"><a href="{{ site.baseurl }}{{ letter.url }}" title="Atvērt vēstuli">{{ letter.title }}</a></h3>
-							<a href="{{ letter.url }}"><p class="archive-item-snippet"><em>{{ letter.excerpt | remove: '<p>' | remove: '</p>' }}</em></p></a>
-							<time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ letter.date | date: "%d.%m.%Y" }}</time>
+							<h2 class="archive-item-title"><a href="{{ site.baseurl }}{{ letter.url }}" title="Atvērt vēstuli">{{ letter.title | strip_html }}</a></h2>
+							<p class="archive-item-snippet"><a href="{{ site.baseurl }}{{ letter.url }}" title="Atvērt vēstuli">{{ letter.excerpt | remove: '<p>' | remove: '</p>' }}</a></p>
+							<time class="post-pubdate" datetime="{{ letter.date | date: "%Y-%m-%d" }}" >{{ letter.date | date: "%d.%m.%Y" }}</time>
 						</li>
 						{% endfor %}
 					</ul> 
