@@ -4,7 +4,7 @@ tagline: Vēstules
 description: "Describe your website."
 #Comment out url when working locally to resolve base urls correctly
 #url: http://martinsmihailovs.github.io
-baseurl: /martinsmihailovs.com
+baseurl: martinsmihailovs.com
 
 # Owner/author information
 owner:
