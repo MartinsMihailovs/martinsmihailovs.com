@@ -29,7 +29,7 @@ hr {
 }
 
 .sprite {
-  background-image: url("../img/css/sprites/martins-logo.jpg");
+  background-image: url("../img/martins-mihailovs-logo.png");
 }
 
 
@@ -948,10 +948,20 @@ p {
 
 .site-logo {
 	position: relative;
-	top: .4318em;
-	display: inline-block;
-	width: 165px;
+	left: -.1em;
+	display: block;
 	border: none;
+	z-index: 2;
+	width: 154px;
+	height: 68px;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+.site-logo:hover {
+	background-position: 0 -69px;
 }
 
 .page-title {
@@ -960,10 +970,11 @@ p {
 	font-size: 2.8em;
 	letter-spacing: -.06em;
 	line-height: 1;
-	margin-top: -.55em;
+	margin-top: -.54em;
 	margin-bottom: .2em;
 	z-index: 1;
 	position: relative;
+	opacity: 1;
 }
 
 @media (min-width: 600px) {
