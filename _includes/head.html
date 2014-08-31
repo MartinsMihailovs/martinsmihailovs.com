@@ -9,11 +9,11 @@
 -->
 
 	<meta charset="UTF-8" />
-	<title>{% if page.title %} {{ page.title | strip_html }} | {% endif %} Mārtiņš Mihailovs</title>
-	<meta name="description" content="{% if page.description %} {{ page.description }} {% elsif page.excerpt %} {{ page.excerpt | stript_html }} {% endif %}}" />
-	<meta name="keywords" content="{{ page.tags | join: ', ' }}" />
-	<meta name="author" content="Martins Mihailovs" />
-	<link rel="canonical" href="{{ page.url }}" />
+	<title>{% if page.title %}{{ page.title | strip_html }} | {% endif %}{{site.owner.name}}</title>
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | stript_html }}{% endif %}"/>
+	<meta name="keywords" content="{{ page.tags | join: ', ' }}"/>
+	<meta name="author" content="{{site.owner.name}}"/>
+	<link rel="canonical" href="{{ page.url }}"/>
 
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">

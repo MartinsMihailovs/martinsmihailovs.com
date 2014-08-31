@@ -10,11 +10,8 @@
 					<h1 class="page-title">{% if page.layout == "post" %}Vēstules{% else %}{{ page.title }}{% endif %}</h1>
 					<nav class="nav-primary">
 						<h3 class="nav-trigger"><span>Menu</span></h3>
-						<ul class="nav-list">
-						{% assign url = page.url | remove:'index.html' %}
-						{% for link in site.data.navigation %}
-						<li><a href="{{ site.baseurl }}{{ link.url }}" {% if url == link.url or page.layout == link.layout %}class="nav-current"{% endif %}>{{ link.text }}</a></li>
-						{% endfor %}
+						<ul class="nav-list">{% assign url = page.url | remove:'index.html' %}{% for link in site.data.navigation %}
+							<li><a href="{{ site.baseurl }}{{ link.url }}" {% if url == link.url or page.layout == link.layout %}class="nav-current"{% endif %}>{{ link.text }}</a></li>{% endfor %}
 						</ul>
 					</nav>
 				</div>
