@@ -266,11 +266,11 @@ iframe {
 }
 
 .post-entry ul, .post-entry ol {
-	margin-bottom: 1.9em;
+	margin-bottom: 1.5em;
 }
 
 .post-entry p+ul, .post-entry p+ol {
-	margin-top: 1.6em;
+	margin-top: 1.3em;
 }
 
 .post-entry ul {
@@ -282,7 +282,7 @@ iframe {
 }
 
 .post-entry ul>li, .post-entry ol>li {
-	margin-bottom: .2em;
+	margin-bottom: .6em;
 }
 
 
@@ -1309,36 +1309,96 @@ p {
 	margin-bottom: 1.3em;
 }
 
-.post-entry h2, .post-entry h3 {
+.post-entry h2 {
 	margin-bottom: .6153em;
 }
 
-.post-entry p+h2, .post-entry p+h3 {
-	margin-top: 1.8em;
+.post-entry h3 {
+	margin-bottom: .9em;
+	line-height: 1.6;
 }
+
+.post-entry p+h2 {
+	margin-top: 1.2em;
+}
+
+.post-entry p+h3 {
+	margin-top: 1.7em;
+}
+
+.post-footnotes {
+	font-size: 16px;
+	color: #868686;
+	margin-top: 30px;
+}
+
+.post-footnotes:before {
+	content: "";
+	display: block;
+	width: 40px;
+	border-top: 3px solid #e6e6e6;
+	margin-bottom: 10px;
+}
+
+.post-footnotes span {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.post-footnotes p {
+	margin-bottom: 5px;
+	line-height: 1.3;
+}
+
+.post-footnotes sup {
+	font-size: 85%;
+}
+
+a[href|="#footnote"] {
+	border: none;
+}
+
+a[href|="#footnote"]:target {
+   background-color: red;
+}
+
+p:target {
+	-webkit-animation: highlight 3s ease;  
+ 	-moz-animation: highlight 3s ease;
+}
+
+@-webkit-keyframes highlight {
+  0% { background: #ffe3aa; }
+  100% { background: none; }
+}
+@-moz-keyframes highlight {
+  0% { background: #ffe3aa; }
+  100% { background: none; }
+}
+
 
 /* Blockquotes */
 
 .post-entry blockquote {
-	margin: .3em 0 2em;
+	margin: 1.8em 0 1.8em;
 }
 
 @media (min-width: 600px) {
 	.post-entry blockquote {
-		margin: .6em 0 1.9em;
+		margin: 2em 0 1.7em;
 	}
 }
 
 @media (min-width: 800px) {
 	.post-entry blockquote {
-		margin-left: -28px;
+		margin: .5em 0 1.7em -28px;
 	}
 }
 
 @media (min-width: 900px) {
 	.post-entry blockquote {
-		margin-top: 1em;
-		margin-left: -33px;
+		margin: 1.7em 0 1.5em -33px;
 	}
 }
 
@@ -1382,7 +1442,7 @@ p {
 }
 
 .post-footer a {
-	color: #868686;
+	color: #7d7d7d;
 }
 
 .post-footer span {
