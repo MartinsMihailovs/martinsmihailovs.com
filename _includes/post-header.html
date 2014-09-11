@@ -1,4 +1,5 @@
 			<header class="post-header">
+				{% if page.cover %}<img class="post-cover" src="{{ site.baseurl }}/img/posts/{{ page.cover }}" alt="{{ page.title }}">{% endif %}
 				<h1 class="post-title">{{ page.title }}</h1>
 				<time class="post-pubdate" pubdate="" datetime="{{ page.date | date: "%Y-%m-%d" }}">
 				{{ page.date| date: "%d.%m.%Y" }}
