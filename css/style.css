@@ -196,6 +196,11 @@ figcaption {
 	line-height: 1.45;
 }
 
+.post-entry figcaption a {
+	color: #636363;
+	border-color: #7d7d7d;
+}
+
 @media (min-width: 900px) {
 	.figcaption-on-right {
 		position: absolute;
@@ -205,6 +210,22 @@ figcaption {
 		width: 250px;
 		margin-top: -2px;
 	}
+}
+
+.figure-float-right, .figure-float-left {
+	width: 45%;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.figure-float-right {
+	float: right;
+	padding-left: 3%;
+}
+
+.figure-float-left {
+	float: left;
+	padding-right: 3%;
 }
 
 
