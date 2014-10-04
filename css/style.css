@@ -344,7 +344,7 @@ iframe {
 .page-width {
     margin: 0 auto;
 	width: 96%;
-	max-width: 52.4210em; /* 972px+12px+12px */
+	max-width: 51.789em; /* 958px+13px+13px */
 }
 
 @media (min-width: 600px) {
@@ -363,7 +363,7 @@ iframe {
 }
 
 .page-width .page-width {
-    margin: 0 -.6315em;
+    margin: 0 -.684em;
     max-width: none;
     width: auto;
 }
@@ -371,8 +371,8 @@ iframe {
 .small-1, .small-2, .small-3, .small-4, .small-5, .small-6, .small-7, .small-8, .small-9, .small-10, .small-11, .small-12, .medium-1, .medium-2, .medium-3, .medium-4, .medium-5, .medium-6, .medium-7, .medium-8, .medium-9, .medium-10, .medium-11, .medium-12, .large-1, .large-2, .large-3, .large-4, .large-5, .large-6, .large-7, .large-8, .large-9, .large-10, .large-11, .large-12, .xlarge-1, .xlarge-2, .xlarge-3, .xlarge-4, .xlarge-5, .xlarge-6, .xlarge-7, .xlarge-8, .xlarge-9, .xlarge-10, .xlarge-11, .xlarge-12 {
     float: left;
     min-height: 1px;
-    padding-right: .6315em;
-    padding-left: .6315em;
+    padding-right: .684em;
+    padding-left: .684em;
     width: 100%;
 }
 
