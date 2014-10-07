@@ -1,13 +1,14 @@
 /* Show & hide main menu items */
+$(document).ready(function(){
 
-jQuery(function($){
-	// add class 'responsive-nav' to primary navigation              
-	$('.nav-primary').addClass('responsive-nav');
+	$(".nav-primary").addClass("responsive-nav");
 	
-   $('.nav-primary')
-      // toggle the menu items' visiblity
-      .find('.nav-trigger')
-         .bind('click focus', function(){
-            $(this).parent().toggleClass('expanded');
-         });
+	// Show/hide menu on mobile
+	$(".nav-trigger").on("click", function() {
+		$(".nav-list").slideToggle(280, function(){
+			$(this).attr('style', '').toggleClass('nav-list-open');
+		});
+		$(this).toggleClass("nav-trigger-active");
+	});
+	
 });
