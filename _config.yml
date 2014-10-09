@@ -3,7 +3,7 @@ title: Mārtiņš Mihailovs
 tagline: Vēstules
 description: "Describe your website."
 #Comment out url when working locally to resolve base urls correctly
-#url: http://martinsmihailovs.github.io
+url: http://martinsmihailovs.com
 baseurl: 
 
 # Owner/author information
