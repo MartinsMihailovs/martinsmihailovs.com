@@ -1366,12 +1366,22 @@ p {
 }
 
 .post-entry {
-	margin-bottom: 1em;
+	margin-bottom: 3.5em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
 	.post-entry {
-		margin-bottom: 1.8em;
+		margin-bottom: 5em;
+	}
+}
+
+.project .post-entry {
+	margin-bottom: 0;
+}
+
+@media (min-width: 500px) {
+	.project .post-entry {
+		margin-bottom: 0;
 	}
 }
 
@@ -1398,7 +1408,7 @@ p {
 .post-footnotes {
 	font-size: .8888em;
 	color: #868686;
-	margin-top: 2.5em;
+	margin-top: 3em;
 }
 
 .post-footnotes:before {
@@ -1499,35 +1509,62 @@ p:target {
 
 .post-footer {
 	font-family: "Source Sans pro", Arial, sans-serif;
+	background: #f7f7f7;
+	padding: 3em 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
 	.post-footer {
-		margin-bottom: .5em;
+		padding: 4.3em 0 3.5em;
 	}
 }
 
 .post-footer-content {
-	padding: 1.2em 0 2em;
-	border-top: 1px solid #e6e6e6;
+	line-height: 1.4;
 }
 
-.post-footer a {
-	color: #7d7d7d;
+.post-footer-avatar {
+	margin-bottom: .5em;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
 }
 
-.post-footer span {
-	position: relative;
-	left: -2px;
-	top: -1px;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
+@media (min-width: 400px) {
+	.post-footer-avatar {
+		float: left;
+		margin-right: 1.1em;
+	}
 }
 
-.post-footer a:hover span {
-	left: -10px;
+.post-footer-content h4 {
+	font-weight: normal;
+	font-size: 1em;
+	margin-bottom: .3em;
+}
+
+@media (min-width: 400px) {
+	.post-footer-content h4 {
+		margin-bottom: .2em;
+	}
+}
+
+.post-footer-content p {
+	color: #868686;
+	font-size: .8888em;
+	overflow: hidden;
+	max-width: 25em;
+}
+
+.post-footer-content p a {
+	color: #868686;
+	border-color: #d4d4d4;
+	white-space: nowrap;
+}
+
+.post-footer-content p a:hover {
+	color: #505050;
+	border-color: #868686;
 }
 
 
@@ -1930,8 +1967,36 @@ p:target {
 	color: #ffc820;
 }
 
+.project-footer {
+	font-family: "Source sans pro", sans-serif;
+}
+
 .project-footer-content {
-	padding: .5em 0 2em;
+	padding: 1.5em 0 1.5em;
+}
+
+@media (min-width: 700px) {
+	.project-footer-content {
+		padding: 2em 0 2em;
+	}
+}
+
+.project-footer a {
+	color: #7d7d7d;
+}
+
+.project-footer span {
+	position: relative;
+	left: -2px;
+	top: -1px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.project-footer a:hover span {
+	left: -10px;
 }
 
 
