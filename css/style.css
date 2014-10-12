@@ -2114,6 +2114,10 @@ p:target {
 	}
 }
 
+.bio {
+	margin-bottom: 0;
+}
+
 @media (min-width: 600px) {
 	.bio {
 		margin-top: -1.2em;
