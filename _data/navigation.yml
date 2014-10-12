@@ -3,6 +3,6 @@
   layout: post
 - text: Portfolio
   url: /portfolio/
-  layout: portfolio
+  layout: project
 - text: Bio
   url: /bio/

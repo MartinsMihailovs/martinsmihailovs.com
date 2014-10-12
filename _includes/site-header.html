@@ -2,11 +2,11 @@
 	<div class="page-width bio-bg-img">
 		<div class="small-12">
 {% endif %}
-	<header class="site-head {% if page.url == "/bio/" %}site-head-bio {% endif %} cfix">
+	<header class="site-head {% if page.site-head %} site-head-{{page.site-head}} {% elsif page.url == "/bio/" %}site-head-bio {% endif %} cfix">
 		<div class="page-width">
 			<div class="small-12">
 				<div class="site-head-content cfix">
-					<a href="/" class="site-logo sprite" title="Atgriezties galvenajā lapā"></a>
+					<a href="/" class="sprite site-logo" title="Atgriezties galvenajā lapā"></a>
 					<nav class="nav-primary">
 						<h3 class="nav-trigger"></h3>
 						<ul class="nav-list">{% assign url = page.url | remove:'index.html' %}{% for link in site.data.navigation %}
