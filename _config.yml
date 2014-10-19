@@ -4,7 +4,14 @@ tagline: Vēstules
 description: "Describe your website."
 #Comment out url when working locally to resolve base urls correctly
 url: http://martinsmihailovs.com
-baseurl: 
+baseurl:
+
+exclude: [
+  'node_modules',
+  'Gruntfile.js',
+  'package.json',
+  'README.md'
+]
 
 # Owner/author information
 owner:
