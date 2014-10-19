@@ -4,6 +4,7 @@ tagline: Vēstules
 description: "Describe your website."
 #Comment out url when working locally to resolve base urls correctly
 url: http://martinsmihailovs.com
+baseurl:
 
 exclude: [
   'node_modules',
