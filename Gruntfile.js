@@ -5,12 +5,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     watch: {
-      js: {
-        files: ['js/responsive-nav.js'],
-        tasks: ['uglify']
-      },
       browserSync: {
-        files: ['_site/css/style.css'],
+        files: ['_site/js/scripts.js', '_site/css/reset.css', '_site/css/style.css'],
         tasks: ['browserSync']
       }
     },
@@ -18,26 +14,22 @@ module.exports = function(grunt) {
     uglify: {
       global: {
         files: {
-        'js/scripts.min.js': ['js/lib/*.js', 'js/responsive-nav.js']
+        'js/build/scripts.min.js': ['js/lib/*.js', 'js/scripts.js']
         }
       }
     },
 
     autoprefixer: {
-      reset: {
-        src: "css/reset-unprefixed.css",
-        dest: "css/reset.css"
-      },
       style: {
-        src: "css/style-unprefixed.css",
-        dest: "css/style.css"
+        src: "css/style.css",
+        dest: "css/build/style-prefixed.css"
       }
     },
 
     cssmin: {
       global: {
         files: {
-          'css/style.min.css': ['css/reset.css', 'css/style.css']
+          'css/build/style.min.css': ['css/reset.css', 'css/build/style-prefixed.css']
         }
       }
     },
@@ -45,7 +37,7 @@ module.exports = function(grunt) {
     browserSync: {
       dev: {
         bsFiles: {
-          src : '_site/css/style-unprefixed.css'
+          src: ['_site/css/*.css', '_site/js/scripts.js', '_site/*.html', '_site/img']
         },
         options: {
           proxy: "http://localhost:4000/",
@@ -62,9 +54,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Tasks
-  grunt.registerTask('default', ['uglify', 'browserSync', 'watch']);
-  grunt.registerTask('build', ['uglify', 'autoprefixer', 'cssmin', 'browserSync']);
+  grunt.registerTask('default', ['browserSync', 'watch']);
+  grunt.registerTask('build', ['uglify', 'autoprefixer', 'cssmin', 'watch']);
 
 };

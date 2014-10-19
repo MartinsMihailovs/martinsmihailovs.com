@@ -7,8 +7,6 @@ url: http://martinsmihailovs.com
 baseurl: ""
 
 exclude: [
-  'css',
-  'js',
   'node_modules',
   'Gruntfile.js',
   'package.json',
@@ -30,3 +28,5 @@ tools:
 
 markdown: redcarpet
 permalink: /:categories/:title
+
+production: false
