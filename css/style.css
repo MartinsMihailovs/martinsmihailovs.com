@@ -12,7 +12,7 @@
 
 body { 
 	margin: 0 auto;
-	color: #505050;
+	color: #3c3c3c;
 	font: normal 400 18px/1.8333 Lora, Georgia, serif; /* Magic number: 1.6842105263157895em or 32; all line heights and margin bottoms have to be a multiples of 32px */
 	background: #fcfcfc;
 	-moz-osx-font-smoothing: grayscale;
@@ -42,7 +42,7 @@ hr {
 /*
   Primary: #c6870a;
   Dark grey accents: #2b2b2b;
-  Base text: #505050;
+  Base text: #3c3c3c;
   Dimmed base text: #6d6d6d;
   Light text: #868686;
   Dividers: #e6e6e6;
@@ -132,7 +132,7 @@ mark {
    ========================================================================== */
 
 a {
-	color: #505050;
+	color: #3c3c3c;
 	text-decoration: none;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
@@ -144,7 +144,7 @@ a {
 }
 
 .post-entry a {
-	border-bottom: 1px solid #505050;
+	border-bottom: 1px solid #3c3c3c;
 }
 
 .post-entry figure > a {
@@ -153,7 +153,7 @@ a {
 
 
 a:hover {
-	border-bottom-color: #505050;
+	border-bottom-color: #3c3c3c;
 }
 
 
@@ -896,25 +896,25 @@ iframe {
 
 html { 
 	-webkit-overflow-scrolling: touch; 
-	/* -webkit-tap-highlight-color: #505050; */
+	/* -webkit-tap-highlight-color: #3c3c3c; */
 	-webkit-text-size-adjust: 100%; 
 	-ms-text-size-adjust: 100%;
 }
 
 ::-webkit-selection { 
-	background: #505050; 
+	background: #3c3c3c; 
 	color: #fff; 
 	text-shadow: none;
 }
 
 ::-moz-selection { 
-	background: #505050; 
+	background: #3c3c3c; 
 	color: #fff; 
 	text-shadow: none;
 }
 
 ::selection { 
-	background: #505050; 
+	background: #3c3c3c; 
 	color: #fff; 
 	text-shadow: none;
 }
@@ -1195,7 +1195,7 @@ p {
 }
 
 .nav-list a:hover {
-	border-bottom-color: #505050;
+	border-bottom-color: #3c3c3c;
 }
 
 @media (min-width: 600px) {
@@ -1313,7 +1313,7 @@ p {
 }
 
 .page-desc {
-	color: #505050;
+	color: #3c3c3c;
 }
 
 .page-desc-heading {
@@ -1629,7 +1629,7 @@ p:target {
 }
 
 .post-footer-content p a:hover {
-	color: #505050;
+	color: #3c3c3c;
 	border-color: #868686;
 }
 
@@ -2083,7 +2083,7 @@ p:target {
 }
 
 .section-test {
-	background: #505050;
+	background: #3c3c3c;
 	color: #fff;
 	border-bottom: 8px solid #ffc820;
 }
