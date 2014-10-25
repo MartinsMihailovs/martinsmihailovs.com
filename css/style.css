@@ -1675,11 +1675,12 @@ p:target {
 
 .archive-item-snippet {
 	margin-bottom: .6em;
-    line-height: 1.6111;
+    line-height: 1.65;
 }
 
 .archive-item-snippet > a {
 	border: none;
+	color: #505050;
 }
 
 
