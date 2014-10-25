@@ -998,20 +998,32 @@ p {
 	}
 }
 
-.project .site-head {
+@media (min-width: 700px) {
+	.site-head-post {
+		margin-bottom: 6em;
+	}
+}
+
+@media (min-width: 900px) {
+	.site-head-post {
+		margin-bottom: 7.5em;
+	}
+}
+
+.site-head-project {
 	margin-bottom: .3em;
 }
 
-.project .site-head-content {
-	border-bottom: none;
-}
-
 @media (min-width: 600px) {
-	.project .site-head {
+	.site-head-project {
 		position: absolute;
 		width: 100%;
 		z-index: 10;
 	}
+}
+
+.site-head-project .site-head-content {
+	border-bottom: none;
 }
 
 .site-logo {
@@ -1310,63 +1322,46 @@ p {
    ========================================================================== */
 
 .post-header {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
+}
+
+@media (min-width: 400px) {
+	.post-header {
+		margin-bottom: 1.7em;
+	}
 }
 
 @media (min-width: 500px) {
 	.post-header {
-		margin-bottom: 1.5em;
+		margin-bottom: 2.3em;
+		text-align: center;
 	}
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
 	.post-header {
-		margin-bottom: 2em;
+		margin-bottom: 2.5em;
 	}
 }
-
- .post-cover {
- 	margin-bottom: 1em;
- }
-
- @media (min-width: 600px) {
- 	 .post-cover {
-	 	margin-bottom: 1.5em;
-	 }
- }
-
-  @media (min-width: 900px) {
- 	 .post-cover {
-	 	margin-bottom: 2em;
-	 }
- }
 
  .post-title {
- 	margin-bottom: .1em;
-	font-size: 1.6666em; 
+ 	margin-bottom: .2em;
+	font-size: 1.4444em; 
 	line-height: 1.1;
-	font-weight: 400;
 	color: #2b2b2b;
 }
 
 @media (min-width: 400px) {
 	.post-title {
-		font-size: 1.8888em;
-		line-height: 1;
-		margin-bottom: .2em;
-	}
-}
-
-@media (min-width: 500px) {
-	.post-title {
-		font-size: 2.3888em;
-		line-height: 1.05;
+		margin-bottom: .3em;
+		font-size: 1.5555em;
+		line-height: 1.1;
 	}
 }
 
 @media (min-width: 700px) {
 	.post-title {
-		font-size: 2.8888em;
+		font-size: 1.6666em;
 		line-height: 1;
 	}
 }
@@ -1374,7 +1369,7 @@ p {
 @media (min-width: 900px) {
 	.post-title {
 		margin-bottom: .3em;
-		font-size: 3em;
+		font-size: 1.8888em;
 	}
 }
 
@@ -1383,6 +1378,7 @@ p {
 }
 
 .post-pubdate {
+	display: block;
 	font-size: .7777em;
 	color: #868686;
 	letter-spacing: 3px;
@@ -1392,14 +1388,34 @@ p {
 @media (min-width: 600px) {
 	.post-pubdate {
 		font-size: .8333em;
-		color: #868686;
-		letter-spacing: 3px;
-		text-transform: uppercase;
 	}
 }
 
 .archive-item .post-pubdate {
 	letter-spacing: 4px;
+}
+
+.post-cover {
+	margin-top: 1.2em;
+	vertical-align: bottom;
+}
+
+@media (min-width: 500px) {
+	.post-cover {
+		margin-top: 1.5em;
+	}
+}
+
+@media (min-width: 600px) {
+	.post-cover {
+		margin-top: 2em;
+	}
+}
+
+@media (min-width: 900px) {
+	.post-cover {
+		margin-top: 2.5em;
+	}
 }
 
 .post-entry {
@@ -1414,6 +1430,12 @@ p {
 
 .project .post-entry {
 	margin-bottom: 0;
+}
+
+@media (min-width: 400px) {
+	.project .post-entry {
+		margin-bottom: 1.5em;
+	}
 }
 
 @media (min-width: 500px) {
