@@ -1640,6 +1640,15 @@ p:target {
 	border-color: #868686;
 }
 
+.section-divider {
+	display: block;
+	border: 0;
+	height: 0;
+	border-top: 1px solid #b1b1b1;
+	margin: 2.5em auto 2.5em;
+	width: 100px;
+}
+
 
 /* ==========================================================================
 
