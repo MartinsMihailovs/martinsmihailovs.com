@@ -1650,8 +1650,12 @@ p:target {
 	border: 0;
 	height: 0;
 	border-top: 1px solid #b1b1b1;
-	margin: 2.5em auto 2.5em;
+	margin: 2.5em auto 2.3em;
 	width: 100px;
+}
+
+.section-divider-left {
+	margin-left: 0;
 }
 
 
