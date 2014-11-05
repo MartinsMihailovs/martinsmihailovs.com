@@ -127,7 +127,7 @@ mark {
 
 .small {
 	font-size: .8333em;
-	line-height: 1.7;
+	line-height: 1.8;
 }
 
 /* ==========================================================================
@@ -1336,6 +1336,10 @@ p {
 
 .post-header {
 	margin-bottom: 1.5em;
+}
+
+.figure-float-left ~ p {
+	margin-bottom: 70px;
 }
 
 @media (min-width: 400px) {
