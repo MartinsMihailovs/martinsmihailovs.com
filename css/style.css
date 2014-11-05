@@ -1387,6 +1387,7 @@ p {
 @media (min-width: 900px) {
 	.post-title {
 		font-size: 1.8888em;
+		line-height: 1.1;
 	}
 }
 
