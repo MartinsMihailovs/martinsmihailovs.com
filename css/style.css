@@ -1120,27 +1120,13 @@ p {
 	display: block;
 	border: none;
 	z-index: 2;
-	width: 125px;
-	height: 54px;
+	width: 180px;
+	height: 57px;
 	background-position: 0 0;
 	-webkit-transition: none;
 	-moz-transition: none;
 	-o-transition: none;
 	transition: none;
-}
-
-@media (min-width: 600px) {
-	.site-logo {
-		width: 160px;
-		height: 69px;
-		background-position: 0 -54px;
-	}
-}
-
-@media (min-width: 600px) {
-	.site-head-white .site-logo {
-		background-position: 0 -123px;
-	}
 }
 
 .page-title {
