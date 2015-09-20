@@ -1116,17 +1116,24 @@ p {
 
 .site-logo {
 	position: relative;
-	left: -.1em;
+	left: -.2em;
 	display: block;
+	margin-bottom: .5em;
 	border: none;
 	z-index: 2;
-	width: 180px;
-	height: 57px;
+	width: 220px;
+	height: 46px;
 	background-position: 0 0;
 	-webkit-transition: none;
 	-moz-transition: none;
 	-o-transition: none;
 	transition: none;
+}
+
+@media (min-width: 600px) {
+	.site-logo {
+		margin-bottom: 0;
+	}
 }
 
 .page-title {
@@ -1209,7 +1216,7 @@ p {
 @media (min-width: 600px) {
 	.nav-list {
 		position: relative;
-		top: -.9em;
+		top: -.2em;
 		padding-top: .3em;
 		border-top: 1px solid #e6e6e6;
 		font-size: 1em;
@@ -1246,7 +1253,13 @@ p {
 .nav-list a {
 	display: block;
 	color: #6d6d6d;
-	padding: .5em 0 .4em;
+	padding: 1em 0 .7em;
+}
+
+@media (min-width: 600px) {
+	.nav-list a {
+		padding: .6em 0 .4em;
+	}
 }
 
 @media (min-width: 600px) {
@@ -1295,14 +1308,6 @@ p {
 }
 
 @media (min-width: 600px) {
-	.nav-list .nav-current {
-		font-weight: normal;
-	}
-
-	.site-head-dark .nav-list .nav-current {
-		font-weight: bold;
-	}
-
 	.site-head-white .nav-list .nav-current {
 		opacity: 1;
 	}
@@ -1863,8 +1868,8 @@ p:target {
 @media (min-width: 600px) {
 	.featured-image {
 		position: relative;
-		height: 65vh;
-		min-height: 320px;
+		height: 60vh;
+		min-height: 420px;
 		background: #2b2b2b;
 		background-repeat: no-repeat;
 	}
@@ -1897,9 +1902,10 @@ p:target {
 @media (min-width: 600px) {
 	.project-info {
 		position: absolute;
+		left: 0;
+		right: 0;
 		bottom: 3.5em;
 		padding: 0;
-		text-align: left;
 	}
 }
 
@@ -2024,7 +2030,7 @@ p:target {
 
 @media (min-width: 600px) {
 	.project-link:before {
-		margin: 0 0 .8em;
+		margin: 0 auto .8em;
 	}
 }
 
