@@ -1080,12 +1080,6 @@ p {
 	}
 }
 
-@media (min-width: 1200px) {
-	.site-head {
-		margin-bottom: 6em;
-	}
-}
-
 @media (min-width: 700px) {
 	.site-head-post {
 		margin-bottom: 6em;
@@ -2248,7 +2242,7 @@ p:target {
 
 @media (min-width: 900px) {
 	.bio {
-		margin-top: 9em;
+		margin-top: 7em;
 	}
 }
 
