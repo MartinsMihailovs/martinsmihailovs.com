@@ -1,20 +1,35 @@
 $(document).ready(function() {
 
-	/* Show & hide main menu items */
+	/**************************************************
+		Define variables 
+	***************************************************/
 
 	var $window = $(window),
-		$navList = $(".nav-list"),
-		$navTrigger = $(".nav-trigger");
+	$siteHead = $(".site-head"),
+	$navTrigger = $("<span class='nav-trigger'><span class='hamburger-top'></span><span class='hamburger-middle'></span><span class='hamburger-bottom'></span></span>"),
+	$siteNav = $(".nav-primary");
+
+	/**************************************************
+		Site navigation
+	***************************************************/
+
+	// Add nav trigger element to the DOM
+
+	$siteNav.prepend($navTrigger);
+
+	// Show & hide main menu items
+
+	var $navList = $(".nav-list");
 
 	$(".nav-primary").addClass("responsive-nav");
-	
+
 	// Show/hide menu on mobile
 
 	$navTrigger.on("click", function(e) {
 		$navList.slideToggle(280, function(){
 			$(this).attr('style', '').toggleClass("nav-list-open");
 		});
-		$(this).toggleClass("nav-trigger-active");
+		$(this).toggleClass("is-active");
 		e.stopPropagation();
 	});
 
@@ -22,9 +37,8 @@ $(document).ready(function() {
 		e.stopPropagation();
 	});
 
-	// Hide menu when clicked outside .responsive-nav
-
 	// flag to allow clicking
+	
 	var clickAllowed = true;
 
 	$(document).on("click", function() {
@@ -32,7 +46,7 @@ $(document).ready(function() {
 			$navList.slideUp(280, function(){
 				$navList.attr('style', '').removeClass("nav-list-open");
 			});
-			$navTrigger.removeClass("nav-trigger-active");
+			$navTrigger.removeClass("is-active");
 		}
 	});
 
