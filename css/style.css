@@ -2309,6 +2309,10 @@ p:target {
 	}
 }
 
+.bio-meta {
+	line-height: 1.4;
+}
+
 @media (min-width: 750px) {
 	.bio-meta {
 		float: right;
@@ -2351,6 +2355,7 @@ p:target {
 
 .bio-name {
 	font-size: 1em;
+	margin-bottom: .4em;
 }
 
 @media (min-width: 350px) {
