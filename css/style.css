@@ -87,10 +87,22 @@ i.icon {
 body { 
 	margin: 0 auto;
 	color: #3c3c3c;
+	background-color: #fcfcfc;
 	font: normal 400 18px/1.8333 Lora, Georgia, serif; /* Magic number: 1.6842105263157895em or 32; all line heights and margin bottoms have to be a multiples of 32px */
-	background: #fcfcfc;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizelegibility;
+}
+
+@media (min-width: 600px) {
+	.page {
+		background: #fcfcfc url("../img/pages-bg.jpg") no-repeat bottom fixed;
+	}
+}
+
+@media (min-width: 1800px) {
+	.page {
+		background-size: contain;
+	}
 }
 
 hr {
@@ -1352,18 +1364,18 @@ p {
    
    ========================================================================== */
 
-.page {
+.page-content {
 	margin-bottom: 2em;
 }
 
 @media (min-width: 750px) {
-	.page {
+	.page-content {
 		margin-bottom: 2.5em;
 	}
 }
 
 @media (min-width: 900px) {
-	.page {
+	.page-content {
 		margin-bottom: 4em;
 	}
 }
