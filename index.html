@@ -9,13 +9,17 @@ tags: Dizains, Dizaina blogs, Grafiskais dizains, Mājaslapu veidošana, Program
 			<div class="page-width">
 				<div class="medium-10 large-8">
 					<ul class="archive-list">
-						{% for letter in site.categories.vestules %}
-						<li class="archive-item">
-							<h2 class="archive-item-title"><a href="{{ site.baseurl }}{{ letter.url }}" title="Atvērt vēstuli">{{ letter.title | strip_html }}</a></h2>
-							<p class="archive-item-snippet"><a href="{{ site.baseurl }}{{ letter.url }}" title="Atvērt vēstuli">{{ letter.description | remove: '<p>' | remove: '</p>' }}</a></p>
-							<time class="post-pubdate" datetime="{{ letter.date | date: "%Y-%m-%d" }}" >{{ letter.date | date: "%d.%m.%Y" }}</time>
-						</li>
-						{% endfor %}
+						
+							{% for letter in site.categories.vestules %}
+							{% unless letter.category == "hidden" %}
+							<li class="archive-item">
+								<h2 class="archive-item-title"><a href="{{ site.baseurl }}{{ letter.url }}" title="Atvērt vēstuli">{{ letter.title | strip_html }}</a></h2>
+								<p class="archive-item-snippet"><a href="{{ site.baseurl }}{{ letter.url }}" title="Atvērt vēstuli">{{ letter.description | remove: '<p>' | remove: '</p>' }}</a></p>
+								<time class="post-pubdate" datetime="{{ letter.date | date: "%Y-%m-%d" }}" >{{ letter.date | date: "%d.%m.%Y" }}</time>
+							</li>
+							{% endunless %}
+							{% endfor %}
+						
 					</ul> 
 				</div>
 			</div> <!-- Page width -->

@@ -68,7 +68,7 @@
 {% if page.layout == "project" %}
 <body class="project project-{{ page.title | replace: '.', '-' }}">
 {% else if page.layout == "page" %}
-<body class="page page-{{ page.title | downcase | replace: " ", "-" | replace: '.', '-' | replace: 'ē', 'e' | replace: 'ā', 'a' | replace: 'ī', 'i' | replace: 'š', 's' }}">
+<body class="page page-{{ page.title | downcase | replace: " ", "-" | replace: '.', '-' | replace: ",", "" | replace: 'ē', 'e' | replace: 'ā', 'a' | replace: 'ī', 'i' | replace: 'š', 's' }}">
 {% else %}
 <body>
 {% endif %} 
