@@ -4,5 +4,7 @@
 - text: Portfolio
   url: /portfolio/
   layout: project
+- text: Foto
+  url: /foto/
 - text: Bio
   url: /bio/
