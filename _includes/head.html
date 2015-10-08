@@ -10,7 +10,7 @@
 
 	<meta charset="UTF-8" />
 	<title>{% if page.title %}{{ page.title | strip_html }}{% endif %}{% if page.layout == "page" %} | {{site.owner.name}}{% endif %}</title>
-	<meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.subtitle %}{{ page.subtitle | stript_html }}{% endif %}"/>
+	<meta name="description" content="{% if page.description %}{{ page.description | strip_html}}{% elsif page.subtitle %}{{ page.subtitle | stript_html }}{% endif %}"/>
 	<meta name="keywords" content="{{ page.tags | join: ', ' }}"/>
 	<meta name="author" content="{{site.owner.name}}"/>
 	<link rel="canonical" href="{{ page.url }}"/>
