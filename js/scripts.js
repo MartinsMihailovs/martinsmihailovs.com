@@ -12,7 +12,7 @@ $(document).ready(function() {
 	/**************************************************
 		Call Fluidbox plugin
 	***************************************************/
-	$('.foto-list a').fluidbox({
+	$('a').fluidbox({
 		immediateOpen: true
 	});
 
