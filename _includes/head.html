@@ -35,7 +35,7 @@
 
 	<!-- Fonts-->
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 	<!-- Scripts-->
 	<script src="{{ site.baseurl }}/js/lib/jquery-1.10.2.min.js"></script>
@@ -70,7 +70,7 @@
 {% if page.layout == "project" %}
 <body class="project project-{{ page.title | replace: '.', '-' }}">
 {% else if page.layout == "page" %}
-<body class="page page-{{ page.title | downcase | replace: " ", "-" | replace: '.', '-' | replace: ",", "" | replace: 'ē', 'e' | replace: 'ā', 'a' | replace: 'ī', 'i' | replace: 'š', 's' }}">
+<body class="page page-{{ page.title | strip_html |downcase | replace: " ", "-" | replace: '.', '-' | replace: ",", "" | replace: 'ē', 'e' | replace: 'ā', 'a' | replace: 'ī', 'i' | replace: 'š', 's' | replace: 'ņ', 'n' | replace: 'ļ', 'l' }}">
 {% else %}
 <body>
 {% endif %} 

@@ -9,6 +9,6 @@
 				</div>
 				{% if page.cover %}
 				<div class="large-9 medium-centered">
-					<img class="post-cover" src="{{ site.baseurl }}/img/posts/{{ page.cover }}" alt="{{ page.title }}">
+					<img class="post-cover" src="{{ site.baseurl }}/img/posts/{{ page.cover }}" alt="{{ page.title | strip_html }}">
 				</div>{% endif %}
 			</header>
