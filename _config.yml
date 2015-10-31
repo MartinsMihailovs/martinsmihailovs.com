@@ -6,6 +6,8 @@ description: "Describe your website."
 url: http://martinsmihailovs.com
 baseurl: ""
 
+include:  ['_pages']
+
 exclude: [
   'node_modules',
   'Gruntfile.js',
