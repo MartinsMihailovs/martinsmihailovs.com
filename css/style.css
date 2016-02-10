@@ -1912,6 +1912,15 @@ p:target {
    Portfolio page
    
    ========================================================================== */
+.portfolio {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .portfolio {
+    text-align: left;
+  }
+}
 
 .portfolio-list, .foto-list {
 	list-style: none;
