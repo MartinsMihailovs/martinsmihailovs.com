@@ -289,20 +289,28 @@ a {
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: transparent;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+
+a:hover {
+  color: #b27600;
 }
 
 .post-entry a {
-	border-bottom: 1px solid #3c3c3c;
+	border-bottom: 1px solid #c6870a;
+}
+
+.post-entry a:hover {
+  color: #ae6a00;
+  border-bottom-color: #c6870a;
 }
 
 .post-entry figure > a {
 	border-bottom: none;
 }
-
 
 a:hover {
 	border-bottom-color: #3c3c3c;
