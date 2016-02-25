@@ -74,4 +74,16 @@ $(document).ready(function() {
 
 	$(window).on("resize", onResize);
 
+	/**************************************************
+	Parallax effect for bg images
+	***************************************************/
+
+	// var bgLayer = $(".featured-image");
+
+	// $(window).on("scroll", function() {
+	// var top = pageYOffset;
+	// //bgLayer.css("background-position", 'right ' + 0 + ' bottom ' + (top * -0.5) + 'px');
+	// bgLayer.css("background-position", '200px ' + (top * 0.5) + 'px');
+	// });
+
 });
