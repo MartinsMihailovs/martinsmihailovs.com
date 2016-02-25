@@ -308,11 +308,11 @@ a:hover {
   color: #b27600;
 }
 
-.post-entry a {
+.post-entry a, .page-desc a {
 	border-bottom: 1px solid #c6870a;
 }
 
-.post-entry a:hover {
+.post-entry a:hover, .page-desc a:hover {
   color: #ae6a00;
   border-bottom-color: #c6870a;
 }
