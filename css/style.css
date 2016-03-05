@@ -99,7 +99,7 @@ body {
 	text-rendering: optimizelegibility;
 }
 
-@media (min-width: 600px) {
+/*@media (min-width: 600px) {
 	.page {
 		background: #fff url("../img/pages-bg.jpg") no-repeat bottom fixed;
 	}
@@ -110,7 +110,7 @@ body {
 		background-size: contain;
 	}
 }
-
+*/
 hr {
 	display: block;
     height: 1px;
