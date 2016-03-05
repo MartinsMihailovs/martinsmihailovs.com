@@ -6,6 +6,9 @@
 				<div class="page-width">
 					<div class="small-12">
 						<div class="project-info">
+							{% if page.url == "/portfolio/borgcamp" %}
+							   <img src="/img/portfolio/borgcamp/borgcamp-logo-sm.png" alt="Borgcamp Group logo" class="borgcamp-project-logo">
+							{% endif %}
 							<h1 class="project-title">{{ page.title }}</h1>
 							<h2 class="project-subtitle">{{ page.subtitle }}</h2>
 							{% if page.project-link %}

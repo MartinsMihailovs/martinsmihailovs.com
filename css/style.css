@@ -466,6 +466,10 @@ figcaption {
   }
 }
 
+.figure-starts-section {
+  margin-top: 0;
+}
+
 /* ==========================================================================
 
    Embeds
@@ -2242,15 +2246,18 @@ p:target {
 }
 
 .project-title {
+  margin-bottom: .2em;
 	font-weight: 700;
 	font-size: 2.3333em;
 	letter-spacing: -1.5px;
-	line-height: 1.2;
+	line-height: .9;
 }
 
 @media (min-width: 600px) {
 	.project-title {
+    margin-bottom: 0;
 		font-size: 3.1111em;
+    line-height: 1.2;
 	}
 }
 
@@ -2273,13 +2280,6 @@ p:target {
 	line-height: 1.3;
 	letter-spacing: 2px;
 	margin: 0;
-	margin-top: .6em;
-}
-
-@media (min-width: 500px) {
-	.project .project-subtitle {
-		margin-top: .75em;
-	}
 }
 
 @media (min-width: 700px) {
@@ -2291,14 +2291,12 @@ p:target {
 @media (min-width: 900px) {
 	.project .project-subtitle {
 		font-size: 1.1111em;
-		margin-top: .5em;
 	}
 }
 
 @media (min-width: 1200px) {
 	.project .project-subtitle {
 		font-size: 1.2222em;
-		margin-top: .4em;
 	}
 }
 
@@ -2308,7 +2306,6 @@ p:target {
 	letter-spacing: 2.5px;
 	font-size: .7777em;
 	margin-top: 1em;
-
 }
 
 @media (min-width: 900px) {
@@ -3205,6 +3202,214 @@ p:target {
   }
 }
 
+/* Project: Borgcamp Group */
+/*Project color: #de6011*/
+
+.project-borgcamp-group .project-header {
+  border-top: 1px solid #e6e6e6;
+}
+
+@media (min-width: 600px) {
+  .project-borgcamp-group .project-header {
+    border-top: none;
+  }
+}
+
+.project-borgcamp-group .featured-image {
+  background-color: #fff;
+  background-image: url("../img/portfolio/borgcamp/borgcamp-cover.jpg");
+  background-position: center bottom;
+  background-size: contain;
+}
+
+@media (min-width: 600px) {
+  .project-borgcamp-group .featured-image {
+    height: 65vh;
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-borgcamp-group .featured-image {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-borgcamp-group .featured-image {
+    min-height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-borgcamp-group .featured-image {
+    min-height: 700px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .project-borgcamp-group .featured-image {
+    min-height: 750px;
+  }
+}
+
+.project-borgcamp-group .section-with-divider:before, .project-borgcamp-group .section-with-divider:after {
+  border-color: #de6011;
+}
+
+.project-borgcamp-group .section-with-divider:after {
+  background: #de6011;
+}
+
+.project-borgcamp-group .project-info {
+  padding: 3.5em 0 4em;
+  color: #1a1c4d;
+}
+
+@media (min-width: 500px) {
+  .project-borgcamp-group .project-info {
+    padding: 4em 0 5.5em;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-borgcamp-group .project-info {
+    padding: 0;
+    bottom: 25%;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-borgcamp-group .project-info {
+    bottom: 28%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-borgcamp-group .project-info {
+    bottom: 30%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .project-borgcamp-group .project-info {
+    bottom: 31%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .project-borgcamp-group .project-info {
+    bottom: 32%;
+  }
+}
+
+.borgcamp-project-logo {
+  width: 60px;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 500px) {
+  .borgcamp-project-logo {
+    width: 70px;
+    margin-bottom: .5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .borgcamp-project-logo {
+    width: auto;
+    margin-bottom: .3em;
+  }
+}
+
+@media (min-width: 700px) {
+  .project-borgcamp-group .project-title {
+      font-size: 3.8888em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-borgcamp-group .project-title {
+      font-size: 4.4444em;
+  }
+}
+
+.project-borgcamp-group .project-subtitle {
+  display: block;
+  text-transform: uppercase;
+}
+
+@media (min-width: 600px) {
+  .project-borgcamp-group .project-subtitle {
+    margin-top: .3em;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-borgcamp-group .project-subtitle {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .project-borgcamp-group .project-subtitle {
+    margin-top: .5em;
+  }
+}
+
+.section-borgcamp-result {
+  background: #05102b url("/img/portfolio/borgcamp/borgcamp-bg.jpg") no-repeat left bottom fixed;
+  color: #626879;
+}
+
+.section-borgcamp-result-content {
+  padding: 3em 0 2em;
+}
+
+@media (min-width: 600px) {
+  .section-borgcamp-result-content {
+    padding: 5em 0 4em;
+  }
+}
+
+@media (min-width: 900px) {
+  .section-borgcamp-result-content {
+    padding: 7em 0 4.5em;
+  }
+}
+
+.section-borgcamp-result-content-left > img {
+  width: 150px;
+  margin-bottom: 3em;
+}
+
+@media (min-width: 600px) {
+  .section-borgcamp-result-content-left > img {
+    width: auto;
+    margin-bottom: 0;
+    margin-top: .7em;
+  }
+}
+
+@media (min-width: 600px) {
+  .section-borgcamp-result-content-right {
+    border-left: 1px solid #253458;
+  }
+}
+
+.project-borgcamp-group .things-learned {
+  background: #f4f4f4 url("../img/portfolio/borgcamp/borgcamp-bg-light.jpg") no-repeat left center fixed;
+}
+
+.project-borgcamp-group .things-learned .divider-lg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaeaea+0,eaeaea+14,c2c2c2+14,c2c2c2+28,4e4e4e+28,4e4e4e+42,de6011+42,de6011+58,4e4e4e+58,4e4e4e+72,c2c2c2+72,c2c2c2+86,eaeaea+86,eaeaea+100,eaeaea+100 */
+  background: #eaeaea; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #eaeaea 0%, #eaeaea 14%, #c2c2c2 14%, #c2c2c2 28%, #4e4e4e 28%, #4e4e4e 42%, #de6011 42%, #de6011 58%, #4e4e4e 58%, #4e4e4e 72%, #c2c2c2 72%, #c2c2c2 86%, #eaeaea 86%, #eaeaea 100%, #eaeaea 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #eaeaea 0%,#eaeaea 14%,#c2c2c2 14%,#c2c2c2 28%,#4e4e4e 28%,#4e4e4e 42%,#de6011 42%,#de6011 58%,#4e4e4e 58%,#4e4e4e 72%,#c2c2c2 72%,#c2c2c2 86%,#eaeaea 86%,#eaeaea 100%,#eaeaea 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #eaeaea 0%,#eaeaea 14%,#c2c2c2 14%,#c2c2c2 28%,#4e4e4e 28%,#4e4e4e 42%,#de6011 42%,#de6011 58%,#4e4e4e 58%,#4e4e4e 72%,#c2c2c2 72%,#c2c2c2 86%,#eaeaea 86%,#eaeaea 100%,#eaeaea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#eaeaea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
 /* ==========================================================================
 
    Foto page
@@ -3237,7 +3442,7 @@ p:target {
   max-width: 51.222em; /* 912px+12px+12px */
 }
 
-.foto .small-6, .foto .small-12, .foto .medium-4, .foto .medium-6, .foto .medium-12, .foto .large-6, .foto .large-12, .foto .xlarge-6, .foto .xlarge-12 {
+.foto .small-6, .foto .small-4, .foto .small-12, .foto .medium-3, .foto .medium-4, .foto .medium-6, .foto .medium-12, .foto .large-6, .foto .large-12, .foto .xlarge-6, .foto .xlarge-12 {
     padding-right: .2777em;
     padding-left: .2777em;
 }
