@@ -240,6 +240,10 @@ h3, .h3 {
   text-align: center;
 }
 
+.post-entry .no-mg-top {
+  margin-top: 0;
+}
+
 /* Other typographical elements */
 
 pre, code, kbd, samp {
@@ -2567,7 +2571,7 @@ p:target {
 
 .project-footer-avatar {
   position: absolute;
-  top: -25px;
+  top: -39px;
   left:0;
   right:0;
   margin-left:auto;
