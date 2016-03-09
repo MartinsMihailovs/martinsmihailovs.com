@@ -31,6 +31,26 @@
 			</div>
 		</header>
 		{{ content }}
-			{% include project-footer.html %}
+		<div class="project-nav">
+			<div class="project-nav-bg-color">
+				<div class="project-nav-wrapper cfix">
+					<div class="prev-project">
+						{% if page.prevProject %}
+							<a href="{{ page.prevProject }}"><i class="icon icon-left-circled2"></i> Iepriekšējais <span class="project-nav-extra-txt">projekts</span></a>
+						{% else %}
+							<span class="project-nav-disabled"><i class="icon icon-left-circled2"></i> Iepriekšējais <span class="project-nav-extra-txt">projekts</span></span>
+						{% endif %}
+					</div>
+					<div class="next-project">
+						{% if page.nextProject %}
+							<a href="{{ page.nextProject }}">Nākošais <span class="project-nav-extra-txt">projekts</span> <i class="icon icon-right-circled2"></i></a>
+						{% else %}
+							<span class="project-nav-disabled">Nākošais <span class="project-nav-extra-txt">projekts</span> <i class="icon icon-right-circled2"></i></span>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+		{% include project-footer.html %}
 	</article> <!-- Project -->
 {% include foot.html %}

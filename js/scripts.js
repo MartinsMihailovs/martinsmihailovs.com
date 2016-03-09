@@ -96,9 +96,6 @@ $(document).ready(function() {
 		var top = pageYOffset;
 		bwTitle.css("background-size", 100 - (top * 0.18) + '%' + '30%');
 	});
-
- 
-
 });
 
 /**************************************************
