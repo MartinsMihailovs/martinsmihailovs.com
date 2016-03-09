@@ -18,7 +18,7 @@ description: Dizaina un web izstrādes portfolio
 				<li class="portfolio-item medium-6 large-4">
 					<a href="{{ site.baseurl }}{{ project.url }}"><img src="{{ site.baseurl }}/img/portfolio/{{ project.thumb }}" alt="{{ project.title }}"></a>
 					<div class="portfolio-item-meta">
-						<h2 class="portfolio-item-title"><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h2>
+						<h2 class="portfolio-item-title"><a href="{{ site.baseurl }}{{ project.url }}">{% if project.brand %}{{ project.brand }}{% else %}{{ project.title }}{% endif %}</a></h2>
 						<p class="portfolio-item-tags">{{ project.tags | join: '. ' | append: "." }}</p>
 					</div>
 				</li>
@@ -26,3 +26,4 @@ description: Dizaina un web izstrādes portfolio
 			</ul> <!-- Portfolio list -->
 		</div> <!-- Page width -->
 	</section> <!-- Page -->
+	{% include project-footer.html %}

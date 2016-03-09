@@ -3,6 +3,9 @@
 	<article>
 		<header class="project-header">
 			<div class="featured-image">
+				{% if page.url == "/portfolio/balticwall" %}
+					<div class="bw-icon-bg">
+				{% endif %}
 				<div class="page-width">
 					<div class="small-12">
 						<div class="project-info">
@@ -14,9 +17,17 @@
 							{% if page.project-link %}
 							<address class="project-link"><a href="http://{{page.project-link}}">{{page.project-link}}</a></address>
 							{% endif %}
+							{% if page.url == "/portfolio/balticwall" %}
+							<div>
+							   <img src="/img/portfolio/balticwall/balticwall-logo-bordered.png" alt="BalticWall logo" class="baltic-wall-logo-bordered">
+							{% endif %}
+							</div>
 						</div>
 					</div>
 				</div>
+				{% if page.url == "/portfolio/borgcamp" %}
+					</div>
+				{% endif %}
 			</div>
 		</header>
 		{{ content }}

@@ -653,6 +653,10 @@ ul.text-list>li, ol.text-list>li {
     width: auto;
 }
 
+.clear-centered {
+  overflow: hidden;
+}
+
 .small-1, .small-2, .small-3, .small-4, .small-5, .small-6, .small-7, .small-8, .small-9, .small-10, .small-11, .small-12, .medium-1, .medium-2, .medium-3, .medium-4, .medium-5, .medium-6, .medium-7, .medium-8, .medium-9, .medium-10, .medium-11, .medium-12, .large-1, .large-2, .large-3, .large-4, .large-5, .large-6, .large-7, .large-8, .large-9, .large-10, .large-11, .large-12, .xlarge-1, .xlarge-2, .xlarge-3, .xlarge-4, .xlarge-5, .xlarge-6, .xlarge-7, .xlarge-8, .xlarge-9, .xlarge-10, .xlarge-11, .xlarge-12 {
     float: left;
     min-height: 1px;
@@ -1100,6 +1104,10 @@ ul.text-list>li, ol.text-list>li {
 	    margin-left: -25%;
 	}
 
+  .xlarge-pull-4 {
+      margin-left: -33.3333333333333333%;
+  }
+
 	/* Push margins */
 
 	.xlarge-push-1 {
@@ -1113,6 +1121,10 @@ ul.text-list>li, ol.text-list>li {
 	.xlarge-push-3 {
 	    margin-right: -25%;
 	}
+
+  .xlarge-push-4 {
+      margin-right: -33.3333333333333333%;
+  }
 
 	/* Centering columns */
 
@@ -1543,19 +1555,25 @@ p {
    ========================================================================== */
 
 .page-content {
-	margin-bottom: 2em;
+	margin-bottom: 4.5em;
 }
 
 @media (min-width: 750px) {
 	.page-content {
-		margin-bottom: 2.5em;
+		margin-bottom: 5.5em;
 	}
 }
 
 @media (min-width: 900px) {
 	.page-content {
-		margin-bottom: 4em;
+		margin-bottom: 6em;
 	}
+}
+
+@media (min-width: 1200px) {
+  .page-content {
+    margin-bottom: 7em;
+  }
 }
 
 .page-header {
@@ -1720,12 +1738,12 @@ p {
 }
 
 .post-entry {
-	margin-bottom: 3.5em;
+	margin-bottom: 4.5em;
 }
 
 @media (min-width: 500px) {
 	.post-entry {
-		margin-bottom: 5em;
+		margin-bottom: 6em;
 	}
 }
 
@@ -2141,7 +2159,6 @@ p:target {
 
 .portfolio-item-meta {
 	margin-top: .3em;
-	letter-spacing: 1px;
 	text-align: center;
 }
 
@@ -2153,7 +2170,7 @@ p:target {
 
 .portfolio-item-title {
 	font-size: 1em;
-	font-weight: 400;
+	font-weight: 600;
 	margin-bottom: .05em;
 }
 
@@ -2162,8 +2179,10 @@ p:target {
 }
 
 .portfolio-item-tags {
-	font-size: 0.8888em;
+  font-family: Roboto, Arial, sans-serif;
+	font-size: 0.8333em;
 	line-height: 1.3;
+  white-space: nowrap;
 	color: #868686;
 }
 
@@ -2278,7 +2297,6 @@ p:target {
 }
 
 .project .project-subtitle {
-  display: inline;
 	font-weight: 300;
 	font-size: .9444em;
 	line-height: 1.3;
@@ -2748,6 +2766,7 @@ p:target {
 }
 
 .project-atlas-logistics .project-subtitle {
+  display: inline;
   padding: .0555em 0 0;
   background-color: #dd4b39;
   color: #fff;
@@ -3339,7 +3358,6 @@ p:target {
 }
 
 .project-borgcamp-group .project-subtitle {
-  display: block;
   text-transform: uppercase;
 }
 
@@ -3413,6 +3431,218 @@ p:target {
   background: linear-gradient(45deg,  #eaeaea 0%,#eaeaea 14%,#c2c2c2 14%,#c2c2c2 28%,#4e4e4e 28%,#4e4e4e 42%,#de6011 42%,#de6011 58%,#4e4e4e 58%,#4e4e4e 72%,#c2c2c2 72%,#c2c2c2 86%,#eaeaea 86%,#eaeaea 100%,#eaeaea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#eaeaea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+/* Project: BalticWall */
+/*Project color: #0f76d6*/
+
+.project-best-baltic-brands-in .featured-image {
+  background-color: #d5e8ff;
+  background-image: url("../img/portfolio/balticwall/balticwall-cover.jpg");
+  background-image: url("../img/portfolio/balticwall/cover-pattern.png"), url("../img/portfolio/balticwall/balticwall-cover.jpg");
+  background-size: cover;
+  background-size: auto, cover;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat;
+  background-repeat: repeat, no-repeat;
+  background-position: center bottom;
+  background-position: left, center bottom;
+}
+
+@media (min-width: 600px) {
+  .project-best-baltic-brands-in .featured-image {
+    height: 65vh;
+    min-height: 600px;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-best-baltic-brands-in .featured-image {
+    min-height: 610px;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-best-baltic-brands-in .featured-image {
+    min-height: 650px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-best-baltic-brands-in .featured-image {
+    min-height: 700px;
+  }
+}
+
+.bw-icon-bg {
+  height: 100%;
+  background: url("../img/portfolio/balticwall/cover-icons.png") no-repeat center 25%;
+}
+
+.project-best-baltic-brands-in .project-info h1, .project-best-baltic-brands-in .project-info h2 {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #2b2b2b;
+}
+
+.project-best-baltic-brands-in .project-info {
+  padding: 3.5em 0 2.5em;
+  color: #1a1c4d;
+}
+
+@media (min-width: 500px) {
+  .project-best-baltic-brands-in .project-info {
+    padding: 5em 0 3em;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-best-baltic-brands-in .project-info {
+    padding: 0;
+    bottom: 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-best-baltic-brands-in .project-info {
+    bottom: 18%;
+  }
+}
+
+.project-best-baltic-brands-in .project-title {
+  font-weight: 400;
+  font-size: 1.1111em;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 500px) {
+  .project-best-baltic-brands-in .project-title {
+    font-size: 1.4444em;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-best-baltic-brands-in .project-title {
+    font-size: 1.5555em;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-best-baltic-brands-in .project-title {
+    font-size: 1.7777em;
+  }
+}
+
+.project-best-baltic-brands-in .project-subtitle {
+  display: inline;
+  padding: 0 .1em 0 .2em;
+  font-size: 2.6666em;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 5px;
+  background: url("../img/portfolio/balticwall/page-subtitle-bg.gif") no-repeat center 48%;
+  background-size: 100% 30%;
+}
+
+@media (min-width: 500px) {
+  .project-best-baltic-brands-in .project-subtitle {
+    font-size: 4.2222em;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-best-baltic-brands-in .project-subtitle {
+    font-size: 4.6666em;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-best-baltic-brands-in .project-subtitle {
+    padding: 0 .175em 0 .3em;
+    font-size: 5.3333em;
+  }
+}
+
+.baltic-wall-logo-bordered {
+  margin-top: 1em;
+}
+
+.project-best-baltic-brands-in .section-with-divider:before, .project-best-baltic-brands-in .section-with-divider:after {
+  border-color: #0f76d6;
+}
+
+.project-best-baltic-brands-in .section-with-divider:after {
+  background: #0f76d6;
+}
+
+.logo-section {
+  margin: 2.5em 0 .5em;
+  padding: 3.5em 0 3em;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  background-image: url("../img/portfolio/balticwall/logo-section-bg.jpg");
+  background-image: url("../img/portfolio/balticwall/cover-pattern-dark.png"), url("../img/portfolio/balticwall/logo-section-bgs.jpg");
+  background-size: cover;
+  background-size: auto, cover;
+  background-attachment: fixed, fixed;
+  background-repeat: no-repeat;
+  background-repeat: repeat, no-repeat;
+  background-position: center bottom;
+  background-position: left, center;
+}
+
+@media (min-width: 600px) {
+  .logo-section {
+    margin: 2.5em 0 .5em;
+    padding: 5em 0 4em;
+  }
+}
+
+@media (min-width: 900px) {
+  .logo-section {
+    margin: 3.5em 0 1em;
+    padding: 7.5em 0 7em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-section {
+    margin: 4em 0 1em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .logo-section {
+    margin: 4em 0 1em;
+    padding: 8.3em 0 8em;
+  }
+}
+
+.logo-section img {
+  width: 230px;
+}
+
+@media (min-width: 900px) {
+  .logo-section img {
+    width: auto;
+  }
+}
+
+.project-best-baltic-brands-in .things-learned {
+  background-image: url("../img/portfolio/balticwall/cover-pattern-dark-2.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+.project-best-baltic-brands-in .things-learned .divider-lg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaeaea+0,eaeaea+14,c2c2c2+14,c2c2c2+28,4e4e4e+28,4e4e4e+42,2e71f2+42,2e71f2+58,4e4e4e+58,4e4e4e+72,c2c2c2+72,c2c2c2+86,eaeaea+86,eaeaea+100,eaeaea+100 */
+  background: #eaeaea; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #eaeaea 0%, #eaeaea 14%, #c2c2c2 14%, #c2c2c2 28%, #4e4e4e 28%, #4e4e4e 42%, #2e71f2 42%, #2e71f2 58%, #4e4e4e 58%, #4e4e4e 72%, #c2c2c2 72%, #c2c2c2 86%, #eaeaea 86%, #eaeaea 100%, #eaeaea 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #eaeaea 0%,#eaeaea 14%,#c2c2c2 14%,#c2c2c2 28%,#4e4e4e 28%,#4e4e4e 42%,#2e71f2 42%,#2e71f2 58%,#4e4e4e 58%,#4e4e4e 72%,#c2c2c2 72%,#c2c2c2 86%,#eaeaea 86%,#eaeaea 100%,#eaeaea 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #eaeaea 0%,#eaeaea 14%,#c2c2c2 14%,#c2c2c2 28%,#4e4e4e 28%,#4e4e4e 42%,#2e71f2 42%,#2e71f2 58%,#4e4e4e 58%,#4e4e4e 72%,#c2c2c2 72%,#c2c2c2 86%,#eaeaea 86%,#eaeaea 100%,#eaeaea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#eaeaea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
 
 /* ==========================================================================
 

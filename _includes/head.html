@@ -9,8 +9,8 @@
 -->
 
 	<meta charset="UTF-8" />
-	<title>{% if page.title %}{{ page.title | strip_html }}{% endif %}{% if page.layout == "page" %} | {{site.owner.name}}{% endif %}</title>
-	<meta name="description" content="{% if page.description %}{{ page.description | strip_html}}{% elsif page.subtitle %}{{ page.subtitle | stript_html }}{% endif %}"/>
+	<title>{% if page.brand %}{{ page.brand | strip_html }}{% else if page.title %}{{ page.title | strip_html }}{% endif %}{% if page.layout == "page" %} | {{site.owner.name}}{% endif %}</title>
+	<meta name="description" content="{% if page.description %}{{ page.description | strip_html}}{% else if page.subtitle %}{{ page.subtitle | stript_html }}{% endif %}"/>
 	<meta name="keywords" content="{{ page.tags | join: ', ' }}"/>
 	<meta name="author" content="{{site.owner.name}}"/>
 	<link rel="canonical" href="{{ page.url }}"/>
@@ -36,12 +36,9 @@
 	<!-- Fonts-->
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
-
-	<!-- Scripts-->
-	<script src="{{ site.baseurl }}/js/lib/jquery-1.10.2.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.3.1/jquery.fluidbox.min.js"></script>
-	<script src="{{ site.baseurl }}/js/scripts.js"></script>
-	
+	{% if page.url == "/portfolio/balticwall" %}
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	{% endif %} 
 	
 	<!--Emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8-->
 	<!--[if (gte IE 6)&(lte IE 9)]>

@@ -82,8 +82,54 @@ $(document).ready(function() {
 
 	// $(window).on("scroll", function() {
 	// var top = pageYOffset;
-	// //bgLayer.css("background-position", 'right ' + 0 + ' bottom ' + (top * -0.5) + 'px');
-	// bgLayer.css("background-position", '200px ' + (top * 0.5) + 'px');
+	// bgLayer.css("background-position", 'left ' + 0 + ' bottom ' + (top * -0.5) + 'px');
+	// //bgLayer.css("background-position", 'center ' + (top * 0.5) + 'px');
 	// });
 
+	/**************************************************
+	Background img animation for BalticWall case study title
+	***************************************************/
+
+	var bwTitle = $(".project-best-baltic-brands-in").find(".project-subtitle");
+	var bgSize;
+	$(window).on("scroll", function() {
+		var top = pageYOffset;
+		bwTitle.css("background-size", 100 - (top * 0.18) + '%' + '30%');
+	});
+
+ 
+
 });
+
+/**************************************************
+Add youtube video to page via api. This allows to play hd 
+***************************************************/
+
+// 1. This code loads the IFrame Player API code asynchronously.  
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 2. This function creates an <iframe> (and YouTube player) after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player('player', {
+		height: 'auto',
+		width: '100%',
+		videoId: 'gU6UROuQZw0',
+		playerVars: {
+			'rel': 0,
+			'showinfo': 0,
+        },
+		events: {
+		'onReady': onPlayerReady
+		}
+	});
+}
+
+// 3. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+	player.setPlaybackQuality('hd720'); // Here we set the quality (yay!)
+}
