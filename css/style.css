@@ -600,17 +600,17 @@ ul.text-list>li, ol.text-list>li {
 }
 
 .post-entry .checklist li:before {
-  content:"\e800";
+  content:"\e804";
   font-family: "fontello";
-  font-size: 1.2222em;
+  font-size: 1.1111em;
   position: absolute;
-  top: .6666em;
+  top: .7777em;
   left: 0;
 }
 
 @media (min-width: 600px) {
   .post-entry .checklist li:before {
-     top: .7222em;
+     top: .8333em;
   }
 }
 
