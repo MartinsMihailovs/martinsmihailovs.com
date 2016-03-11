@@ -3714,15 +3714,9 @@ p:target {
   padding: 3.5em 0 3em;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
-  background-image: url("../img/portfolio/balticwall/logo-section-bg.jpg");
-  background-image: url("../img/portfolio/balticwall/cover-pattern-dark.png"), url("../img/portfolio/balticwall/logo-section-bgs.jpg");
-  background-size: cover;
-  background-size: auto, cover;
-  background-attachment: fixed, fixed;
-  background-repeat: no-repeat;
-  background-repeat: repeat, no-repeat;
-  background-position: center bottom;
-  background-position: left, center;
+  background-image: url("../img/portfolio/balticwall/cover-pattern-dark.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 @media (min-width: 600px) {
