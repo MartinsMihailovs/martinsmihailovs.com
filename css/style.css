@@ -2866,6 +2866,69 @@ p:target {
   color: #9a9a9a;
 }
 
+/* Animate project header */
+
+@media (min-width: 750px) {
+	.featured-image {
+		-webkit-animation:  fadeIn 1s ease-out .5s normal forwards 1;
+		-moz-animation:     fadeIn 1s ease-out .5s normal forwards 1;
+		-ms-animation:      fadeIn 1s ease-out .5s normal forwards 1;
+		-o-animation:       fadeIn 1s ease-out .5s normal forwards 1;
+		animation:  fadeIn 1s ease-out .5s normal forwards 1;
+		opacity: 0;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		-webkit-opacity: 0;
+	}
+
+	100% {
+		-webkit-opacity: 1;
+	}
+}
+
+@media (min-width: 750px) {
+	.project-info {
+		-webkit-animation:  moveBottom 1s ease-out .5s normal forwards 1;
+		-moz-animation:     moveBottom 1s ease-out .5s normal forwards 1;
+		-ms-animation:      moveBottom 1s ease-out .5s normal forwards 1;
+		-o-animation:       moveBottom 1s ease-out .5s normal forwards 1;
+		animation:  moveBottom 1s ease-out .5s normal forwards 1;
+	}
+}
+
+@keyframes moveBottom {
+	0% {
+		transform: translateY(10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes moveBottom {
+	0% {
+		-webkit-transform: translateY(10px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+
 /* Project: Atlas logistics */
 /*Project color: #0070af*/
 
