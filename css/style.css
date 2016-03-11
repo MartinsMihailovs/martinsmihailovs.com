@@ -1694,7 +1694,7 @@ p {
 
 .post-pubdate {
 	display: block;
-  margin-top: .8em;
+	margin-top: .8em;
 	font-size: .7777em;
 	color: #868686;
 	letter-spacing: 3px;
@@ -1716,6 +1716,7 @@ p {
 }
 
 .archive-item .post-pubdate {
+	margin-top: 0;
 	letter-spacing: 4px;
 }
 
@@ -2114,7 +2115,7 @@ p:target {
 }
 
 .archive-item-snippet {
-	margin-bottom: .6em;
+	margin-bottom: .5em;
     line-height: 1.65;
 }
 
