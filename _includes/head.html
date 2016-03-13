@@ -9,8 +9,8 @@
 -->
 
 	<meta charset="UTF-8" />
-	<title>{% if page.brand %}{{ page.brand | strip_html }}{% else if page.title %}{{ page.title | strip_html }}{% endif %}{% if page.layout == "page" %} | {{site.owner.name}}{% endif %}</title>
-	<meta name="description" content="{% if page.description %}{{ page.description | strip_html}}{% else if page.subtitle %}{{ page.subtitle | stript_html }}{% endif %}"/>
+	<title>{% if page.brand %}{{ page.brand | strip_html }}{% elsif page.title %}{{ page.title | strip_html }}{% endif %}{% if page.layout == "page" %} | {{site.owner.name}}{% endif %}</title>
+	<meta name="description" content="{% if page.description %}{{ page.description | strip_html}}{% elsif page.subtitle %}{{ page.subtitle | stript_html }}{% endif %}"/>
 	<meta name="keywords" content="{{ page.tags | join: ', ' }}"/>
 	<meta name="author" content="{{site.owner.name}}"/>
 	<link rel="canonical" href="{{ page.url }}"/>
@@ -60,7 +60,7 @@
 </head>
 {% if page.layout == "project" %}
 <body class="project project-{{ page.title | strip_html | downcase | replace: " ", "-" | replace: '.', '-' | replace: ",", "" | replace: 'ē', 'e' | replace: 'ā', 'a' | replace: 'ī', 'i' | replace: 'š', 's' | replace: 'ņ', 'n' | replace: 'ļ', 'l' }}">
-{% else if page.layout == "page" %}
+{% elsif page.layout == "page" %}
 <body class="page page-{{ page.title | strip_html | downcase | replace: " ", "-" | replace: '.', '-' | replace: ",", "" | replace: 'ē', 'e' | replace: 'ā', 'a' | replace: 'ī', 'i' | replace: 'š', 's' | replace: 'ņ', 'n' | replace: 'ļ', 'l' }}">
 {% else %}
 <body>
