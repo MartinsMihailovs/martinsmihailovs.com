@@ -29,7 +29,7 @@ tools:
   standards: "HTML, CSS, JavaScript, Jekyll"
   software: "git"
 
-markdown: redcarpet
+markdown: kramdown
 permalink: /:categories/:title
 
 production: false
