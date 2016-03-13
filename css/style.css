@@ -4167,12 +4167,6 @@ p:target {
 	}
 }
 
-.full-width-narrow-img {
-	height: 18em;
-	background: url("../img/portfolio/martinsmihailovs/dog-eyes.jpg") no-repeat center center;
-	background-size: cover;
-}
-
 .project-martinsmihailovs-com .foto-list-projects {
 	margin-top: 0;
 }
