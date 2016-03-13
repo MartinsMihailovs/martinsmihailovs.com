@@ -2,9 +2,9 @@
   url: /
   layout: post
 - text: Portfolio
-  url: /portfolio/
+  url: /portfolio
   layout: project
 - text: Foto
-  url: /foto/
+  url: /foto
 - text: Bio
-  url: /bio/
+  url: /bio
