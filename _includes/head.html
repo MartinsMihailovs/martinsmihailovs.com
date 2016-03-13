@@ -60,6 +60,8 @@
 </head>
 {% if page.layout == "project" %}
 <body class="project project-{{ page.title | strip_html | downcase | replace: " ", "-" | replace: '.', '-' | replace: ",", "" | replace: 'ē', 'e' | replace: 'ā', 'a' | replace: 'ī', 'i' | replace: 'š', 's' | replace: 'ņ', 'n' | replace: 'ļ', 'l' }}">
+{% elsif page.layout == "post" %}
+<body class="post post-{{ page.title | strip_html | downcase | replace: " ", "-" | replace: '.', '-' | replace: ",", "" | replace: 'ē', 'e' | replace: 'ā', 'a' | replace: 'ī', 'i' | replace: 'š', 's' | replace: 'ņ', 'n' | replace: 'ļ', 'l' }}">
 {% elsif page.layout == "page" %}
 <body class="page page-{{ page.title | strip_html | downcase | replace: " ", "-" | replace: '.', '-' | replace: ",", "" | replace: 'ē', 'e' | replace: 'ā', 'a' | replace: 'ī', 'i' | replace: 'š', 's' | replace: 'ņ', 'n' | replace: 'ļ', 'l' }}">
 {% else %}

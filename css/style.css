@@ -2058,28 +2058,28 @@ p:target {
    
    ========================================================================== */
 
-.page-lietas-ko-var-paspet-izdarit-darba-laika .post-entry ul {
+.post-lietas-ko-var-paspet-izdarit-darba-laika .post-entry ul {
 	margin-left: 0;
 	list-style: none;
 }
 
-.page-lietas-ko-var-paspet-izdarit-darba-laika .post-entry ul li {
+.post-lietas-ko-var-paspet-izdarit-darba-laika .post-entry ul li {
 	padding: 10px 0 8px;
 	margin-bottom:0;
 	border-bottom: 1px solid #d6d6d6;
 }
 
-.page-lietas-ko-var-paspet-izdarit-darba-laika .post-entry ul li i {
+.post-lietas-ko-var-paspet-izdarit-darba-laika .post-entry ul li i {
 	margin-left: 0;
 	margin-right: 5px;
 	color: #f2b200;
 }
 
 @media (min-width: 600px) {
-  .page-20-atzinas-pec-5-nostradatiem-gadiem .post-title {
+  .post-20-atzinas-pec-5-nostradatiem-gadiem .post-title {
     line-height: 1.15;
   }
-  .page-20-atzinas-pec-5-nostradatiem-gadiem .post-title span {
+  .post-20-atzinas-pec-5-nostradatiem-gadiem .post-title span {
     font-size: 1.3235em;
   }
 }
