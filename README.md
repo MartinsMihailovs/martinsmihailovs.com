@@ -16,7 +16,7 @@ martinsmihailovs.com
 </ol>
 <h3>CSS</h3>
 <ol>
-  <li>Use OOCSS for ease of maintance and expendable</li>
+  <li>Use OOCSS for ease of maintenance and expandable</li>
   <li>CSS selectors must not relate to HTML structure</li>
   <li>Use more classes and less descendant selectors</li>
   <li>Keep selectors as short as possible</li>
