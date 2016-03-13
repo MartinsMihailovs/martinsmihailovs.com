@@ -137,7 +137,7 @@ hr {
    ========================================================================== */
 
 /*
-  Primary: #c6870a;
+  Primary: #e49305;
   Dark grey accents: #2b2b2b;
   Base text: #3c3c3c;
   Dimmed base text: #6d6d6d;
@@ -294,6 +294,11 @@ mark {
 	background: #ff0;
 }
 
+abbr {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
 .small {
 	font-size: .8333em;
 	line-height: 1.8;
@@ -318,16 +323,16 @@ a {
 }
 
 a:hover {
-  color: #b27600;
+  color: #e49305;
 }
 
 .post-entry a, .page-desc a {
-	border-bottom: 1px solid #c6870a;
+	border-bottom: 1px solid #e49305;
 }
 
 .post-entry a:hover, .page-desc a:hover {
-  color: #ae6a00;
-  border-bottom-color: #c6870a;
+  color: #e49305;
+  border-bottom-color: #e49305;
 }
 
 .post-entry figure > a {
@@ -538,12 +543,17 @@ iframe {
 
 .text-list {
 	margin: 1em 0 2em;
+	line-height: 1.7;
 }
 
 @media (min-width: 700px) {
   .text-list {
     margin: 1.5em 0 2em;
   }
+}
+
+.text-list-compact {
+	line-height: 1.35;
 }
 
 p+ul.text-list, p+ol.text-list {
@@ -555,7 +565,7 @@ ul.text-list {
 }
 
 ol.text-list {
-	margin-left: 1.3em;
+	margin-left: 1em;
 }
 
 ul.text-list>li, ol.text-list>li {
@@ -581,9 +591,9 @@ ul.text-list>li, ol.text-list>li {
 	margin-left: 0; 
 	vertical-align: bottom;
 	border-bottom: 1px solid #e6e6e6;
-  list-style-position: outside;
-  list-style-type: none;
-  line-height: 1.6;
+	list-style-position: outside;
+	list-style-type: none;
+	line-height: 1.6;
 }
 
 .post-entry .checklist li {
@@ -1282,7 +1292,7 @@ p {
   width: 35px;
   height: 4px;
   margin-bottom: 5px;
-  background: #c6870a;
+  background: #e49305;
   border-radius: 2px;
   transition: all 0.25s ease-out;
 }
@@ -2239,6 +2249,10 @@ p:target {
   }
 }
 
+.cover-extra-bg {
+  height: 100%;
+}
+
 .project-info {
 	padding: 3.5em 0 3.1em;
   font-family: "Roboto", Arial, sans-serif;
@@ -2652,12 +2666,12 @@ p:target {
 }
 
 .project-footer-desc>a {
-  color: #c6870a;
+  color: #e49305;
   white-space: nowrap;
 }
 
 .project-footer-desc>a:hover {
-  border-bottom-color: #c6870a;
+  border-bottom-color: #e49305;
 }
 
 .project-swatches {
@@ -2757,7 +2771,7 @@ p:target {
   }
 }
 
-.project-nav {
+.post-nav {
   font-family: "Roboto", Arial, sans-serif;
   font-size: .9444em;
   font-weight: 500;
@@ -2769,114 +2783,112 @@ p:target {
 }
 
 @media (min-width: 500px) {
-  .project-nav {
+  .post-nav {
     font-size: 1em;
   }
 }
 
 @media (min-width: 1200px) {
-  .project-nav {
+  .post-nav {
     font-size: 1.1111em;
   }
 }
 
 @media (min-width: 500px) {
-  .project-nav-wrapper {
+  .post-nav-wrapper {
     width: 90%;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 900px) {
-  .project-nav-wrapper {
+  .post-nav-wrapper {
     width: 80%;
   }
 }
 
 @media (min-width: 1200px) {
-  .project-nav-wrapper {
+  .post-nav-wrapper {
     width: 70%;
   }
 }
 
 @media (min-width: 1600px) {
-  .project-nav-wrapper {
+  .post-nav-wrapper {
     width: 60%;
   }
 }
 
-.prev-project > a, .next-project > a {
+.prev-post > a, .next-post > a {
   color: #2b2b2b;
   border: 0;
 }
 
-.prev-project > a, .next-project > a, .project-nav-disabled {
+.prev-post > a, .next-post > a, .post-nav-disabled {
   display: inline-block;
   padding: 1em .5em;
 }
 
 @media (min-width: 600px) {
-  .prev-project > a, .next-project > a, .project-nav-disabled {
+  .prev-post > a, .next-post > a, .post-nav-disabled {
     padding: 1.5em 1.5em;
   }
 }
 
 @media (min-width: 900px) {
-  .prev-project > a, .next-project > a, .project-nav-disabled {
+  .prev-post > a, .next-post > a, .post-nav-disabled {
     padding: 2em 2.5em;
   }
 }
 
 @media (min-width: 1200px) {
-  .prev-project > a, .next-project > a, .project-nav-disabled {
+  .prev-post > a, .next-post > a, .post-nav-disabled {
     padding: 2em 4em;
   }
 }
 
 @media (min-width: 1400px) {
-  .prev-project > a, .next-project > a, .project-nav-disabled {
+  .prev-post > a, .next-post > a, .post-nav-disabled {
     padding: 2.2em 6em;
   }
 }
 
-.project-nav-extra-txt {
+.post-nav-extra-txt {
   display: none;
 }
 
 @media (min-width: 600px) {
-  .project-nav-extra-txt {
+  .post-nav-extra-txt {
     display: inline;
   }
 }
 
-.prev-project > a:hover, .next-project > a:hover {
-  color: #c6870a;
+.prev-post > a:hover, .next-post > a:hover {
+  color: #e49305;
 }
 
-.prev-project {
+.prev-post {
   float: left;
 }
 
-.next-project {
+.next-post {
   float: right;
 }
 
-.project-nav-disabled {
+.post-nav-disabled {
   font-weight: 400;
   color: #9a9a9a;
 }
 
 /* Animate project header */
 
-@media (min-width: 750px) {
-	.featured-image {
-		-webkit-animation:  fadeIn 1s ease-out .5s normal forwards 1;
-		-moz-animation:     fadeIn 1s ease-out .5s normal forwards 1;
-		-ms-animation:      fadeIn 1s ease-out .5s normal forwards 1;
-		-o-animation:       fadeIn 1s ease-out .5s normal forwards 1;
-		animation:  fadeIn 1s ease-out .5s normal forwards 1;
-		opacity: 0;
-	}
+.featured-image {
+	-webkit-animation:  fadeIn 1s ease-out .5s normal forwards 1;
+	-moz-animation:     fadeIn 1s ease-out .5s normal forwards 1;
+	-ms-animation:      fadeIn 1s ease-out .5s normal forwards 1;
+	-o-animation:       fadeIn 1s ease-out .5s normal forwards 1;
+	animation:  fadeIn 1s ease-out .5s normal forwards 1;
+	opacity: 0;
 }
 
 @keyframes fadeIn {
@@ -2899,15 +2911,15 @@ p:target {
 	}
 }
 
-@media (min-width: 750px) {
-	.project-info {
-		-webkit-animation:  moveBottom 1s ease-out .5s normal forwards 1;
-		-moz-animation:     moveBottom 1s ease-out .5s normal forwards 1;
-		-ms-animation:      moveBottom 1s ease-out .5s normal forwards 1;
-		-o-animation:       moveBottom 1s ease-out .5s normal forwards 1;
-		animation:  moveBottom 1s ease-out .5s normal forwards 1;
-	}
+
+.project-info {
+	-webkit-animation:  moveBottom 1s ease-out .5s normal forwards 1;
+	-moz-animation:     moveBottom 1s ease-out .5s normal forwards 1;
+	-ms-animation:      moveBottom 1s ease-out .5s normal forwards 1;
+	-o-animation:       moveBottom 1s ease-out .5s normal forwards 1;
+	animation:  moveBottom 1s ease-out .5s normal forwards 1;
 }
+
 
 @keyframes moveBottom {
 	0% {
@@ -3114,7 +3126,7 @@ p:target {
   background-color: #eaeaea;
 }
 
-.project-atlas-logistics .things-learned, .project-atlas-logistics .project-nav {
+.project-atlas-logistics .things-learned, .project-atlas-logistics .post-nav {
   background: url("../img/portfolio/atlas/world-map.jpg") no-repeat center center fixed;
 }
 
@@ -3127,7 +3139,7 @@ p:target {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#eaeaea',GradientType=1 ); /* IE6-9 */
 }
 
-.project-atlas-logistics .project-nav-bg-color {
+.project-atlas-logistics .post-nav-bg-color {
   background-color: rgba(255, 255, 255, .45);
 }
 
@@ -3296,7 +3308,7 @@ p:target {
 }
 
 @media (min-width: 600px) {
-  .project-warehouse-lv .things-learned, .project-warehouse-lv .project-nav {
+  .project-warehouse-lv .things-learned, .project-warehouse-lv .post-nav {
     background: url("../img/portfolio/warehouse/things-learned-bg.jpg") no-repeat left center fixed;
     background-size: contain;
   }
@@ -3414,7 +3426,7 @@ p:target {
   }
 }
 
-.project-warehouse-lv .project-nav-bg-color {
+.project-warehouse-lv .post-nav-bg-color {
   background-color: rgba(255, 255, 255, .6);
 }
 
@@ -3612,7 +3624,7 @@ p:target {
   }
 }
 
-.project-borgcamp-group .things-learned, .project-borgcamp-group .project-nav {
+.project-borgcamp-group .things-learned, .project-borgcamp-group .post-nav {
   background: #f4f4f4 url("../img/portfolio/borgcamp/borgcamp-bg-light.jpg") no-repeat left center fixed;
 }
 
@@ -3625,7 +3637,7 @@ p:target {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#eaeaea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-.project-borgcamp-group .project-nav-bg-color {
+.project-borgcamp-group .post-nav-bg-color {
   background-color: rgba(255, 255, 255, .25);
 }
 
@@ -3670,8 +3682,7 @@ p:target {
   }
 }
 
-.bw-icon-bg {
-  height: 100%;
+.project-best-baltic-brands-in .cover-extra-bg {
   background: url("../img/portfolio/balticwall/cover-icons.png") no-repeat center 25%;
 }
 
@@ -3772,7 +3783,7 @@ p:target {
   background: #0f76d6;
 }
 
-.logo-section {
+.project-best-baltic-brands-in .logo-section {
   margin: 2.5em 0 .5em;
   padding: 3.5em 0 3em;
   border-top: 1px solid #e6e6e6;
@@ -3783,43 +3794,43 @@ p:target {
 }
 
 @media (min-width: 600px) {
-  .logo-section {
+  .project-best-baltic-brands-in .logo-section {
     margin: 2.5em 0 .5em;
     padding: 5em 0 4em;
   }
 }
 
 @media (min-width: 900px) {
-  .logo-section {
+  .project-best-baltic-brands-in .logo-section {
     margin: 3.5em 0 1em;
     padding: 7.5em 0 7em;
   }
 }
 
 @media (min-width: 1200px) {
-  .logo-section {
+  .project-best-baltic-brands-in .logo-section {
     margin: 4em 0 1em;
   }
 }
 
 @media (min-width: 1400px) {
-  .logo-section {
+  .project-best-baltic-brands-in .logo-section {
     margin: 4em 0 1em;
     padding: 8.3em 0 8em;
   }
 }
 
-.logo-section img {
+.project-best-baltic-brands-in .logo-section img {
   width: 230px;
 }
 
 @media (min-width: 900px) {
-  .logo-section img {
+  .project-best-baltic-brands-in .logo-section img {
     width: auto;
   }
 }
 
-.project-best-baltic-brands-in .things-learned, .project-best-baltic-brands-in .project-nav {
+.project-best-baltic-brands-in .things-learned, .project-best-baltic-brands-in .post-nav {
   background-image: url("../img/portfolio/balticwall/cover-pattern-dark-2.png");
   background-attachment: fixed;
   background-repeat: repeat;
@@ -3834,8 +3845,373 @@ p:target {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#eaeaea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-.project-best-baltic-brands-in .project-nav-bg-color {
+.project-best-baltic-brands-in .post-nav-bg-color {
   background-color: rgba(255, 255, 255, .3);
+}
+
+/* Project: martinsmihailovs.com */
+/*Project color: #e49305*/
+
+.project-martinsmihailovs-com .featured-image {
+  background-color: #f5f2e9;
+  background-image: url("../img/portfolio/martinsmihailovs/cover-ink.png");
+  background-image: url("../img/portfolio/martinsmihailovs/cover-ink.png"), url("../img/portfolio/martinsmihailovs/x-pattern.png"), url("../img/portfolio/martinsmihailovs/cover-bottom-border.gif");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-position: center 65%;
+  background-position: center 65%, center, center bottom;
+  background-size: contain;
+  background-size: contain, auto, auto;
+  background-attachment: scroll;
+  background-attachment: scroll, fixed, scroll;
+}
+
+@media (min-width: 600px) {
+	.project-martinsmihailovs-com .featured-image {
+		background-position: center 180%;
+		background-position: center 180%, center, center bottom;
+		background-size: auto;
+		background-size: auto, auto, auto;
+	}
+}
+
+@media (min-width: 900px) {
+	.project-martinsmihailovs-com .featured-image {
+		background-position: center 75%;
+		background-position: center 75%, center, center bottom;
+	}
+}
+
+@media (min-width: 1800px) {
+	.project-martinsmihailovs-com .featured-image {
+	  background-size: auto;
+	  background-size: auto, auto, contain;
+	}
+}
+
+@media (min-width: 600px) {
+  .project-martinsmihailovs-com .featured-image {
+    height: 65vh;
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-martinsmihailovs-com .featured-image {
+    min-height: 650px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-martinsmihailovs-com .featured-image {
+    min-height: 680px;
+  }
+}
+
+.project-martinsmihailovs-com .project-info {
+  padding: 4.5em 0 4em;
+}
+
+@media (min-width: 500px) {
+  .project-martinsmihailovs-com .project-info {
+    padding: 6em 0 5.5em;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-martinsmihailovs-com .project-info {
+    padding: 0;
+    bottom: 25%;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-martinsmihailovs-com .project-info {
+    bottom: 28%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-martinsmihailovs-com .project-info {
+    bottom: 30%;
+  }
+}
+
+.project-martinsmihailovs-com .project-title {
+	position: relative;
+	margin-bottom: .5555em;
+	font-size: 1.6666em;
+	color: #eae3cb;
+}
+
+@media (min-width: 370px) {
+.project-martinsmihailovs-com .project-title {
+		font-size: 2em;
+	}
+}
+
+@media (min-width: 500px) {
+.project-martinsmihailovs-com .project-title {
+		font-size: 2.3333em;
+	}
+}
+
+@media (min-width: 600px) {
+.project-martinsmihailovs-com .project-title {
+		margin-bottom: .2222em;
+		font-size: 2.7777em;
+	}
+}
+
+@media (min-width: 700px) {
+.project-martinsmihailovs-com .project-title {
+		font-size: 3.2222em;
+	}
+}
+
+@media (min-width: 800px) {
+.project-martinsmihailovs-com .project-title {
+		font-size: 3.4444em;
+	}
+}
+
+@media (min-width: 900px) {
+.project-martinsmihailovs-com .project-title {
+		font-size: 3.8888em;
+	}
+}
+
+.project-martinsmihailovs-com .project-title:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 50%;
+	left: 0;
+	top: 50%;
+	right: 0;
+    margin-left: auto;
+    margin-right: auto;
+	width: 30%;
+	max-width: 450px;
+	height: 1px;
+	background: #e49305;
+	transform: rotate(45deg);
+	z-index: -10;
+}
+
+.project-martinsmihailovs-com .project-title > span {
+	color: #e49305;
+}
+
+.project-martinsmihailovs-com .project-subtitle {
+	font-family: Lora, Georgia, serif;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+}
+
+@media (min-width: 1200px) {
+	.project-martinsmihailovs-com .project-subtitle {
+		font-size: 1.111em;
+	}
+}
+
+.martinsmihailovs-cover-logo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+}
+
+@media (min-width: 500px) {
+	.martinsmihailovs-cover-logo {
+		width: 130px;
+	}
+}
+
+@media (min-width: 600px) {
+	.martinsmihailovs-cover-logo {
+		top: -5px;
+	}
+}
+
+@media (min-width: 600px) {
+	.martinsmihailovs-cover-logo {
+		top: 3px;
+	}
+}
+
+@media (min-width: 900px) {
+	.martinsmihailovs-cover-logo {
+		width: auto;
+	}
+}
+
+.work-rules ul {
+	font-size: .9444em;
+}
+
+.work-rules-content {
+	padding-bottom: 1.5em;
+	border-top: 1px solid #e49305;
+	border-bottom: 1px solid #e49305;
+}
+
+.work-rules h3 {
+	color: #e49305;
+}
+
+.project-martinsmihailovs-com .section-with-divider:before, .project-martinsmihailovs-com .section-with-divider:after {
+  border-color: #e49305;
+}
+
+.project-martinsmihailovs-com .section-with-divider:after {
+  background: #e49305;
+}
+
+.martinsmihailovs-intro {
+	background: url("../img/portfolio/martinsmihailovs/txt-mega-bg.png") no-repeat center 96%;
+}
+
+.calligraphy-pen-img {
+	display: block;
+	margin: 0 auto;
+}
+
+.project-martinsmihailovs-com .identity-section {
+	padding: 1.5em 0 2em;
+}
+
+@media (min-width: 600px) {
+	.project-martinsmihailovs-com .identity-section {
+		padding: 2em 0 2.5em;
+	}
+}
+
+@media (min-width: 900px) {
+	.project-martinsmihailovs-com .identity-section {
+		padding: 2.5em 0 4em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.project-martinsmihailovs-com .identity-section {
+		padding: 3em 0 4.5em;
+	}
+}
+
+.project-martinsmihailovs-com .swatch-primary {
+  background-color: #e49305;
+}
+.project-martinsmihailovs-com .swatch-secondary {
+  background-color: #1a1a1a;
+}
+.project-martinsmihailovs-com .swatch-tertiary {
+  background-color: #4d4d4d;
+}
+.project-martinsmihailovs-com .swatch-quaternary {
+  background-color: #8c8c8c;
+}
+
+.project-martinsmihailovs-com .logo-section {
+	background-color: #f5f2e9;
+	background-image: url("../img/portfolio/martinsmihailovs/x-pattern.png");
+	background-image: url("../img/portfolio/martinsmihailovs/x-pattern.png"), url("../img/portfolio/martinsmihailovs/cover-bottom-border.gif"), url("../img/portfolio/martinsmihailovs/cover-top-border.gif");
+	background-repeat: repeat;
+	background-repeat: repeat, no-repeat, no-repeat;
+	background-position: center;
+	background-position: center, center bottom, center top;
+	background-size: auto;
+	background-size: auto, auto, auto;
+	background-attachment: fixed;
+	background-attachment: fixed, scroll, scroll;
+}
+
+@media (min-width: 1200px) {
+	.project-martinsmihailovs-com .logo-section {
+		padding: 9em 0 9em;
+	}
+}
+
+.project-martinsmihailovs-com .logo-section > img {
+	width: 250px;
+}
+
+@media (min-width: 500px) {
+	.project-martinsmihailovs-com .logo-section > img {
+		width: auto;
+	}
+}
+
+.figure-github-jekyll {
+	padding: 2em;
+}
+
+@media (min-width: 600px) {
+	.figure-github-jekyll {
+		padding: 2em 3em;
+	}
+}
+
+@media (min-width: 900px) {
+	.figure-github-jekyll {
+		padding: 2.5em 4em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.figure-github-jekyll {
+		padding: 3em 0;
+	}
+}
+
+.full-width-narrow-img {
+	height: 18em;
+	background: url("../img/portfolio/martinsmihailovs/dog-eyes.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.project-martinsmihailovs-com .foto-list-projects {
+	margin-top: 0;
+}
+
+.project-martinsmihailovs-com .things-learned .divider-lg {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaeaea+0,eaeaea+14,c2c2c2+14,c2c2c2+28,4e4e4e+28,4e4e4e+42,e49305+42,e49305+58,4e4e4e+58,4e4e4e+72,c2c2c2+72,c2c2c2+86,eaeaea+86,eaeaea+100,eaeaea+100 */
+	background: #e49305; /* Old browsers */
+	background: -moz-linear-gradient(45deg,  #eaeaea 0%, #eaeaea 14%, #c2c2c2 14%, #c2c2c2 28%, #4e4e4e 28%, #4e4e4e 42%, #e49305 42%, #e49305 58%, #4e4e4e 58%, #4e4e4e 72%, #c2c2c2 72%, #c2c2c2 86%, #eaeaea 86%, #eaeaea 100%, #eaeaea 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  #eaeaea 0%,#eaeaea 14%,#c2c2c2 14%,#c2c2c2 28%,#4e4e4e 28%,#4e4e4e 42%,#e49305 42%,#e49305 58%,#4e4e4e 58%,#4e4e4e 72%,#c2c2c2 72%,#c2c2c2 86%,#eaeaea 86%,#eaeaea 100%,#eaeaea 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  #eaeaea 0%,#eaeaea 14%,#c2c2c2 14%,#c2c2c2 28%,#4e4e4e 28%,#4e4e4e 42%,#e49305 42%,#e49305 58%,#4e4e4e 58%,#4e4e4e 72%,#c2c2c2 72%,#c2c2c2 86%,#eaeaea 86%,#eaeaea 100%,#eaeaea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#eaeaea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.project-martinsmihailovs-com .things-learned {
+	background-color: #f5f2e9;
+	background-image: url("../img/portfolio/martinsmihailovs/x-pattern.png");
+	background-image: url("../img/portfolio/martinsmihailovs/x-pattern.png"), url("../img/portfolio/martinsmihailovs/cover-top-border.gif");
+	background-repeat: repeat;
+	background-repeat: repeat, no-repeat;
+	background-position: center;
+	background-position: center, center top;
+	background-size: auto;
+	background-size: auto, auto;
+	background-attachment: fixed;
+	background-attachment: fixed, scroll;
+	border-top: none;
+}
+
+.project-martinsmihailovs-com .post-nav {
+	background-color: #f5f2e9;
+	background-image: url("../img/portfolio/martinsmihailovs/x-pattern.png");
+	background-repeat: repeat;
+	background-position: center;
+	background-size: auto;
+	background-attachment: fixed;
+}
+
+.project-martinsmihailovs-com .post-nav-bg-color {
+  background-color: rgba(255, 255, 255, .25);
 }
 
 /* ==========================================================================
@@ -4005,6 +4381,16 @@ p:target {
 	font-size: .8888em;
 	color: #6d6d6d;
 	margin-top: .2em;
+}
+
+.bio-email {
+	display: inline-block;
+	margin-top: .5em;
+	color: #e49305;
+}
+
+.bio-email:hover {
+	border-bottom-color: #e49305;
 }
 
 

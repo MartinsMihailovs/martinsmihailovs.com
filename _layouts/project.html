@@ -4,7 +4,7 @@
 		<header class="project-header">
 			<div class="featured-image">
 				{% if page.url == "/portfolio/balticwall" %}
-					<div class="bw-icon-bg">
+					<div class="cover-extra-bg">
 				{% endif %}
 				<div class="page-width">
 					<div class="small-12">
@@ -12,7 +12,11 @@
 							{% if page.url == "/portfolio/borgcamp" %}
 							   <img src="/img/portfolio/borgcamp/borgcamp-logo-sm.png" alt="Borgcamp Group logo" class="borgcamp-project-logo">
 							{% endif %}
-							<h1 class="project-title">{{ page.title }}</h1>
+							<h1 class="project-title">{{ page.title }}
+								{% if page.url == "/portfolio/martinsmihailovs" %}
+								   <img src="/img/portfolio/martinsmihailovs/martinsmihailovs-cover-logo.png" alt="Martins Mihailovs logo" class="martinsmihailovs-cover-logo">
+								{% endif %}
+							</h1>
 							<h2 class="project-subtitle">{{ page.subtitle }}</h2>
 							{% if page.project-link %}
 							<address class="project-link"><a href="http://{{page.project-link}}">{{page.project-link}}</a></address>
@@ -31,21 +35,21 @@
 			</div>
 		</header>
 		{{ content }}
-		<div class="project-nav">
-			<div class="project-nav-bg-color">
-				<div class="project-nav-wrapper cfix">
-					<div class="prev-project">
-						{% if page.prevProject %}
-							<a href="{{ page.prevProject }}"><i class="icon icon-left-circled2"></i> Iepriekšējais <span class="project-nav-extra-txt">projekts</span></a>
+		<div class="post-nav">
+			<div class="post-nav-bg-color">
+				<div class="post-nav-wrapper cfix">
+					<div class="prev-post">
+						{% if page.prevPost %}
+							<a href="{{ page.prevPost }}"><i class="icon icon-left-circled2"></i> Iepriekšējais <span class="post-nav-extra-txt">projekts</span></a>
 						{% else %}
-							<span class="project-nav-disabled"><i class="icon icon-left-circled2"></i> Iepriekšējais <span class="project-nav-extra-txt">projekts</span></span>
+							<span class="post-nav-disabled"><i class="icon icon-left-circled2"></i> Iepriekšējais <span class="post-nav-extra-txt">projekts</span></span>
 						{% endif %}
 					</div>
-					<div class="next-project">
-						{% if page.nextProject %}
-							<a href="{{ page.nextProject }}">Nākošais <span class="project-nav-extra-txt">projekts</span> <i class="icon icon-right-circled2"></i></a>
+					<div class="next-post">
+						{% if page.nextPost %}
+							<a href="{{ page.nextPost }}">Nākošais <span class="post-nav-extra-txt">projekts</span> <i class="icon icon-right-circled2"></i></a>
 						{% else %}
-							<span class="project-nav-disabled">Nākošais <span class="project-nav-extra-txt">projekts</span> <i class="icon icon-right-circled2"></i></span>
+							<span class="post-nav-disabled">Nākošais <span class="post-nav-extra-txt">projekts</span> <i class="icon icon-right-circled2"></i></span>
 						{% endif %}
 					</div>
 				</div>

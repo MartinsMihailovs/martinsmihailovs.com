@@ -5,6 +5,26 @@
 {% include post-header.html %}
 	</div> <!-- Page width -->
     {{ content }}
+    <div class="post-nav">
+			<div class="post-nav-bg-color">
+				<div class="post-nav-wrapper cfix">
+					<div class="prev-post">
+						{% if page.prevPost %}
+							<a href="{{ page.prevPost }}"><i class="icon icon-left-circled2"></i> Iepriekšējais <span class="post-nav-extra-txt">ieraksts</span></a>
+						{% else %}
+							<span class="post-nav-disabled"><i class="icon icon-left-circled2"></i> Iepriekšējais <span class="post-nav-extra-txt">ieraksts</span></span>
+						{% endif %}
+					</div>
+					<div class="next-post">
+						{% if page.nextPost %}
+							<a href="{{ page.nextPost }}">Nākošais <span class="post-nav-extra-txt">ieraksts</span> <i class="icon icon-right-circled2"></i></a>
+						{% else %}
+							<span class="post-nav-disabled">Nākošais <span class="post-nav-extra-txt">ieraksts</span> <i class="icon icon-right-circled2"></i></span>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
     	{% include project-footer.html %}
 </article> <!-- Post -->
 
