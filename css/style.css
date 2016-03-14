@@ -4208,6 +4208,117 @@ p:target {
   background-color: rgba(255, 255, 255, .25);
 }
 
+/* Project: mlv */
+/*Project color: #df4932*/
+
+.project-m_____-lv .featured-image {
+	background: #df4932 url("../img/portfolio/mlv/m-cover.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+@media (min-width: 600px) {
+  .project-m_____-lv .featured-image {
+    height: 65vh;
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-m_____-lv .featured-image {
+    min-height: 650px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-m_____-lv .featured-image {
+    min-height: 680px;
+  }
+}
+
+.project-m_____-lv .project-info {
+  padding: 4.5em 0 3.5em;
+  color: #fff;
+}
+
+@media (min-width: 500px) {
+  .project-m_____-lv .project-info {
+    padding: 6em 0 5.5em;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-m_____-lv .project-info {
+    padding: 0;
+    bottom: 18%;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-m_____-lv .project-info {
+    bottom: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-m_____-lv .project-info {
+    bottom: 22%;
+  }
+}
+
+.project-m_____-lv .project-title {
+	display: inline-block;
+	padding: .4em .6em;
+	border: 5px solid #df4932;
+}
+
+
+@media (min-width: 600px) {
+	.project-m_____-lv .project-title {
+		margin-bottom: .3em;
+	}
+}
+
+@media (min-width: 700px) {
+	.project-m_____-lv .project-title {
+		font-size: 3.1111em;
+	}
+}
+
+@media (min-width: 900px) {
+	.project-m_____-lv .project-title {
+		font-size: 4.1111em;
+		border-width: 10px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.project-m_____-lv .project-title {
+		padding: .2em .6em;
+		font-size: 4.6666em;
+		border-width: 12px;
+	}f0ddda
+}
+
+.project-m_____-lv .project-subtitle {
+	font-family: "Roboto Condensed", Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	letter-spacing: 2;
+}
+
+@media (min-width: 600px) {
+	.project-m_____-lv .project-subtitle {
+		font-size: 1.2222em;
+		font-weight: 300;
+	}
+}
+
+@media (min-width: 900px) {
+	.project-m_____-lv .project-subtitle {
+		font-size: 1.3333em;
+	}
+}
+
 /* ==========================================================================
 
    Foto page
