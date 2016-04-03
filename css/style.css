@@ -2918,6 +2918,8 @@ p:target {
 	-ms-animation:      moveBottom 1s ease-out .5s normal forwards 1;
 	-o-animation:       moveBottom 1s ease-out .5s normal forwards 1;
 	animation:  moveBottom 1s ease-out .5s normal forwards 1;
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px);
 }
 
 
