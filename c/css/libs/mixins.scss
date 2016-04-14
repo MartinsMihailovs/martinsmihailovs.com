@@ -1,0 +1,25 @@
+/* ==========================================================================
+
+   SASS Mixins
+   
+   ========================================================================== */
+
+// Media queries
+
+@mixin small {
+  @media (min-width: #{$small-width}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$large-width}) {
+    @content;
+  }
+}

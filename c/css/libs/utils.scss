@@ -1,0 +1,47 @@
+/* ==========================================================================
+
+   Utilities
+   
+   ========================================================================== */
+
+.cfix:before,
+.cfix:after {
+    display:table;
+    content:" ";
+}
+	
+.cfix:after {
+    clear:both;
+}
+	
+.cfix {
+    *zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* Assistive text */
+.screen-reader-txt {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: block;
+}

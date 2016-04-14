@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Comban</title>
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True"> <!--The HandheldFriendly meta-tag was used initially by older Palm and Blackberry models as well as browsers like AvantGo. -->
+	<meta name="MobileOptimized" content="320"> <!--Microsoft indroduced the MobileOptimized tag for the PocketPC.-->
+	<meta http-equiv="cleartype" content="on"> <!--Mobile Internet Explorer allows us to activate ClearType technology for smoothing fonts for easy reading -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Remove skype highlighting -->
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+	<!-- CSS-->
+	<link rel="stylesheet" type="text/css" href="css/build/style.css" />
+	<!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+	
+	<!-- Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+	<!-- Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/build/scripts.min.js"></script>
+
+	<!--Emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8-->
+	<!--[if (gte IE 6)&(lte IE 9)]>
+	<script type="text/javascript" src="js/libs/selectivizr-min.js"></script>
+	<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]--> 
+
+	<!--HTML5 shim, for IE6-8 support of HTML5 elements-->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!--Polyfill for min/max-width CSS3 Media-->
+	<!--[if (gte IE 6)&(lte IE 9)]>
+	<script src="js/libs/respond.min.js"></script>
+	<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]--> 
+
+	<!-- Favicon and Apple touch icons -->
+	<link rel="shortcut icon" href="img/icons/favicons/favicon.ico">
+	<link rel="apple-touch-icon" href="img/icons/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/favicons/apple-touch-icon-114x114.png">
+</head>
+<body>
+	<header class="site-head cfix">
+		<div class="site-head-content cfix">
+			<div class="logo-container cfix">
+				<a class="logo" href="/"><span class="icon icon-comban-logo"></span></a>
+			</div> <!-- Logo container -->
+			<div class="nav-trigger-container">
+				<span class="info-current-page">Чат команды</span>
+				<span class="nav-trigger">
+					<span class="hamburger-item hamburger-top"></span><span class="hamburger-item hamburger-middle"></span><span class="hamburger-item hamburger-bottom"></span>
+				</span>
+			</div>
+			<div class="site-nav-secondary-desktop">
+				m_mihailovs<span class="btn-divider"></span>
+				<a href="#" class="btn btn-link">Выйти</a>
+			</div>
+			<div class="site-nav-container">
+				<nav class="site-nav">
+					<ul class="site-nav-main">
+						<li><a href="admin-index.html" class="site-nav-main-item">Главная</a></li>
+						<li><a href="admin-team-chat.html" class="site-nav-active site-nav-main-item">Чат команды <span class="site-nav-highlight">(2)<span></a></li>
+						<li><a href="admin-manage-users.html" class="site-nav-main-item">Пользователи</a></li>
+					</ul>
+					<ul class="site-nav-secondary">
+						<li><a href="login.html" class="site-nav-logout">Выйти</a></li>
+					</ul>
+				</nav> <!-- Site nav-->
+			</div>
+		</div> <!-- Site head content -->
+	</header> <!-- Site head -->
+	<div class="page">
+		<div class="page-width">
+			<aside class="sidebar-users sidebar-mobile">
+				<div class="medium-4">
+					<div class="page-content">
+						<div class="content-nav-wrapper content-nav-sidebar-mobile-wrapper">
+							<nav class="content-nav page-content-padding-md cfix">
+								<ul class="nav nav-tabs cfix">
+									<li class="nav-tabs-active">Участники</li><i class="icon icon-cancel-circled icon-alone btn-close-sidebar-mobile"></i>
+								</ul>
+							</nav> <!-- Content nav -->
+						</div>
+						<div class="content-entry content-entry-secondary">
+							<div class="page-content-padding-md">
+								<ul class="users-list users-list-no-links sidebar-mobile-100h-content list-unstyled">
+									<li class="users-list-item users-list-item-active"><i class="icon icon-user"></i>alex_f<span class="users-list-item-notifications"><span class="notification">1</span></span></li>
+									<li class="users-list-item users-list-item-active"><i class="icon icon-user"></i>oleg_a<span class="users-list-item-notifications"><span class="notification">1</span></span></li>
+									<li class="users-list-item"><i class="icon icon-user"></i>john_q<span class="users-list-item-notifications"></li>
+									<li class="users-list-item"><i class="icon icon-user"></i>peter_p<span class="users-list-item-notifications"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="medium-8">
+				<div class="page-content">
+					<div class="content-nav-wrapper">
+						<nav class="content-nav page-content-padding-lg cfix">
+							<ul class="nav nav-tabs cfix">
+								<li class="nav-tabs-no-border"><strong>Сообщения (2)</strong></li>
+							</ul>
+						</nav> <!-- Content nav -->
+					</div>
+					<div class="content-entry content-entry-primary page-content-padding-md">
+						<div class="chat">
+							<div class="chat-msgs">
+								<article class="chat-msg">
+									<div class="chat-msg-avatar">
+										<span class="icon icon-user icon-chat-avatar"></span>
+									</div>
+									<div class="chat-msg-body">
+										<h4 class="chat-msg-author">alex_f</h4>
+										<div class="chat-msg-txt">
+											<p>ОК. Спасибо.</p>
+										</div>
+										<footer class="chat-msg-meta">
+											<time class="item-date">01.05.2016 | 14:00</time>
+										</footer>
+									</div>
+								</article>
+								<article class="chat-msg">
+									<div class="chat-msg-avatar">
+										<span class="icon icon-user"></span>
+									</div>
+									<div class="chat-msg-body">
+										<h4 class="chat-msg-author">oleg_a</h4>
+										<div class="chat-msg-txt">
+											<p>Пьяный водитель без прав разогнался до 204 км/час. В воскресенье, 13 марта, по дороге Смилтене-Гулбене молодой мужчина 1987 г. род. на автомашине Audi A6 вместо дозволенных 90 км/час ехал со скоростью в 204 км/час.</p>
+										</div>
+										<footer class="chat-msg-meta">
+											<time class="item-date">01.05.2016 | 14:00</time>
+										</footer>
+									</div>
+								</article>
+								<article class="chat-msg">
+									<div class="chat-msg-avatar">
+										<span class="icon icon-user icon-user-me"></span>
+									</div>
+									<div class="chat-msg-body">
+										<h4 class="chat-msg-author">martins_m</h4>
+										<div class="chat-msg-txt">
+											<p>Paскажите пожалуйста какую-нибудь историю. Мне скучно.</p>
+										</div>
+										<footer class="chat-msg-meta">
+											<time class="item-date">01.05.2016 | 14:00</time>
+										</footer>
+									</div>
+								</article>
+								<article class="chat-msg">
+									<div class="chat-msg-avatar">
+										<span class="icon icon-user icon-user-me"></span>
+									</div>
+									<div class="chat-msg-body">
+										<h4 class="chat-msg-author">martins_m</h4>
+										<div class="chat-msg-txt">
+											<p>ОК. Спасибо.</p>
+										</div>
+										<footer class="chat-msg-meta">
+											<time class="item-date">01.05.2016 | 14:00</time>
+										</footer>
+									</div>
+								</article>
+								<article class="chat-msg">
+									<div class="chat-msg-avatar">
+										<span class="icon icon-user"></span>
+									</div>
+									<div class="chat-msg-body">
+										<h4 class="chat-msg-author">peter_p</h4>
+										<div class="chat-msg-txt">
+											<p>Пьяный водитель без прав разогнался до 204 км/час. В воскресенье, 13 марта, по дороге Смилтене-Гулбене молодой мужчина 1987 г. род. на автомашине Audi A6 вместо дозволенных 90 км/час ехал со скоростью в 204 км/час.</p>
+										</div>
+										<footer class="chat-msg-meta">
+											<time class="item-date">01.05.2016 | 14:00</time>
+										</footer>
+									</div>
+								</article>
+								<article class="chat-msg">
+									<div class="chat-msg-avatar">
+										<span class="icon icon-user icon-user-me"></span>
+									</div>
+									<div class="chat-msg-body">
+										<h4 class="chat-msg-author">martins_m</h4>
+										<div class="chat-msg-txt">
+											<p>Paскажите пожалуйста какую-нибудь историю. Мне скучно.</p>
+										</div>
+										<footer class="chat-msg-meta">
+											<time class="item-date">01.05.2016 | 14:00</time>
+										</footer>
+									</div>
+								</article>
+								<article class="chat-msg">
+									<div class="chat-msg-avatar">
+										<span class="icon icon-user"></span>
+									</div>
+									<div class="chat-msg-body">
+										<h4 class="chat-msg-author">alex_f</h4>
+										<div class="chat-msg-txt">
+											<p>Здравствуйте! Здесь Вы можете задать интересующие Вас вопросы.</p>
+										</div>
+										<footer class="chat-msg-meta">
+											<time class="item-date">01.05.2016 | 14:00</time>
+										</footer>
+									</div>
+								</article>
+
+							</div>
+							<div class="chat-new-msg">
+								<form id="form-new-chat-msg" action="">
+									<div class="chat-msg-avatar chat-msg-avatar-lg">
+										<span class="icon icon-user icon-user-me"></span>
+									</div>
+									<div class="chat-msg-body">
+										<textarea class="form-control input-invisible" rows="2" cols="30" id="inputChatMsg" name="inputChatMsg" placeholder="Пишите ваше сообщение..."></textarea>
+									</div>
+									<div class="btn btn-secondary btn-block btn-send-chat-msg">Отправить</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<button class="btn btn-primary btn-circle btn-circle-lg btn-open-sidebar-mobile"><span class="notification notification-on-btn">2</span><i class="icon icon-users icon-alone"></i></button>
+		</div> <!-- Page width -->
+	</div> <!-- Page -->
+</body>
+</html>

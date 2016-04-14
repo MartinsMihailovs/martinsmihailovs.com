@@ -1,0 +1,147 @@
+/* ==========================================================================
+
+   Chat
+   
+   ========================================================================== */
+
+.chat {
+  background: #fff;
+
+  @include medium {
+    display: block;
+  }
+}
+
+.chat-msgs {
+	position: relative;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	overflow: auto;
+
+	@include medium {
+		min-height: 200px;
+		max-height: 350px;	
+	}
+
+	@media (min-height: 900px) {
+		max-height: 400px;
+	}
+}
+
+.chat-msg {
+	margin-bottom: 15px;
+}
+
+.chat-msg-avatar {
+	display: inline;
+	float: left;
+	margin-right: 3px;
+}
+
+.icon-user {
+	color: $color-txt-light;
+}
+
+.icon-user-me:before {
+	color: $color-brand;
+}
+
+.chat-msg-avatar-lg {
+	font-size: 20px;
+	position: relative;
+	line-height: 1;
+}
+
+.chat-msg-author {
+	margin-bottom: 2px;
+	color: $color-txt;
+}
+
+.chat-msg-body {
+    overflow: hidden;
+	font-size: 16px;
+	line-height: 1.25;
+	color: $color-txt-md;
+}
+
+.chat-msg-meta {
+	margin-top: 2px;
+}
+
+.chat-new-msg {
+	position: fixed;
+	left: 15px;
+	right: 15px;
+	bottom: 0;
+	background: #fff;
+	margin-top: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: 1px solid $color-border-dark;
+
+	@include medium {
+		position: static;
+		padding-bottom: 0;
+	}
+}
+
+.users-online-count {
+	color: $color-brand;
+	font-size: 15px;
+}
+
+.btn-open-sidebar-mobile {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	color: $color-brand;
+	cursor: pointer;
+	z-index: 5;
+	line-height: 1;
+
+	@include medium {
+		display: none;
+	}
+}
+
+.btn-open-sidebar-mobile > .icon {
+	font-size: 25px;
+	line-height: 1;
+	color: #fff;
+	vertical-align: middle;
+}
+
+.btn-close-sidebar-mobile {
+	position: absolute;
+	top: 12px;
+	right: 0;
+	font-size: 26px;
+	line-height: 1;
+	color: $color-danger;
+	cursor: pointer;
+
+	@include medium {
+		display: none;
+	}
+}
+
+.sidebar-mobile-activated {
+	width: 300px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	right: -300px;
+	z-index: 50;
+	-webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+	@include medium {
+		width: auto;
+		position: static;
+	}
+}
+
+.sidebar-mobile-active {
+  right: 0;
+}

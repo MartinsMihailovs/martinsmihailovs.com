@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		.img-container {
-			text-align: center;
-		}
-		img {
-			margin: 0 auto;
-			vertical-align: top;
-		}
-	</style>
-</head>
-<body>
-	<div class="img-container">
-		<a href="2.html"><img src="1.jpg" alt=""></a>
-	</div>
+	<meta charset="UTF-8" />
+	<title>Comban</title>
 	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True"> <!--The HandheldFriendly meta-tag was used initially by older Palm and Blackberry models as well as browsers like AvantGo. -->
+	<meta name="MobileOptimized" content="320"> <!--Microsoft indroduced the MobileOptimized tag for the PocketPC.-->
+	<meta http-equiv="cleartype" content="on"> <!--Mobile Internet Explorer allows us to activate ClearType technology for smoothing fonts for easy reading -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Remove skype highlighting -->
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+	<!-- CSS-->
+	<link rel="stylesheet" type="text/css" href="css/build/style.css" />
+	<!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+	
+	<!-- Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+	<!-- Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/build/scripts.min.js"></script>
+
+	<!--Emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8-->
+	<!--[if (gte IE 6)&(lte IE 9)]>
+	<script type="text/javascript" src="js/libs/selectivizr-min.js"></script>
+	<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]--> 
+
+	<!--HTML5 shim, for IE6-8 support of HTML5 elements-->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!--Polyfill for min/max-width CSS3 Media-->
+	<!--[if (gte IE 6)&(lte IE 9)]>
+	<script src="js/libs/respond.min.js"></script>
+	<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]--> 
+
+	<!-- Favicon and Apple touch icons -->
+	<link rel="shortcut icon" href="img/icons/favicons/favicon.ico">
+	<link rel="apple-touch-icon" href="img/icons/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/favicons/apple-touch-icon-114x114.png">
+</head>
+<body class="body-login">
+	<section class="page-login">
+		<div class="page-width">
+			<div class="medium-6 large-5 medium-centered">
+				<div class="comban-logo-login">
+					<i class="icon icon-comban-logo"></i>
+				</div>
+				<h2 class="login-tagline">Пожалуйста войдите чтобы продолжить</h2>
+				<div class="alert alert-danger">Неправильное имя пользователя и / или пароль</div>
+				<form id="form-login">
+					<div class="form-section form-section-login-form">
+						<div class="form-group">
+							<label for="inputLoginUser">Имя пользователя</label>
+							<input type="text" id="inputLoginUser" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="inputLoginPass">Пароль</label>
+							<input type="password" id="inputLoginPass" class="form-control">
+						</div>
+					</div>
+					<a href="client-index.html" class="btn btn-primary btn-lg btn-block">Bойти</a>
+				</form>
+			</div>
+		</div>
+	</section>
 </body>
 </html>

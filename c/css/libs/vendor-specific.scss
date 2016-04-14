@@ -1,0 +1,76 @@
+/* ==========================================================================
+
+   Vendor specific
+   
+   ========================================================================== */
+
+html { 
+	-webkit-overflow-scrolling: touch; 
+	/* -webkit-tap-highlight-color: #c6870a; */
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
+}
+
+::-webkit-selection { 
+	background: #303030; 
+	color: #fff; 
+	text-shadow: none;
+}
+
+::-moz-selection { 
+	background: #303030; 
+	color: #fff; 
+	text-shadow: none;
+}
+
+::selection { 
+	background: #303030; 
+	color: #fff; 
+	text-shadow: none;
+}
+
+button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] { 
+	-webkit-appearance: button;
+}
+
+::-webkit-input-placeholder {
+	color: #636363;
+	line-height: 1.4;
+}
+
+::-webkit-textarea-placeholder {
+	color: #cbcbcb;
+	line-height: 1.4;
+}
+
+input:-moz-placeholder { 
+	color: #cbcbcb; 
+	line-height: 1.4;
+}
+
+textarea:-moz-placeholder { 
+	color: #cbcbcb; 
+	line-height: 1.4;
+}
+
+.ie7 img,
+.iem7 img { 
+	-ms-interpolation-mode: bicubic;
+}
+
+button::-moz-focus-inner, 
+input::-moz-focus-inner { 
+	padding: 0;
+	border: 0;
+}
+
+p {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+/* http://www.w3.org/TR/css3-text/#hyphenation */
+	-webkit-hyphenate-limit-after: 1;
+	-webkit-hyphenate-limit-before: 3;
+}

@@ -1,0 +1,48 @@
+/* ==========================================================================
+
+   Alerts
+   
+   ========================================================================== */
+
+.alert {
+
+    border-left: 5px solid $color-brand;
+    background-color: #eff6ff;
+    margin-bottom: 30px;
+    padding: 16px 20px 14px 20px;
+    color: $color-brand;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    @include medium {
+        margin-bottom: 40px;
+        padding: 22px 20px 20px 20px;
+    }
+}
+
+.alert a {
+    text-decoration: underline;
+}
+
+.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #a88345;
+}
+
+.alert-danger {
+    border-color: $color-danger;
+    color: $color-danger;
+    background-color: #ffeeee;
+}
+
+.alert > p {
+    display: inline;
+    margin-right: 10px;
+}
+
+.alert-page-content-main {
+    @include medium {
+        margin-right: -35px;
+    }
+}

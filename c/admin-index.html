@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Comban</title>
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True"> <!--The HandheldFriendly meta-tag was used initially by older Palm and Blackberry models as well as browsers like AvantGo. -->
+	<meta name="MobileOptimized" content="320"> <!--Microsoft indroduced the MobileOptimized tag for the PocketPC.-->
+	<meta http-equiv="cleartype" content="on"> <!--Mobile Internet Explorer allows us to activate ClearType technology for smoothing fonts for easy reading -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Remove skype highlighting -->
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+	<!-- CSS-->
+	<link rel="stylesheet" type="text/css" href="css/build/style.css" />
+	<!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+	
+	<!-- Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+	<!-- Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/build/scripts.min.js"></script>
+
+	<!--Emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8-->
+	<!--[if (gte IE 6)&(lte IE 9)]>
+	<script type="text/javascript" src="js/libs/selectivizr-min.js"></script>
+	<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]--> 
+
+	<!--HTML5 shim, for IE6-8 support of HTML5 elements-->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!--Polyfill for min/max-width CSS3 Media-->
+	<!--[if (gte IE 6)&(lte IE 9)]>
+	<script src="js/libs/respond.min.js"></script>
+	<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]--> 
+
+	<!-- Favicon and Apple touch icons -->
+	<link rel="shortcut icon" href="img/icons/favicons/favicon.ico">
+	<link rel="apple-touch-icon" href="img/icons/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/favicons/apple-touch-icon-114x114.png">
+</head>
+<body>
+	<header class="site-head cfix">
+		<div class="site-head-content cfix">
+			<div class="logo-container cfix">
+				<a class="logo" href="/"><span class="icon icon-comban-logo"></span></a>
+			</div> <!-- Logo container -->
+			<div class="nav-trigger-container">
+				<span class="info-current-page">Главная</span>
+				<span class="nav-trigger">
+					<span class="hamburger-item hamburger-top"></span><span class="hamburger-item hamburger-middle"></span><span class="hamburger-item hamburger-bottom"></span>
+				</span>
+			</div>
+			<div class="site-nav-secondary-desktop">
+				m_mihailovs<span class="btn-divider"></span>
+				<a href="#" class="btn btn-link">Выйти</a>
+			</div>
+			<div class="site-nav-container">
+				<nav class="site-nav">
+					<ul class="site-nav-main">
+						<li><a href="admin-index.html" class="site-nav-active site-nav-main-item">Главная</a></li>
+						<li><a href="admin-team-chat.html" class="site-nav-main-item">Чат команды <span class="site-nav-highlight">(2)<span></a></li>
+						<li><a href="admin-manage-users.html" class="site-nav-main-item">Пользователи</a></li>
+					</ul>
+					<ul class="site-nav-secondary">
+						<li><a href="login.html" class="site-nav-logout">Выйти</a></li>
+					</ul>
+				</nav> <!-- Site nav-->
+			</div>
+		</div> <!-- Site head content -->
+	</header> <!-- Site head -->
+	<div class="page">
+		<div class="page-width">
+			<aside class="sidebar-users sidebar-mobile">
+				<div class="medium-4">
+					<div class="page-content">
+						<div class="content-nav-wrapper content-nav-sidebar-mobile-wrapper">
+							<nav class="content-nav page-content-padding-md cfix">
+								<ul class="nav nav-tabs cfix">
+									<li class="nav-tabs-active">Kлиенты</li><i class="icon icon-cancel-circled icon-alone btn-close-sidebar-mobile"></i>
+								</ul>
+							</nav> <!-- Content nav -->
+						</div>
+						<div class="content-entry content-entry-secondary">
+							<div class="page-content-padding-md">
+								<ul class="users-list sidebar-mobile-100h-content list-unstyled">
+									<li class="users-list-item users-list-item-active"><a href="#"><i class="icon icon-user"></i>Burritos Ltd.<span class="users-list-item-notifications"><span class="notification">2</span><span class="notification notification-secondary">3</span><i class="icon icon-on-right icon-chat"></i></span></a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>WorldSpaceship<span class="users-list-item-notifications"><span class="notification notification-secondary">3</span><i class="icon icon-on-right icon-chat"></i></span></a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet A</a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet B</a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet C</a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet D</a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet E</a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet F<span class="users-list-item-notifications"></a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet G</a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet H</a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet I</a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet J</a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet K</a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet L<span class="users-list-item-notifications"></a></li>
+									<li class="users-list-item"><a href="#"><i class="icon icon-user"></i>Alphabet M</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="medium-8">
+				<div class="page-content">
+					<div class="content-nav-wrapper">
+						<nav class="content-nav page-content-padding-lg cfix">
+							<ul class="nav nav-tabs cfix">
+								<li class="nav-tabs-active"><a href="#tab-pane-1">Заказы</a></li>
+								<li><a href="#tab-pane-2">Чат (2)</a></li>
+								<li><a href="#tab-pane-3">Счет</a></li>
+							</ul>
+						</nav> <!-- Content nav -->
+					</div>
+					<div class="content-entry content-entry-primary page-content-padding-md">
+						<h1 class="page-heading page-heading-client-name">Burritos Ltd.</h1>
+						<div class="tab-content">
+							<div id="tab-pane-1" class="tab-pane tab-pane-active">
+								<div class="orders-list">
+									<h2>Hовыe заказы (3):</h2>
+									<ul class="item-list item-list-orders list-unstyled">
+										<li class="item item-new cfix">
+											<time class="item-date">01.05.2016 | 14:39</time>
+											<div class="item-txt-container cfix">
+												<p class="item-txt"><strong>Заказ #122: </strong>Подготовка документов / 120 EUR</p><span class="item-action"><a href="#" class="confirm-action"><i class="icon icon-ok"></i>Взять заказ</a></span>
+											</div>
+											<div class="order-details">
+												<ul class="order-details-list list-unstyled">
+													<li><strong>Заказчик: </strong>Some_client</li>
+													<li><strong>Заказ: </strong>Подготовка документов: Инвойс, Контракт</li>
+													<li><strong>Комментарии: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+													<li>
+														<strong>Прикрепленные файлы:</strong>
+														<div class="order-details-attachments">
+															<a href="#" class="btn btn-sm btn-secondary">some-fancy-doc.pdf<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">another-doc.pdf<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">signature.jpg<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">stamp.png<i class="icon icon-on-right icon-download"></i></a>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="item item-new cfix">
+											<time class="item-date">01.05.2016 | 14:39</time>
+											<div class="item-txt-container cfix">
+												<p class="item-txt"><strong>Заказ #121: </strong>Регистрация компании / 120 EUR</p><span class="item-action"><a href="#" class="confirm-action"><i class="icon icon-ok"></i>Взять заказ</a></span>
+											</div>
+											<div class="order-details">
+												<ul class="order-details-list list-unstyled">
+													<li><strong>Заказчик: </strong>Some_client</li>
+													<li><strong>Заказ: </strong>Регистрация компании</li>
+													<li><strong>Юрисдикция: </strong>Юрисдикция 1</li>
+													<li><strong>Комментарии: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+												</ul>
+											</div>
+										</li>
+										<li class="item item-new cfix">
+											<time class="item-date">01.05.2016 | 14:39</time>
+											<div class="item-txt-container cfix">
+												<p class="item-txt"><strong>Заказ #120: </strong>Oткрытие счета / 120 EUR</p><span class="item-action"><a href="#" class="confirm-action"><i class="icon icon-ok"></i>Взять заказ</a></span>
+											</div>
+											<div class="order-details">
+												<ul class="order-details-list list-unstyled">
+													<li><strong>Заказчик: </strong>Some_client</li>
+													<li><strong>Заказ: </strong>Oткрытие счета</li>
+													<li><strong>Банк: </strong>Bank 1</li>
+													<li><strong>Нужно придумать название: </strong>Доверенное лицо, Бенефициар</li>
+													<li><strong>Комментарии: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+												</ul>
+											</div>
+										</li>
+									</ul> <!-- Item list -->
+								</div> <!-- Orders list -->
+								<div class="orders-list">
+									<h2>Aктивныe заказы (2):</h2>
+									<ul class="item-list item-list-orders list-unstyled">
+										<li class="item cfix">
+											<time class="item-date">01.05.2016 | 14:39</time>
+											<div class="item-txt-container cfix">
+												<p class="item-txt"><strong>Заказ #119: </strong>Подготовка документов / 120 EUR</p><span class="item-action">martins_m</span>
+											</div>
+											<div class="order-details">
+												<ul class="order-details-list list-unstyled">
+													<li><strong>Заказчик: </strong>Some_client</li>
+													<li><strong>Заказ: </strong>Инвойс, Контракт</li>
+													<li><strong>Комментарии: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+													<li>
+														<strong>Прикрепленные файлы:</strong>
+														<div class="order-details-attachments">
+															<a href="#" class="btn btn-sm btn-secondary">some-fancy-doc.pdf<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">another-doc.pdf<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">signature.jpg<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">stamp.png<i class="icon icon-on-right icon-download"></i></a>
+														</div>
+													</li>
+												</ul>
+												<div class="order-details-actions">
+													<button class="btn btn-primary" data-toggle="modal" data-target="#modal-new-msg">Отправить письмо</button>
+													<button class="btn btn-primary confirm-action">Завершить</button>
+												</div>
+											</div>
+										</li>
+										<li class="item cfix">
+											<time class="item-date">01.05.2016 | 14:39</time>
+											<div class="item-txt-container cfix">
+												<p class="item-txt"><strong>Заказ #118: </strong>Подготовка документов / 120 EUR</p><span class="item-action">oleg_a</span>
+											</div>
+											<div class="order-details">
+												<ul class="order-details-list list-unstyled">
+													<li><strong>Заказчик: </strong>Some_client</li>
+													<li><strong>Заказ: </strong>Инвойс, Контракт</li>
+													<li><strong>Комментарии: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+													<li>
+														<strong>Прикрепленные файлы:</strong>
+														<div class="order-details-attachments">
+															<a href="#" class="btn btn-sm btn-secondary">some-fancy-doc.pdf<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">another-doc.pdf<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">signature.jpg<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">stamp.png<i class="icon icon-on-right icon-download"></i></a>
+														</div>
+													</li>
+												</ul>
+												<div class="order-details-actions">
+													<button class="btn btn-primary" data-toggle="modal" data-target="#modal-new-msg">Отправить письмо</button>
+													<button class="btn btn-primary confirm-action">Завершить</button>
+												</div>
+											</div>
+										</li>
+									</ul> <!-- Item list -->
+								</div> <!-- Orders list -->
+								<div class="orders-list">
+									<h2>Завершенные заказы (2):</h2>
+									<ul class="item-list item-list-orders list-unstyled">
+										<li class="item cfix">
+											<time class="item-date">01.05.2016 | 14:39</time>
+											<div class="item-txt-container cfix">
+												<p class="item-txt"><strong>Заказ #117: </strong>Подготовка документов / 120 EUR</p><span class="item-action">alex_f</span>
+											</div>
+											<div class="order-details">
+												<ul class="order-details-list list-unstyled">
+													<li><strong>Заказчик: </strong>Some_client</li>
+													<li><strong>Заказ: </strong>Инвойс, Контракт</li>
+													<li><strong>Комментарии: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+													<li>
+														<strong>Прикрепленные файлы:</strong>
+														<div class="order-details-attachments">
+															<a href="#" class="btn btn-sm btn-secondary">some-fancy-doc.pdf<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">another-doc.pdf<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">signature.jpg<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">stamp.png<i class="icon icon-on-right icon-download"></i></a>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="item cfix">
+											<time class="item-date">01.05.2016 | 14:39</time>
+											<div class="item-txt-container cfix">
+												<p class="item-txt"><strong>Заказ #116: </strong>Подготовка документов / 120 EUR</p><span class="item-action">oleg_a</span>
+											</div>
+											<div class="order-details">
+												<ul class="order-details-list list-unstyled">
+													<li><strong>Заказчик: </strong>Some_client</li>
+													<li><strong>Заказ: </strong>Инвойс, Контракт</li>
+													<li><strong>Комментарии: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+													<li>
+														<strong>Прикрепленные файлы:</strong>
+														<div class="order-details-attachments">
+															<a href="#" class="btn btn-sm btn-secondary">some-fancy-doc.pdf<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">another-doc.pdf<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">signature.jpg<i class="icon icon-on-right icon-download"></i></a>
+															<a href="#" class="btn btn-sm btn-secondary">stamp.png<i class="icon icon-on-right icon-download"></i></a>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul> <!-- Item list -->
+								</div> <!-- Orders list -->
+							</div>
+							<div id="tab-pane-2" class="tab-pane">
+								<div class="chat">
+									<div class="chat-msgs">
+										<article class="chat-msg">
+											<div class="chat-msg-avatar">
+												<span class="icon icon-user icon-user-me"></span>
+											</div>
+											<div class="chat-msg-body">
+												<div class="chat-msg-txt">
+													<p>ОК. Спасибо.</p>
+												</div>
+												<footer class="chat-msg-meta">
+													<time class="item-date">01.05.2016 | 14:39</time>
+												</footer>
+											</div>
+										</article>
+										<article class="chat-msg">
+											<div class="chat-msg-avatar">
+												<span class="icon icon-user"></span>
+											</div>
+											<div class="chat-msg-body">
+												<div class="chat-msg-txt">
+													<p>Пьяный водитель без прав разогнался до 204 км/час. В воскресенье, 13 марта, по дороге Смилтене-Гулбене молодой мужчина 1987 г. род. на автомашине Audi A6 вместо дозволенных 90 км/час ехал со скоростью в 204 км/час.</p>
+												</div>
+												<footer class="chat-msg-meta">
+													<time class="item-date">01.05.2016 | 14:20</time>
+												</footer>
+											</div>
+										</article>
+										<article class="chat-msg">
+											<div class="chat-msg-avatar">
+												<span class="icon icon-user icon-user-me"></span>
+											</div>
+											<div class="chat-msg-body">
+												<div class="chat-msg-txt">
+													<p>Paскажите пожалуйста какую-нибудь историю. Мне скучно.</p>
+												</div>
+												<footer class="chat-msg-meta">
+													<time class="item-date">01.05.2016 | 14:18</time>
+												</footer>
+											</div>
+										</article>
+										<article class="chat-msg">
+											<div class="chat-msg-avatar">
+												<span class="icon icon-user icon-user-me"></span>
+											</div>
+											<div class="chat-msg-body">
+												<div class="chat-msg-txt">
+													<p>ОК. Спасибо.</p>
+												</div>
+												<footer class="chat-msg-meta">
+													<time class="item-date">01.05.2016 | 14:10</time>
+												</footer>
+											</div>
+										</article>
+										<article class="chat-msg">
+											<div class="chat-msg-avatar">
+												<span class="icon icon-user"></span>
+											</div>
+											<div class="chat-msg-body">
+												<div class="chat-msg-txt">
+													<p>Пьяный водитель без прав разогнался до 204 км/час. В воскресенье, 13 марта, по дороге Смилтене-Гулбене молодой мужчина 1987 г. род. на автомашине Audi A6 вместо дозволенных 90 км/час ехал со скоростью в 204 км/час.</p>
+												</div>
+												<footer class="chat-msg-meta">
+													<time class="item-date">01.05.2016 | 14:09</time>
+												</footer>
+											</div>
+										</article>
+										<article class="chat-msg">
+											<div class="chat-msg-avatar">
+												<span class="icon icon-user icon-user-me"></span>
+											</div>
+											<div class="chat-msg-body">
+												<div class="chat-msg-txt">
+													<p>Paскажите пожалуйста какую-нибудь историю. Мне скучно.</p>
+												</div>
+												<footer class="chat-msg-meta">
+													<time class="item-date">01.05.2016 | 14:01</time>
+												</footer>
+											</div>
+										</article>
+										<article class="chat-msg">
+											<div class="chat-msg-avatar">
+												<span class="icon icon-user"></span>
+											</div>
+											<div class="chat-msg-body">
+												<div class="chat-msg-txt">
+													<p>Здравствуйте! Здесь Вы можете задать интересующие Вас вопросы.</p>
+												</div>
+												<footer class="chat-msg-meta">
+													<time class="item-date">01.05.2016 | 14:00</time>
+												</footer>
+											</div>
+										</article>
+									</div>
+									<div class="chat-new-msg">
+										<form id="form-new-chat-msg" action="">
+											<div class="chat-msg-avatar chat-msg-avatar-lg">
+												<span class="icon icon-user icon-user-me"></span>
+											</div>
+											<div class="chat-msg-body">
+												<textarea class="form-control input-invisible" rows="2" cols="30" id="inputChatMsg" name="inputChatMsg" placeholder="Пишите ваше сообщение..."></textarea>
+											</div>
+											<div class="btn btn-secondary btn-block btn-send-chat-msg">Отправить</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div id="tab-pane-3" class="tab-pane cfix">
+								<div class="medium-5">
+									<form id="form-add-money" action="">
+									<div class="form-section">
+										<div class="form-group">
+											<h2 class="form-section-heading">Баланс: 300 EUR</h2>
+											<input class="form-control" type="number" placeholder="+">
+										</div>
+										<button class="btn btn-primary btn-form-add-money">Пополнить счёт</button>
+									</div>
+									</form>
+								</div>
+								<div class="medium-7">
+									<div class="account-history">
+										<h2 class="form-section-heading">История счета:</h2>
+										<ul class="account-history-list list-unstyled">
+											<li>
+												<time class="item-date">01.05.2016 | 14:00</time>
+												<p class="account-history-item-desc"><span class="account-history-addition">+ 200 EUR</span> | Пополнение счета</p>
+											</li>
+											<li>
+												<time class="item-date">01.05.2016 | 14:00</time>
+												<p class="account-history-item-desc"><span class="account-history-subtraction">- 200 EUR</span> | заказ #91</p>
+											</li>
+											<li>
+												<time class="item-date">01.05.2016 | 14:00</time>
+												<p class="account-history-item-desc"><span class="account-history-subtraction">- 80 EUR</span> | заказ #90</p>
+											</li>
+											<li>
+												<time class="item-date">01.05.2016 | 14:00</time>
+												<p class="account-history-item-desc"><span class="account-history-subtraction">- 80 EUR</span> | заказ #89</p>
+											</li>
+											<li>
+												<time class="item-date">01.05.2016 | 14:00</time>
+												<p class="account-history-item-desc"><span class="account-history-subtraction">- 80 EUR</span> | заказ #88</p>
+											</li>
+											<li>
+												<time class="item-date">01.05.2016 | 14:00</time>
+												<p class="account-history-item-desc"><span class="account-history-subtraction">- 80 EUR</span> | заказ #87</p>
+											</li>
+											<li>
+												<time class="item-date">01.05.2016 | 14:00</time>
+												<p class="account-history-item-desc"><span class="account-history-subtraction">- 80 EUR</span> | заказ #86</p>
+											</li>
+											<li>
+												<time class="item-date">01.05.2016 | 14:00</time>
+												<p class="account-history-item-desc"><span class="account-history-subtraction">- 80 EUR</span> | заказ #85</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<button class="btn btn-primary btn-circle btn-circle-lg btn-open-sidebar-mobile"><span class="notification notification-on-btn">6</span><i class="icon icon-users icon-alone"></i></button>
+		</div> <!-- Page width -->
+	</div> <!-- Page -->
+	<div class="modal fade" id="modal-new-msg" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="screen-reader-txt">Close</span></button>
+					<h4 class="modal-title"><span class="icon icon-mail"></span>Письмо заказчику</h4>
+				</div>
+				<div class="modal-subheader">
+					<p><strong>Заказ #21: </strong>Инвойс, Контракт / 120 EUR</p>
+				</div>
+				<div class="modal-body">
+					<form id="new-msg-form" action="" method="post">
+						<textarea class="form-control msg-textarea" placeholder="Текст" rows="5" cols="30" name="new-msg" autofocus></textarea>
+						<div class="attachments">
+							<ul class="attachments-list list-unstyled">
+								<li class="attachments-item">some-fancy-doc.pdf <button class="btn-unstyled attachments-item-btn attachments-item-btn-right attachments-item-btn-remove"><span class="icon icon-alone icon-cancel"></span></button></li>
+								<li class="attachments-item">some-fancy-doc.pdf <button class="btn-unstyled attachments-item-btn attachments-item-btn-right attachments-item-btn-remove"><span class="icon icon-alone icon-cancel"></span></button></li>
+							</ul>
+							<button class="btn-link btn-unstyled">Прикрепить файл</button>
+						</div>
+						<button class="btn btn-primary">Отправить</button>
+						<button class="btn btn-secondary" data-dismiss="modal" type="button">Отмена</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> <!-- Modal -->
+</body>
+</html>
