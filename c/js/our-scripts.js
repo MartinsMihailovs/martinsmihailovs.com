@@ -11,6 +11,8 @@ $(function() {
 		$sidebarMobile = $('.sidebar-mobile'),
 		$btnOpenSidebarMobile = $('.btn-open-sidebar-mobile'),
 		$btnCloseSidebarMobile = $('.btn-close-sidebar-mobile'),
+		$removeAttachmentBtn = $('.attachments-item-btn-remove'),
+		$chatMsgs = $('.chat-msgs'),
 		clickAllowed = true;
 
 	/**************************************************
@@ -103,16 +105,14 @@ $(function() {
 		});
 
 		$sidebarMobile.on('swiperight', function() {
-		closeSidebarMobile();
-		deactivatePageOverlay();
-	});
+			closeSidebarMobile();
+			deactivatePageOverlay();
+		});
 	}
 
 	/**************************************************
 		Add class to 'attachment-item' when its delete btn is hovered
 	***************************************************/
-
-	var $removeAttachmentBtn = $('.attachments-item-btn-remove');
 
 	$removeAttachmentBtn.hover(function() {
 		$(this).parent().addClass('attachments-item-delete-alert');
@@ -160,7 +160,7 @@ $(function() {
 		deactivatePageOverlay();
 	});
 
-	$('.sidebar-mobile').on("click", function(e) {
+	$sidebarMobile.on("click", function(e) {
 		e.stopPropagation();
 	});
 
@@ -168,13 +168,11 @@ $(function() {
 		Set chat window height on mobile devices. To cover 100% height
 	***************************************************/
 
-	var $chatMsgs = $('.chat-msgs');
-
 
 	function setChatMsgsHeight() {
 
 		var chatFormHeight = $('.chat-new-msg').outerHeight(true),
-			ChatMsgsPosition = $chatMsgs.offset(),
+			ChatMsgsPosition = $chatMsgs.position(),
 			ChatMsgsPositionTop = ChatMsgsPosition.top;
 
 		if($(window).width() <= 850){
