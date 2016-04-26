@@ -1,0 +1,1250 @@
+@import "libs/reset";
+
+// Variables
+@import "libs/variables";
+
+// Mixins
+@import "libs/mixins";
+
+// Utils
+@import "libs/utils";
+
+// Icons font
+@import "libs/fontello";
+
+// Components
+@import "libs/basic-page-setup";
+@import "libs/vendor-specific";
+@import "libs/typography";
+@import "libs/links";
+@import "libs/images";
+@import "libs/figures";
+@import "libs/forms";
+@import "libs/tables";
+@import "libs/buttons";
+@import "libs/nav";
+@import "libs/grid";
+@import "libs/embeds";
+@import "libs/lists";
+@import "libs/overlay";
+@import "libs/chosen";
+@import "libs/fluidbox";
+@import "libs/modal";
+@import "libs/alerts";
+
+/* ==========================================================================
+
+   Dropdowns
+   
+   ========================================================================== */
+
+.dropdown-list.is-hidden {
+  display: none;
+}
+
+.dropdown-list .dropdown-list-active a {
+
+  font-weight: 700;
+
+  @include medium {
+    font-weight: normal;
+    color: $color-brand;
+  }
+}
+
+.dropdown-list-user {
+  clear: both;
+  margin: 3px 0;
+
+  @include medium {
+    position: absolute;
+    z-index: 9;
+    top: 40px;
+    right: 25px;
+    width: 250px;
+    padding: 6px 13px;
+    border: 1px solid $color-border-md;
+    border-radius: 7px;
+    font-size: 17px;
+    background: #fff;
+    background: rgba(255,255,255,.9);
+  }
+}
+
+.dropdown-list-user li {
+  border-top: 1px solid;
+  border-top-color: #fff;
+  border-top-color: #f88a7c;
+
+  @include medium {
+    border-top-color: $color-border;
+  }
+}
+
+.dropdown-list-user li:first-child {
+  @include medium {
+    border-top: none;
+  }
+}
+
+.dropdown-list-user a {
+  display: block;
+  padding: 9px 0;
+  color: #fff;
+  color: rgba(255,255,255,.8);
+
+  @include medium {
+    color: $color-txt-md;
+  }
+}
+
+.dropdown-list-user a:hover {
+  color: #fff;
+
+  @include medium {
+    color: $color-brand;
+  }
+}
+
+/* ==========================================================================
+
+   Notifications
+   
+   ========================================================================== */
+
+.notification {
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  padding: 1px 6px;
+  border: 1px solid;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.notification-on-btn {
+  position: absolute;
+  padding: 1px 5px;
+  border: 2px solid $color-brand;
+  right: -5px;
+  top: -8px;
+  background-color: #fff;
+  color: $color-brand;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.notification-new-letter {
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+  font-size: 13px;
+  color: $color-brand-secondary;
+  background-color: #fff;
+}
+
+/* ==========================================================================
+
+   Page
+   
+   ========================================================================== */
+.page {
+  padding-bottom: 40px;
+
+  @media (min-width: 500px) {
+    padding-bottom: 50px;
+  }
+
+  @include small {
+    padding-bottom: 55px;
+  }
+  @include medium {
+    padding-bottom: 65px;
+  }
+  @include large {
+    padding-bottom: 100px;
+  }
+}
+
+.page-heading {
+  display: inline-block;
+  padding: 0 50px 20px 0;
+  border-bottom: 1px solid;
+  border-bottom-color: $color-brand;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: $color-txt-dimmed;
+
+  @include small {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+}
+
+.page-heading-sm {
+  padding: 0 30px 15px 0;
+  border-bottom-color: $color-txt-md;
+  font-size: 20px;
+
+  @include small {
+    font-size: 22px;
+  }
+}
+
+.page-heading-with-icon {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 0 0 20px 0;
+  text-align: center;
+  border-bottom-color: $color-border-md;
+
+  @include small {
+    margin-bottom: 40px;
+    padding: 0 0 40px 0;
+  }
+  @include medium {
+    margin-bottom: 45px;
+  }
+}
+
+.page-heading-with-icon .icon:before {
+  margin-right: .3em;
+  top: .1em;
+  font-size: 140%;
+  color: $color-brand-secondary;
+}
+
+.page-heading-letters {
+  padding: 0;
+  border-bottom: none;
+}
+
+.page-actions {
+  padding-top: 25px;
+  border-top: 1px solid $color-border;
+
+  @include medium {
+    padding-top: 30px;
+  }
+}
+
+.page-actions-centered {
+  text-align: center;
+}
+
+@include small {
+  .page-actions-centered .btn {
+    width: 34%;
+  }
+}
+
+
+/* ==========================================================================
+
+   Site head
+   
+   ========================================================================== */
+
+.site-head {
+	padding-top: 12px;
+  border-bottom: 1px solid $color-border;
+  margin-bottom: 20px;
+  background: $color-brand;
+
+  @media (min-width: 500px) {
+    margin-bottom: 30px;
+  }
+
+  @include small {
+    margin-bottom: 30px;
+  }
+
+	@include medium {
+    padding-top: 24px;
+    border-top: 3px solid $color-brand;
+    background: #fff;
+  }
+  @include large {
+    margin-bottom: 40px;
+  }
+}
+
+.site-head-content {
+  position: relative;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include large {
+    padding: 0 25px;
+  }
+}
+
+.logo-container {
+	position: relative;
+  z-index: 5;
+	top: 5px;
+	float: left;
+	line-height: 1;
+
+	@include medium {
+		top: 0;
+		margin-right: 20px;
+	}
+}
+
+.logo {
+	display: inline-block;
+  font-size: 26px;
+	width: 125px;
+	height: 18px;
+  color: #fff;
+
+  @include medium {
+    color: $color-txt;
+    font-size: 32px;
+  }
+}
+
+.site-tagline-container {
+  display: none;
+
+  @include medium {
+    display: block;
+    margin: 20px 0 35px;
+    text-align: center;
+  }
+}
+
+.site-tagline {
+  margin-bottom: 5px;
+  font-size: 30px;
+  letter-spacing: -.2px;
+}
+
+.site-tagline-desc {
+  font-size: 20px;
+  font-weight: 400;
+  color: $color-txt-dimmed;
+}
+
+.site-nav {
+  position: relative;
+  z-index: 4;
+  clear: both;
+  padding: 0 15px;
+  padding-top: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  background: #f7f7f7;
+
+  @media (min-width: 500px) {
+    padding-top: 15px;
+  }
+
+  @include medium {
+    clear: none;
+    width: 700px;
+    padding-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background: none;
+  }
+
+  @include large {
+    margin: 0 auto;
+  }
+}
+
+.site-nav-posts-count {
+  display: none;
+
+  @media (min-width: 550px) {
+    display: inline;
+  }
+}
+
+.site-nav .site-nav-my-posts {
+  display: none;
+
+  @media (min-width: 410px) {
+    display: block;
+  }
+}
+
+.site-nav-user {
+  position: relative;
+  z-index: 5;
+  float: right;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .site-nav-user > .btn-responsive {
+    height: 36px;
+    width: 36px;
+    padding: 0;
+    border-color: #fff;
+    border-color: rgba(255,255,255,.5);
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 950px) {
+  .site-nav-user > .btn-new-post {
+    height: 36px;
+    width: 36px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 850px) {
+  .site-nav-user > .btn {
+    border-color: #fff;
+    border-color: rgba(255,255,255,.5);
+  }
+}
+
+@media (min-width: 0) and (max-width: 500px) {
+	.site-nav-user .btn-responsive .icon:before {
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 850px) and (max-width: 950px) {
+  .site-nav-user .btn-new-post .icon:before {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 950) {
+  .btn-new-post {
+    border: none;
+    color: $color-brand;
+    background: none;
+  }
+  .btn-new-post:hover {
+    text-decoration: underline;
+    background: none;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .btn-login .btn-txt, .btn-new-post .btn-txt {
+    display: none;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 950px) {
+  .btn-new-post .btn-txt {
+    display: none;
+  }
+}
+
+.btn-login.is-active {
+  background: #fff;
+  color: $color-brand;
+}
+
+.menu-item-count {
+  position: relative;
+  top: -1px;
+  font-size: 16px;
+
+  @include medium {
+    color: $color-brand;
+    font-size: 14px;
+  }
+}
+
+// Posts filter
+
+.posts-filter {
+  margin-bottom: 10px;
+  border: 5px solid $color-border;
+
+  @include small {
+     margin-left: -15px;
+     margin-right: -15px;
+     margin-bottom: 15px;
+  }
+  @include large {
+     margin-bottom: 25px;
+  }
+}
+
+.posts-filter-item {
+  position: relative;
+  border-top: 1px solid #dedede;
+
+  @media (min-width: 600px) {
+    float: left;
+    border-top: none;
+    border-right: 1px solid #dedede;
+  }
+}
+
+.posts-filter-item:first-child {
+  border-top: none;
+}
+
+.posts-filter-item.is-hidden {
+  display: none;
+}
+
+.posts-filter-item-search .form-control {
+  height: 45px;
+}
+
+@media (min-width: 600px) {
+
+  .posts-filter-item-search {
+    width: 32%;
+  }
+
+  .posts-filter-item-city,
+  .posts-filter-item-cat {
+    width: 22.6666%;
+  }
+
+  .posts-filter-item-reward {
+    width: 22.6666%;
+    border-bottom: none;
+    border-right: none;
+  }
+}
+
+.posts-filter .chosen-single {
+  border: none;
+  border-radius: 0;
+}
+
+.posts-filter .chosen-container-single .chosen-single {
+  @media (min-width: 600px) {
+      height: 45px;
+      line-height: 3.2;
+      border: none;
+  }
+}
+
+.posts-filter .chosen-container .chosen-drop {
+  border: none;
+}
+
+.posts-filter .form-control {
+  border: none;
+}
+
+.posts-filter .chosen-select {
+  border: none;
+}
+
+// Chosen plugin
+
+.chosen-select {
+  width: 100%;
+  height: 42px;
+  padding-left: 4px;
+  border: 1px solid $color-border-dark;
+  color: $color-txt-md;
+  font-size: 17px;
+  background: #fff url("../../img/icons/select-arrow.png") no-repeat 96% center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* ==========================================================================
+
+   Ads list
+   
+   ========================================================================== */
+
+.posts-list {
+  margin-bottom: 15px;
+
+  @include small {
+    margin-bottom: 20px;
+  }
+  @include medium {
+    margin-bottom: 25px;
+  }
+  @include large {
+    margin-bottom: 30px;
+  }
+}
+
+.posts-list > li {
+  padding: 18px 0;
+  border-bottom: 1px solid $color-border;
+}
+
+.posts-list > li:last-child {
+  border-bottom: none;
+}
+
+.posts-list-heading {
+  padding-bottom: 15px;
+  border-bottom: 1px solid $color-border;
+  color: $color-txt-md;
+
+  @media (min-width: 600px) {
+    padding-bottom: 20px;
+  }
+}
+
+.post-actions {
+  float: right;
+  margin-left: 10px;
+
+  @media (min-width: 600px) {
+    margin-left: 20px;
+  }
+}
+
+.post-actions-admin {
+  margin-top: 8px;
+  font-size: 16px;
+  color: $color-brand;
+
+  @media (min-width: 600px) {
+    margin-top: 5px;
+  }
+}
+
+.post-actions-admin a:hover {
+  text-decoration: underline;
+}
+
+.btn-favourite {
+  padding: 2px 0 2px 2px;
+  margin-left: 10px;
+  color: #dedede;
+  font-size: 23px;
+  line-height: 1.4;
+  cursor: pointer;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+
+  @media (min-width: 500px) {
+    margin-left: 1px;
+  }
+  @include small {
+    font-size: 23px;
+  }
+
+}
+
+.btn-favourite:hover {
+  color: $color-brand;
+}
+
+.post-author {
+  display: none;
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+
+  @media (min-width: 500px) {
+    display: inline-block;
+  }
+
+  @include small {
+    width: 28px;
+    height: 28px;
+  }
+
+  @include medium {
+    width: 28px;
+  }
+}
+
+.post-title-link {
+  color: $color-txt;
+}
+
+.post-title-link:hover {
+  text-decoration: underline;
+}
+
+.post-title {
+  overflow: hidden;
+
+  @include medium {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+}
+
+.post-tags {
+  margin-top: 4px;
+  color: $color-txt-md;
+  font-size: 15px;
+
+  @include small {
+    margin-top: 6px;
+    font-size: 16px;
+  }
+}
+
+.post-tags .icon:before {
+  margin-right: 1px;
+  font-size: 14px;
+
+  @include small {
+
+  }
+}
+
+.post-tags-item {
+  margin-right: 2px;
+}
+
+/* ==========================================================================
+
+   Single post
+   
+   ========================================================================== */
+
+.post-single {
+  margin-top: 10px;
+}
+
+.post-header {
+  margin-bottom: 20px;
+
+  @media (min-width: 500px) {
+    margin-bottom: 25px;
+  }
+}
+
+.post-meta {
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color-border;
+  margin-bottom: 20px;
+  color: $color-txt-md;
+  font-size: 16px;
+
+  @media (min-width: 500px) {
+    padding-bottom: 13px;
+    margin-bottom: 30px;
+  }
+}
+
+.post-author-single {
+  font-weight: 700;
+}
+
+.post-author-single span:hover {
+  text-decoration: underline;
+}
+
+.post-author-single > img {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 3px;
+}
+
+.post-single .post-tags {
+  margin-top: 6px;
+}
+
+.post-entry {
+  margin-bottom: 30px;
+
+  @media (min-width: 500px) {
+    margin-bottom: 40px;
+  }
+}
+
+.post-entry > p {
+  margin-bottom: 15px;
+}
+
+.post-gallery, .post-gallery-form {
+  margin-bottom: 30px;
+
+  @include medium {
+    margin-bottom: 40px;
+  }
+}
+
+.post-gallery > li, .post-gallery-form > li {
+  float: left;
+  margin-right: 8px;
+  position: relative;
+
+  @media (min-width: 400px) {
+  }
+}
+
+.post-gallery-item {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+
+  @media (min-width: 400px) {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.post-gallery-form .post-gallery-item {
+  position: relative;
+  border: none;
+  font-size: 34px;
+  line-height: .5;
+  color: #a8a8a8;
+  background: #eaeaea;
+}
+
+.post-gallery-form .post-gallery-item:hover {
+  color: $color-brand;
+}
+
+.btn-delete-gallery-img {
+  font-size: 25px;
+  position: absolute;
+  right: -7px;
+  top: -13px;
+  color: $color-brand-secondary;
+  z-index: 991;
+  cursor: pointer;
+  background: #fff;
+  line-height: 1;
+  padding: 2px;
+  border-radius: 100%;
+}
+
+@media (min-width: 900px) {
+  .btn-delete-gallery-img {
+    font-size: 22px;
+    right: -8px;
+    top: -10px;
+    line-height: .3;
+  }
+}
+
+.btn-delete-gallery-img:hover {
+  color: $color-brand;
+}
+
+.post-gallery-msg {
+  float: left;
+  margin: 15px 0 0 10px;
+  font-size: 17px;
+  line-height: 1.25;
+  color: #a0a0a0;
+}
+
+/* ==========================================================================
+
+   Profile
+   
+   ========================================================================== */
+
+.profile-cover {
+  position: relative;
+  margin-bottom: 45px;
+
+  @media (min-width: 500px) {
+    margin-bottom: 60px;
+  }
+  @include small {
+    margin-bottom: 65px;
+  }
+  @include large {
+    margin-bottom: 75px;
+  }
+}
+
+.avatar-container {
+  position: absolute;
+  left: 10px;
+  bottom: -30px;
+  width: 100px;
+  padding: 3px;
+  background: #fff;
+
+  @media (min-width: 400px) {
+    width: 110px;
+  }
+  @media (min-width: 500px) {
+    left: 15px;
+    bottom: -40px;
+    width: 140px;
+  }
+  @include small {
+    bottom: -45px;
+    width: 150px;
+  }
+}
+
+.profile-cover-img {
+  height: 100px;
+  background: url("/img/cover.jpg") no-repeat;
+  background-size: cover;
+
+  @media (min-width: 400px) {
+    height: 130px;
+  }
+  @media (min-width: 500px) {
+    height: 160px;
+  }
+  @include small {
+    height: 170px;
+  }
+}
+
+.profile-cover-img-active {
+  outline: 3px dashed $color-brand-secondary;
+}
+
+.profile-cover-img-default {
+  background: url("/img/cover-default.jpg") no-repeat;
+}
+
+.btn-change-cover {
+  position: absolute;
+  height: 34px;
+  margin: auto;
+  bottom: 5px;
+  right: 0;
+  color: #fff;
+  color: rgba(255, 255, 255, .8);
+  display: none;
+
+  @include small {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.profile-cover-img:hover .btn-change-cover {
+  display: inline;
+}
+
+.user-info {
+  margin-bottom: 35px;
+
+  @media (min-width: 500px) {
+    margin-bottom: 40px;
+  }
+  @include small {
+    margin-bottom: 50px;
+  }
+}
+
+.body-profile-logged .profile-cover-img {
+  cursor: pointer;
+}
+
+.body-profile-logged .profile-cover-img:hover {
+  outline: 3px dashed $color-brand-secondary;
+}
+
+.user-info-primary {
+  margin-bottom: 10px;
+}
+
+.user-name {
+  margin-bottom: 2px;
+
+  @media (min-width: 600px) {
+    font-size: 26px;
+  }
+}
+
+.user-job-title, .input-user-job-title {
+  color: $color-txt-md;
+}
+
+.user-desc {
+  max-width: 540px;
+  color: $color-txt-dimmed;
+
+  @include small {
+    line-height: 1.4;
+  }
+}
+
+.body-profile-logged .user-desc {
+  margin-bottom: 20px;
+}
+
+// Profile edit
+
+.text-to-input-container {
+  position: relative;
+}
+
+.user-desc-container {
+  margin-bottom: 20px;
+}
+
+.text-to-input-input {
+  padding: 0 0 0 4px;
+  border-style: dashed;
+  border: 1px solid $color-border-md;
+  margin-left: -1px;
+  background-color: #fafafa;
+}
+
+.text-to-input-input:focus {
+  border-color: #4193c1;
+  outline: 0;
+  -webkit-box-shadow: 0 0 4px rgba(0, 112, 175, .5);
+  box-shadow: 0 0 4px rgba(0, 112, 175, .5);
+}
+
+.input-user-job-title {
+  max-width: 350px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+textarea.input-user-desc {
+  max-width: 545px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $color-txt-dimmed;
+  resize: none;
+}
+
+.input-user-desc::-moz-placeholder {
+  color: $color-txt-dimmed;
+}
+
+.input-user-desc::-ms-input-placeholder {
+  color: $color-txt-dimmed;
+}
+
+.input-user-desc::-webkit-input-placeholder {
+  color: $color-txt-dimmed;
+}
+
+/* ==========================================================================
+
+   New post form
+   
+   ========================================================================== */
+
+.new-post-form-container {
+  @include small {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.input-post-title {
+  height: 45px;
+  padding: 8px 10px;
+  margin-bottom: -1px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  resize: none;
+
+  @include small {
+    height: 50px;
+    font-size: 26px;
+  }
+
+  @include large {
+    font-size: 30px;
+  }
+}
+
+.new-post-form-post-meta .chosen-container {
+  font-size: 17px;
+}
+
+.new-post-form-post-meta .chosen-container-single .chosen-single {
+  height: 42px;
+  line-height: 2.5;
+}
+
+.new-post-form-post-meta > li {
+  margin-bottom: -1px;
+}
+
+.new-post-form-post-txt {
+  padding-top: 10px;
+  margin-bottom: 25px;
+  font-size: 17px;
+}
+
+.new-post-form-gallery {
+  margin-bottom: 25px;
+
+  @include small {
+    margin-bottom: 30px;
+  }
+}
+
+.btn-add-post-img {
+  margin-bottom: 40px;
+  background-color: #f8f8f8;
+  display: block;
+}
+
+/* ==========================================================================
+
+   Letters
+   
+   ========================================================================== */
+
+.letter {
+  border-top: 1px solid $color-border-md;
+}
+
+.letter:hover .letter-snippet {
+  text-decoration: underline;
+}
+
+.letter-new {
+  background-color: #f2f8ff;
+}
+
+
+.letter:last-child {
+  border-bottom: 1px solid $color-border-md;
+}
+
+.letter-link {
+  display: block;
+  padding: 15px 0;
+  color: $color-txt;
+
+  @include small {
+    padding: 14px 12px;
+  }
+}
+
+.letter-author-avatar, .chat-msg-author-avatar {
+  float: left;
+  width: 30px;
+  margin-right: 10px;
+
+  @media (min-width: 450px) {
+    width: 40px;
+  }
+}
+
+.chat-msg-author-avatar {
+  @media (min-width: 450px) {
+    width: 40px;
+    margin-right: 15px;
+  }
+}
+
+.letter-meta, .chat-msg-meta {
+  overflow: hidden;
+}
+
+.letter-post-title-snippet, .chat-msg-author-name {
+  display: inline;
+  margin: 0 5px 2px 0;
+  font-size: 20px;
+
+  @include small {
+    margin: 0 5px 0 0;
+    font-size: 17px;
+  }
+}
+
+.letter-date {
+  font-size: 14px;
+  color: $color-txt-md;
+  white-space: nowrap;
+}
+
+.letter-snippet, .chat-msg-content {
+  margin-top: 5px;
+  color: $color-txt-dimmed;
+
+  @include small {
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 1.1;
+  }
+}
+
+.chat-msg-content {
+  @include small {
+    margin-top: 1px;
+    line-height: 1.3;
+  }
+}
+
+// Single letter
+.letter-post-title {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid $color-border;
+
+  @include small {
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+  }
+}
+
+.letter-post-title-link {
+  color: $color-txt;
+}
+
+.letter-post-title-link:hover {
+  text-decoration: underline;
+}
+
+.chat {
+  margin-bottom: 30px;
+
+  @include small {
+    margin-bottom: 40px;
+  }
+}
+
+.chat-msg-author-link {
+  color: $color-txt;
+}
+
+.chat-msg-author-link:hover {
+  text-decoration: underline;
+}
+
+.chat-msg {
+  margin-bottom: 20px;
+
+  @include small {
+    margin-bottom: 25px;
+  }
+}
+
+.chat-msg-level-2 {
+  margin-top: 10px;
+}
+
+.new-msg-form-container {
+  margin-left: 40px;
+
+  @media (min-width: 450px) {
+   margin-left: 55px;
+  }
+}
+
+.msg-textarea {
+  margin-bottom: 10px;
+
+  @include small {
+    margin-bottom: 15px;
+  }
+}

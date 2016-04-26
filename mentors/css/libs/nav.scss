@@ -1,0 +1,97 @@
+/* ==========================================================================
+
+   Nav
+   
+   ========================================================================== */
+
+.nav {
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.nav > li {
+	position: relative;
+	display: block;
+}
+
+.nav-tabs {
+	position: relative;
+	font-size: 16px;
+	z-index: 5;
+}
+
+@media (min-width: 800px) {
+	.nav-tabs {
+		font-size: 16px;
+	}
+}
+
+.nav-tabs > li {
+	margin-bottom: -1px;
+	margin-right: 8px;
+	color: $color-txt-dimmed;
+	float: left;
+	border-bottom: 2px solid transparent;
+
+	@media (min-width: 800px) {
+		margin-right: 14px;
+	}
+
+	@include large {
+		margin-right: 22px;
+	}
+}
+
+.nav-tabs > li > a {
+	display: inline-block;
+	padding: 5px 2px 12px;
+	color: inherit;
+
+	@include medium {
+		padding: 5px 1px 25px;
+	}
+}
+
+.nav-tabs > li:hover {
+	border-bottom-color: $color-txt-md;
+}
+
+.nav-tabs > .nav-tabs-active {
+	font-weight: 700;
+	color: $color-brand;
+	border-bottom-color: $color-brand;
+}
+
+.nav-tabs > .nav-tabs-active:hover {
+	border-color: $color-brand;
+}
+
+.nav-tabs > .nav-tabs-active > a:hover {
+	color: $color-brand;
+}
+
+// Radio tabs
+
+.radio-tabs {
+  margin-bottom: 25px;
+  text-align: center;
+
+  @media (min-width: 500px) {
+    margin-bottom: 30px;
+  }
+}
+
+.radio-tabs label {
+  font-size: 17px;
+  color: $color-txt-dimmed;
+}
+
+.radio-tabs label input {
+  position: relative;
+  top: -1px;
+}
+
+.radio-tabs label:last-child {
+  margin-right: 0;
+}

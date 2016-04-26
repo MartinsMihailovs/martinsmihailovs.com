@@ -1,0 +1,20 @@
+/* ==========================================================================
+
+   Grid
+   
+   ========================================================================== */
+
+.page-width {
+    margin: 0 auto;
+	max-width: 700px;
+	padding: 0 15px;
+}
+
+.page-width:before, .page-width:after {
+    display:table;
+    content:" ";
+}
+
+.page-width:after {
+    clear:both;
+}

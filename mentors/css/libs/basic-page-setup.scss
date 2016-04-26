@@ -1,0 +1,35 @@
+/* ==========================================================================
+
+   Basic page setup
+   
+   ========================================================================== */
+
+*, *:after, *:before{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+} /* Apply a natural box layout model to all elements  see http://paulirish.com/2012/box-sizing-border-box-ftw */	 
+
+body { 
+	margin: 0 auto;
+	color: $color-txt;
+	font: normal 400 18px/1.4 $font-stack;
+	background: #fff;
+	-moz-osx-font-smoothing: grayscale;
+
+	@media (min-width: 500px) {
+		line-height: 1.5;
+	}
+	@include small {
+		line-height: 1.6;
+	}
+}
+
+hr {
+	display: block;
+    height: 1px;
+    border: 0;   
+    border-top: 1px solid $color-border;
+    margin: 20px 0;
+    padding: 0;
+}

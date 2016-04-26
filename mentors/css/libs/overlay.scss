@@ -1,0 +1,118 @@
+.overlay {
+	display: none;
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.96);
+	text-align: center;
+	width: 100%;
+	border-top: 3px solid $color-brand;
+	z-index: 900;
+	overflow: auto;
+}
+
+.overlay-visible {
+	display: block;
+}
+
+.close-overlay {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: $color-brand;
+	font-size: 35px;
+
+	@include small {
+		right: 20px;
+		top: 18px;
+		font-size: 40px;
+	}
+}
+
+.close-overlay:hover {
+	color: #ef5441;
+}
+
+.overlay-content {
+	padding: 25px;
+	margin-top: 30px;
+}
+
+.overlay-content-login {
+	@include small {
+		margin-top: 70px;
+	}
+	@include medium {
+		margin-top: 90px;
+	}
+}
+
+.overlay-content-login-heading {
+	margin-bottom: 10px;
+	font-size: 30px;
+
+	@media (min-width: 350px) {
+		margin-bottom: 15px;
+	}
+
+	@include small {
+		margin-bottom: 20px;
+	}
+}
+
+.overlay-content-login-heading .icon:before {
+	display: block;
+	width: 100%;
+}
+
+.overlay-content-login-txt {
+	margin-bottom: 10px;
+	line-height: 1.3;
+	max-width: 410px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include small {
+		width: 410px;
+		margin-bottom: 30px;
+	}
+}
+
+.overlay-content-login-actions {
+	padding-top: 10px;
+	margin: 0 auto;
+
+	@media (min-width: 350px) {
+		width: 275px;
+		padding: 25px 25px;
+	}
+
+	@include small {
+		padding-top: 30px;
+		border-top: 1px solid $color-brand;
+	}
+}
+
+.btn-login-fb {
+	background-color: #3a5795;
+	border: none;
+	color: #fff;
+}
+
+.btn-login-fb:hover {
+	background-color: #4c70bd;
+}
+
+.btn-login-dr {
+	background-color: #ff6600;
+	border: none;
+	color: #fff;
+}
+
+.btn-login-dr:hover {
+	background-color: #ff852c;
+}

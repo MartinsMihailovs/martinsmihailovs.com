@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Mentors</title>
+	<meta name="description" content="Atrodi sev mentoru" />
+	<meta name="keywords" content="Project keywords"/>
+	<meta name="author" content="www.martinsmihailovs.com" />
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True"> <!--The HandheldFriendly meta-tag was used initially by older Palm and Blackberry models as well as browsers like AvantGo. -->
+	<meta name="MobileOptimized" content="320"> <!--Microsoft indroduced the MobileOptimized tag for the PocketPC.-->
+	<meta http-equiv="cleartype" content="on"> <!--Mobile Internet Explorer allows us to activate ClearType technology for smoothing fonts for easy reading -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Remove skype highlighting -->
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+	<!-- CSS-->
+	<link rel="stylesheet" type="text/css" href="css/build/style.css" />
+	<!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+	
+	<!-- Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+
+	<!-- Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="js/build/scripts.min.js"></script>
+	<script src="js/libs/chosen.jquery.js"></script>
+
+	<!--Emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8-->
+	<!--[if (gte IE 6)&(lte IE 9)]>
+	<script type="text/javascript" src="js/libs/selectivizr-min.js"></script>
+	<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]--> 
+
+	<!--HTML5 shim, for IE6-8 support of HTML5 elements-->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!--Polyfill for min/max-width CSS3 Media-->
+	<!--[if (gte IE 6)&(lte IE 9)]>
+	<script src="js/libs/respond.min.js"></script>
+	<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]--> 
+
+	<!-- Favicon and Apple touch icons -->
+	<link rel="shortcut icon" href="img/icons/favicons/favicon.ico">
+	<link rel="apple-touch-icon" href="img/icons/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/favicons/apple-touch-icon-114x114.png">
+</head>
+<body>
+	<header class="site-head">
+		<div class="site-head-content">
+			<div class="logo-container">
+				<a class="logo" href="/"><span class="icon icon-mentors-logo"></span></a>
+			</div> <!-- Logo container -->
+			<div class="site-nav-user cfix">
+				<a href="#" class="btn btn-primary btn-responsive btn-new-post"><span class="icon icon-plus"></span><span class="btn-txt">Sludinājums</span></a>
+				<a href="login.html" class="btn btn-primary btn-responsive btn-login" data-toggle="overlay" data-target="#overlay-login">
+				<span class="icon icon-user"></span><span class="btn-txt">Ielogoties</span></a>
+			</div> <!-- Site nav user -->
+			<nav class="site-nav cfix">
+				<ul class="nav nav-tabs cfix">
+					<li class="nav-tabs-active"><a href="#">Mentori <span class="site-nav-posts-count">(12)</span></a></li>
+					<li><a href="#">Meklē mentoru <span class="site-nav-posts-count">(38)</span></a></li>
+				</ul>
+			</nav> <!-- Site nav -->
+		</div> <!-- Site head content -->
+	</header> <!-- Site head -->
+	<div class="page">
+		<div class="page-width">
+			<div class="site-tagline-container">
+				<h1 class="site-tagline">Atrodi sev piemērotu mentoru</h1>
+				<h2 class="site-tagline-desc">Sludinājumu portāls tiem, kas meklē zināšanas un prasmes</h2>
+			</div>
+			<ul class="posts-filter list-unstyled cfix">
+				<li class="posts-filter-item posts-filter-item-search">
+					<label id="search-label" class="screen-reader-txt" for="q">Meklēšana</label>
+					<input type="search" id="q" class="form-control " onfocus="if(this.value=='Atslēgas vārds&hellip;')this.value=''" onblur="if(this.value=='')this.value='Atslēgas vārds&hellip;" placeholder="Atslēgas vārds&hellip;">
+				</li> <!-- Posts filter item -->
+				<li class="posts-filter-item posts-filter-item-secondary posts-filter-item-city">
+					<select data-placeholder="Pilsēta" class="chosen-select" title="Pilsēta">
+						<option value="">Visas pilsētas</option>
+						<option value="United States">Rīga</option>
+						<option value="United Kingdom">Ainaži</option>
+						<option value="United Kingdom">Aizkraukle</option>
+						<option value="United Kingdom">Aizpute</option>
+						<option value="United Kingdom">Aknīste</option>
+						<option value="United Kingdom">Aloja</option>
+						<option value="United Kingdom">Alūksne</option>
+						<option value="United Kingdom">Ape</option>
+						<option value="United Kingdom">Auce</option>
+						<option value="United Kingdom">Baldone</option>
+						<option value="United Kingdom">Baloži</option>		
+					</select>
+				</li> <!-- Posts filter item -->
+				<li class="posts-filter-item posts-filter-item-secondary posts-filter-item-cat">
+					<select data-placeholder="Kategorija" class="chosen-select">
+						<option value="">Visas kategorijas</option>
+						<option value="United States">Client #1</option>
+						<option value="United Kingdom">Client #2</option>
+						<option value="United Kingdom">Client #3</option>
+						<option value="United Kingdom">Client #4</option>
+						<option value="United Kingdom">Client #5</option>
+						<option value="United Kingdom">Client #6</option>
+						<option value="United Kingdom">Client #7</option>
+						<option value="United Kingdom">Client #8</option>
+						<option value="United Kingdom">Client #9</option>
+						<option value="United Kingdom">Client #10</option>
+						<option value="United Kingdom">Client #11</option>
+					</select>
+				</li> <!-- Posts filter item -->
+				<li class="posts-filter-item posts-filter-item-secondary posts-filter-item-reward">
+					<select data-placeholder="Atlīdzība" class="chosen-select">
+						<option value="">Visas atlīdzības</option>
+						<option value="United States">Bezmaksas</option>
+						<option value="United Kingdom">Kafija</option>
+						<option value="United Kingdom">Barters</option>
+						<option value="United Kingdom">EUR</option>
+					</select>
+				</li> <!-- Posts filter item -->
+			</ul> <!-- Posts filter -->
+			<ul class="posts-list list-unstyled">
+				<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+								<li class="post">
+					<div class="post-actions">
+						<a href="#" class="post-author">
+							<img class="img-round" src="img/avatars/avatar-user.png" alt="Username">
+						</a>
+						<b class="btn-favourite"><span class="icon icon-alone icon-heart"></span></b>
+					</div>
+					<a href="#" class="post-title-link"><h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia inventore explicabo repudiandae dolores.</h2></a>
+					<p class="post-tags">
+						<span class="post-tags-item post-tags-city"><span class="icon icon-location"></span>Daugavpils</span>
+						<span class="post-tags-item post-tags-cat"><span class="icon icon-tag"></span>Dizains</span>
+						<span class="post-tags-item post-tags-reward"><span class="icon icon-euro"></span>Bezmaksas</span>
+					</p>
+				</li> <!-- Post -->
+			</ul> <!-- posts list -->
+			<button class="btn btn-block btn-lg btn-secondary">Ielādēt vēl</button>
+		</div> <!-- Page width -->
+	</div> <!-- Page -->
+	<div class="overlay" id="overlay-login">
+		<button class="btn-unstyled close-overlay" data-dismiss="overlay"><span class="icon icon-cancel-circled icon-alone"></span><span class="screen-reader-txt">Aizvērt</span></button>
+		<div class="overlay-content overlay-content-login">
+			<h2 class="overlay-content-login-heading"><span class="screen-reader-txt">Mentors.lv</span><span class="icon icon-alone icon-mentors-logo"></span></h2>
+			<p class="overlay-content-login-txt">Ielogojies, lai varētu pievienot sludinājumus, saglabāt favorītus un sazināties ar citiem lietotājiem </p>
+			<div class="overlay-content-login-actions">
+				<button class="btn btn-block btn-login-fb"><span class="icon icon-facebook-squared"></span>Ielogojies ar Facebook</button>
+				<button class="btn btn-block btn-login-dr"><span class="icon icon-draugiem"></span>Ielogojies ar draugiem.lv</button>
+			</div>
+		</div>
+	</div>
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-XXXXX-X');ga('send','pageview');
+	</script>
+</body>
+</html>

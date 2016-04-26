@@ -1,0 +1,50 @@
+/* ==========================================================================
+
+   Typography
+   
+   ========================================================================== */
+
+/* Headings */
+   
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+h1, .h1 {
+	font-size: 24px;
+	line-height: 1.1;
+
+	@media (min-width: 400px) {
+    	font-size: 26px;
+	}
+	@media (min-width: 500px) {
+    	font-size: 28px;
+	}
+	@media (min-width: 600px) {
+    	font-size: 30px;
+    	letter-spacing: -.2px;
+	}
+	@include small {
+		font-size: 34px;
+	}
+}
+
+h2, .h2 {
+	font-size: 24px;
+	line-height: 1.05;
+}
+
+h3, .h3 {
+	font-size: 18px;
+}
+
+/* Other typographical elements */
+
+em {
+	font-style: italic;
+}
+mark {
+	background: #ff0;
+}
