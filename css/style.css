@@ -2887,37 +2887,36 @@ p:target {
 	-moz-animation:     fadeIn 1s ease-out .5s normal forwards 1;
 	-ms-animation:      fadeIn 1s ease-out .5s normal forwards 1;
 	-o-animation:       fadeIn 1s ease-out .5s normal forwards 1;
-	animation:  fadeIn 1s ease-out .5s normal forwards 1;
+	animation:  		fadeIn 1s ease-out .5s normal forwards 1;
 	opacity: 0;
 }
 
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
 @-webkit-keyframes fadeIn {
-	0% {
-		-webkit-opacity: 0;
-	}
-
-	100% {
-		-webkit-opacity: 1;
-	}
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
+@-moz-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
 
 .project-info {
 	-webkit-animation:  moveBottom 1s ease-out .5s normal forwards 1;
 	-moz-animation:     moveBottom 1s ease-out .5s normal forwards 1;
 	-ms-animation:      moveBottom 1s ease-out .5s normal forwards 1;
 	-o-animation:       moveBottom 1s ease-out .5s normal forwards 1;
-	animation:  moveBottom 1s ease-out .5s normal forwards 1;
+	animation:  		moveBottom 1s ease-out .5s normal forwards 1;
 	-webkit-transform: translateY(10px);
 	transform: translateY(10px);
 }
@@ -2936,10 +2935,12 @@ p:target {
 @-webkit-keyframes moveBottom {
 	0% {
 		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
 	}
 
 	100% {
 		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 }
 
