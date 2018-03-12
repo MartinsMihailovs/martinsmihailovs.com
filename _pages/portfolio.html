@@ -15,6 +15,7 @@ description: Dizaina un web izstrādes portfolio
 		<div class="page-width">
 			<ul class="portfolio-list cfix">
 				{% for project in site.categories.portfolio %}
+				{% unless project.exclude_from_portfolio %}
 				<li class="portfolio-item medium-6 large-4">
 					<a href="{{ site.baseurl }}{{ project.url }}"><img src="{{ site.baseurl }}/img/portfolio/{{ project.thumb }}" alt="{{ project.title }}"></a>
 					<div class="portfolio-item-meta">
@@ -22,6 +23,7 @@ description: Dizaina un web izstrādes portfolio
 						<p class="portfolio-item-tags">{{ project.tags | join: '. ' | append: "." }}</p>
 					</div>
 				</li>
+				{% endunless %}
 				{% endfor %}
 			</ul> <!-- Portfolio list -->
 		</div> <!-- Page width -->

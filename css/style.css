@@ -100,7 +100,8 @@ body {
 	color: #3c3c3c;
 	background-color: #fff;
 	font: normal 400 18px/1.8333 Lora, Georgia, serif; /* Magic number: 1.6842105263157895em or 32; all line heights and margin bottoms have to be a multiples of 32px */
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
 }
 
@@ -152,9 +153,6 @@ hr {
    
    ========================================================================== */
 
-p {
-	
-}
 
 .hanging-punctuation {
   text-indent: -.35em;
@@ -373,7 +371,8 @@ img {
    ========================================================================== */
 
 figure {
-	margin-top: 2em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 	position: relative;
 }
 
@@ -463,7 +462,6 @@ figcaption {
 
 .post-entry .figure-bordered {
   border: 1px solid #dddddd;
-  display: block;
 }
 
 .post-entry .figure-bordered:hover {
@@ -478,6 +476,18 @@ figcaption {
   .post-entry .figure-padded {
     padding: 10px;
   }
+}
+
+.post-entry .figure-shadowed {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.08);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.08);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.08);
+}
+
+.post-entry .figure-shadowed-heavy {
+  -webkit-box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.15);
 }
 
 .figure-starts-section {
@@ -644,7 +654,7 @@ ul.text-list>li, ol.text-list>li {
 .page-width {
   margin: 0 auto;
 	width: 96%;
-	max-width: 52em; /* 912px+12px+12px */
+  max-width: 52em; /* 912px+12px+12px */
 }
 
 @media (min-width: 600px) {
@@ -1771,6 +1781,10 @@ p {
 	margin-top: 1.2222em;
 }
 
+.post-entry .paragraph-no-margin {
+  margin-top: 0;
+}
+
 .post-entry .p-after-figure {
   margin-top: 2em;
 }
@@ -1893,7 +1907,8 @@ a[href|="#footnote"]:target {
 
 p:target {
 	-webkit-animation: highlight 3s ease;  
- 	-moz-animation: highlight 3s ease;
+   -moz-animation: highlight 3s ease;
+   animation: highlight 3s ease;
 }
 
 @-webkit-keyframes highlight {
@@ -1904,7 +1919,10 @@ p:target {
   0% { background: #ffe3aa; }
   100% { background: none; }
 }
-
+@keyframes highlight {
+  0% { background: #ffe3aa; }
+  100% { background: none; }
+}
 
 /* Blockquotes */
 
@@ -2040,6 +2058,16 @@ p:target {
 
 .section-divider-left {
 	margin-left: 0;
+}
+
+.section-description {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 700px) {
+  .section-description {
+    margin-bottom: 2.666em;
+  }
 }
 
 .highlight {
@@ -2258,6 +2286,7 @@ p:target {
   font-family: "Roboto", Arial, sans-serif;
 	text-align: center;
   line-height: 1.3;
+  color: #323232;
 }
 
 @media (min-width: 500px) {
@@ -2293,7 +2322,7 @@ p:target {
 	font-weight: 700;
 	font-size: 2.3333em;
 	letter-spacing: -1.5px;
-	line-height: .9;
+  line-height: .9;
 }
 
 @media (min-width: 600px) {
@@ -2317,7 +2346,7 @@ p:target {
 }
 
 .project .project-subtitle {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: .9444em;
 	line-height: 1.3;
 	letter-spacing: 2px;
@@ -2495,6 +2524,14 @@ p:target {
   }
 }
 
+.project .section-no-padding {
+  padding: 0;
+}
+
+.project .section-no-bottom-padding {
+  padding-bottom: 0;
+}
+
 .section-with-divider {
   position: relative;
 }
@@ -2530,12 +2567,12 @@ p:target {
 	text-align: center;
 }
 
-.section-col-list h2:first-child {
+.section-col-list h2:first-child, .section-col-list h3:first-child  {
 	margin: .5em 0;
 }
 
 @media (min-width: 600px) {
-	.section-col-list h2:first-child {
+	.section-col-list h2:first-child, .section-col-list h3:first-child {
 		margin: .5em 0 1.4em;
 	}
 }
@@ -2880,6 +2917,14 @@ p:target {
   color: #9a9a9a;
 }
 
+.mobile-screens {
+  background: #F2F2F2;
+}
+
+.project .section-full-width-heading {
+  margin-bottom: 2em;
+}
+
 /* Animate project header */
 
 .featured-image {
@@ -2942,6 +2987,16 @@ p:target {
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
+}
+
+.figure-mobile-screen-margin-bottom {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 900px) {
+  .figure-mobile-screen-margin-bottom {
+    margin-bottom: 0;
+  }
 }
 
 /* Project: Atlas logistics */
@@ -4299,7 +4354,7 @@ p:target {
 		padding: .2em .6em;
 		font-size: 4.6666em;
 		border-width: 12px;
-	}f0ddda
+	}
 }
 
 .project-m_____-lv .project-subtitle {
@@ -4321,6 +4376,818 @@ p:target {
 		font-size: 1.3333em;
 	}
 }
+
+
+/* Project: zip */
+/*Project color: #df4932*/
+
+.project-mobilie-sludinajumi .featured-image {
+  background-color: #0071C5;
+  background-image: url("../img/portfolio/zip/zip-header-bg.svg");
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+@media (min-width: 900px) {
+  .project-mobilie-sludinajumi .featured-image {
+    height: 80vh;
+    min-height: 550px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-mobilie-sludinajumi .featured-image {
+    min-height: 700px;
+  }
+}
+
+.project-mobilie-sludinajumi .project-info {
+  padding: 2.5em 0 2.5em;
+  color: #E0FDFF;
+}
+
+@media (min-width: 600px) {
+  .project-mobilie-sludinajumi .project-info {
+    padding: 2.5em 0 2.5em;
+    color: #E0FDFF;
+    bottom: 2%;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-mobilie-sludinajumi .project-info {
+    bottom: 8%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-mobilie-sludinajumi .project-info {
+    bottom: 7%;
+  }
+}
+
+.logo-zip {
+  width: 50%;
+  margin-bottom: .444em;
+}
+
+@media (min-width: 600px) {
+  .logo-zip {
+    width: 250px;
+    margin-bottom: .444em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-zip {
+    width: 290px;
+    margin-bottom: 1.111em;
+  }
+}
+
+.project-mobilie-sludinajumi .project-title {
+	position: relative;
+	margin-bottom: .222em;
+  font-size: 1.666em;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+@media (min-width: 500px) {
+  .project-mobilie-sludinajumi .project-title {
+    margin-bottom: .222em;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-mobilie-sludinajumi .project-title {
+    margin-bottom: .222em;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-mobilie-sludinajumi .project-title {
+    font-size: 2.333em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-mobilie-sludinajumi .project-title {
+    font-size: 2.444em;
+  }
+}
+
+.project-mobilie-sludinajumi .project-subtitle {
+  font-family: Lora;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2222;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+.zip-header-divider {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .zip-header-divider {
+    display: inline;
+    margin-top: 3em;
+  }
+}
+
+.project-mobilie-sludinajumi .things-learned {
+  background-color: #f4f4f4;
+  background-image: url("../img/portfolio/zip/zip-things-learned-bg.svg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.project-mobilie-sludinajumi .things-learned .divider-lg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aaadb0+0,aaadb0+14,75787b+14,75787b+28,232629+28,232629+42,0071c5+42,0071c5+58,232629+58,232629+72,75787b+72,75787b+86,aaadb0+86,aaadb0+100 */
+  background: #aaadb0; /* Old browsers */
+  background: -moz-linear-gradient(left, #aaadb0 0%, #aaadb0 14%, #75787b 14%, #75787b 28%, #232629 28%, #232629 42%, #0071c5 42%, #0071c5 58%, #232629 58%, #232629 72%, #75787b 72%, #75787b 86%, #aaadb0 86%, #aaadb0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #aaadb0 0%,#aaadb0 14%,#75787b 14%,#75787b 28%,#232629 28%,#232629 42%,#0071c5 42%,#0071c5 58%,#232629 58%,#232629 72%,#75787b 72%,#75787b 86%,#aaadb0 86%,#aaadb0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #aaadb0 0%,#aaadb0 14%,#75787b 14%,#75787b 28%,#232629 28%,#232629 42%,#0071c5 42%,#0071c5 58%,#232629 58%,#232629 72%,#75787b 72%,#75787b 86%,#aaadb0 86%,#aaadb0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaadb0', endColorstr='#aaadb0',GradientType=1 ); /* IE6-9 */
+}
+
+.project-mobilie-sludinajumi .section-with-divider:before, .project-mobilie-sludinajumi .section-with-divider:after {
+  border-color: #0097C0;
+}
+
+.project-mobilie-sludinajumi .section-with-divider:after {
+  background: #0097C0;
+}
+
+.project-mobilie-sludinajumi .swatch-primary {
+  background-color: #0097C0;
+}
+.project-mobilie-sludinajumi .swatch-secondary {
+  background-color: #232629;
+}
+.project-mobilie-sludinajumi .swatch-tertiary {
+  background-color: #75787B;
+}
+.project-mobilie-sludinajumi .swatch-quaternary {
+  background-color: #AAADB0;
+}
+
+.project-mobilie-sludinajumi .txt-mega {
+  color: #0097C0;
+}
+
+.project-mobilie-sludinajumi .section-promoted {
+  background-color: #0071C5;
+  color: #fff;
+  background-image: url("../img/portfolio/zip/promoted-bg.svg");
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.section-zip-search {
+  background: #F2F2F2;
+}
+
+/* Dummy article v2 */
+
+.dummy-post-container:nth-child(2), .dummy-post-container:nth-child(3) {
+  margin-top: 1em;
+}
+
+.dummy-post-img, .dummy-post-heading, .dummy-post-paragraph {
+  background: #2E99E3;
+}
+
+.dummy-post-promoted .dummy-post-img, .dummy-post-promoted .dummy-post-heading, .dummy-post-promoted .dummy-post-paragraph {
+  background: #00e7ba;
+}
+
+.dummy-post-img {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 10px;
+}
+
+.dummy-post-txt {
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.dummy-post-txt div {
+  margin-bottom: 4px;
+}
+
+.dummy-post-txt .dummy-post-heading {
+  height: 20px;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.dummy-post-paragraph {
+  height: 10px;
+  width: 90%;
+}
+
+.dummy-post-paragraph-2nd {
+  width: 80%;
+}
+
+.dummy-post-paragraph-3d {
+  width: 70%;
+}
+
+/* Project: bruklene */
+/*Project color: #df4932*/
+
+.project-bruklene .site-head-content {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: 600px) {
+  .project-bruklene .site-head-content {
+    border-bottom: none;
+  }
+}
+
+.project-bruklene .featured-image {
+  background: #fff;
+  background-image: url("../img/portfolio/bruklene/bear.svg");
+  background-attachment: scroll;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (min-width: 400px) {
+  .project-bruklene .featured-image {
+    background-size: 60%;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-bruklene .featured-image {
+    background-size: 65%;
+    background-position: center 75%;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-bruklene .featured-image {
+    min-height: 550px;
+    background-size: 60%;
+    background-position: center 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-bruklene .featured-image {
+    min-height: 700px;
+    background-size: 750px, auto;
+    background-position: center 65%;
+  }
+}
+
+.project-bruklene .project-info {
+  padding: 4em 0 4em;
+}
+
+@media (min-width: 400px) {
+  .project-bruklene .project-info {
+    padding: 4em 0 5.5em;
+  }
+}
+
+@media (min-width: 500px) {
+  .project-bruklene .project-info {
+    padding: 5.5em 0 5.5em;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-bruklene .project-info {
+    padding: 0;
+    bottom: 7em;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-bruklene .project-info {
+    bottom: 10em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-bruklene .project-info {
+    bottom: 14em;
+  }
+}
+
+.featured-image .logo-bruklene {
+  width: 200px;
+  margin-bottom: .444em;
+}
+
+@media (min-width: 600px) {
+  .featured-image .logo-bruklene {
+    width: 220px;
+    margin-bottom: .666em;
+  }
+}
+
+@media (min-width: 900px) {
+  .featured-image .logo-bruklene {
+    width: 260px;
+    margin-bottom: .666em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .featured-image .logo-bruklene {
+    width: 300px;
+    margin-bottom: 1em;
+  }
+}
+
+.project-bruklene .project-title {
+  display: none;
+}
+
+.project-bruklene .project-subtitle {
+  letter-spacing: 0;
+  font-size: 1em;
+}
+
+@media (min-width: 600px) {
+  .project-bruklene .project-subtitle {
+    font-size: 1.222em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-bruklene .project-subtitle {
+    font-size: 1.333em;
+  }
+}
+
+.project-bruklene .circles-divider {
+  position: absolute;
+  bottom: -24px;
+  left: 0; 
+  right: 0;
+  text-align: center;
+  width: 90%;
+  max-width: 758px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-bruklene .circles-divider:before {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #D4D4E5;
+  position: relative;
+  top: 16px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .project-bruklene .circles-divider:before {
+    top: 20px;
+  }
+}
+
+.project-bruklene .circles-divider--circles {
+  display: inline-block;
+  padding: 0 24px;
+  background: #fff;;
+  position: relative;
+  z-index: 10;
+}
+
+.project-bruklene .circles-divider--circle {
+  display: inline-block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+@media (min-width: 600px) {
+  .project-bruklene .circles-divider--circle {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.circles-divider--circles .circles-divider--circle-a {
+  background: #0872FF;
+  left: 4px;
+}
+
+.circles-divider--circles .circles-divider--circle-b {
+  background: #EA1328;
+  right: 4px;
+}
+
+.project-bruklene .section-heading:before, .project-bruklene .section-heading:before, .project-bruklene .section-with-divider:before, .project-bruklene .section-with-divider:after {
+  content:"";
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: #0872FF;
+  padding: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 100%;
+}
+
+.project-bruklene .section-with-divider:before {
+  left: -24px;
+  background: #0872FF;
+}
+
+.project-bruklene .section-with-divider:after {
+  right: -24px;
+  background: #EA1328;
+}
+
+.project-bruklene .things-learned {
+  background-image: url("../img/portfolio/bruklene/pattern-dot.svg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+.project-bruklene .things-learned .divider-lg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaeaea+0,eaeaea+14,c2c2c2+14,c2c2c2+28,4e4e4e+28,4e4e4e+42,0070af+42,0070af+58,4e4e4e+58,4e4e4e+72,c2c2c2+72,c2c2c2+86,eaeaea+86,eaeaea+100,eaeaea+100 */
+  background: #EA1328; /* Old browsers */
+  background: -moz-linear-gradient(left,  #909BA2 0%, #909BA2 14%, #232628 14%, #232628 28%, #1077FF 28%, #1077FF 42%, #EA1328 42%, #EA1328 58%, #1077FF 58%, #1077FF 72%, #232628 72%, #232628 86%, #909BA2 86%, #909BA2 100%, #909BA2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #909BA2 0%,#909BA2 14%,#232628 14%,#232628 28%,#1077FF 28%,#1077FF 42%,#EA1328 42%,#EA1328 58%,#1077FF 58%,#1077FF 72%,#232628 72%,#232628 86%,#909BA2 86%,#909BA2 100%,#909BA2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #909BA2 0%,#909BA2 14%,#232628 14%,#232628 28%,#1077FF 28%,#1077FF 42%,#EA1328 42%,#EA1328 58%,#1077FF 58%,#1077FF 72%,#232628 72%,#232628 86%,#909BA2 86%,#909BA2 100%,#909BA2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#909BA2', endColorstr='#909BA2',GradientType=1 ); /* IE6-9 */
+}
+
+.project-bruklene .section-with-divider:before, .project-bruklene .section-with-divider:after {
+  border-color: #EA1328;
+}
+
+.project-bruklene .section-with-divider:after {
+  background: #EA1328;
+}
+
+.project-bruklene .swatch-primary {
+  background-color: #EA1328;
+}
+.project-bruklene .swatch-secondary {
+  background-color: #1077FF;
+}
+.project-bruklene .swatch-tertiary {
+  background-color: #232628;
+}
+.project-bruklene .swatch-quaternary {
+  background-color: #909BA2;
+}
+
+.project-bruklene .checklist-assignments {
+  border-bottom: none;
+}
+
+.project-bruklene .post-entry .checklist li:before {
+  color: #EA1328;
+}
+
+
+/* Project: draugiem.lv */
+/*Project color: #df4932*/
+
+.project-vertigam-draudzibam .featured-image {
+  background: #F2F2F6;
+  background-image: url("../img/portfolio/draugiem/net-left.svg"), url("../img/portfolio/draugiem/net-right.svg");
+  background-size: 0%, 0%;
+  background-repeat: no-repeat;
+  background-position: left center, right center;
+  overflow: hidden;
+}
+
+@media (min-width: 700px) {
+  .project-vertigam-draudzibam .featured-image {
+    background-size: 40%;
+    background-position: left 55%, right 55%;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-vertigam-draudzibam .featured-image {
+    background-size: 40%;
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .project-vertigam-draudzibam .featured-image {
+    min-height: 600px;
+    background-size: 36%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-vertigam-draudzibam .featured-image {
+    min-height: 640px;
+  }
+}
+
+.project-vertigam-draudzibam .chat-bubbles {
+  width: 200px;
+  position: absolute;
+  top: 24px;
+  right: -30px;
+  opacity: .6;
+}
+
+@media (min-width: 500px) {
+  .project-vertigam-draudzibam .chat-bubbles {
+    width: 260px;
+    top: 24px;
+    right: -30px;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-vertigam-draudzibam .chat-bubbles {
+    width: 320px;
+    top: 110px;
+    right: -50px;
+  }
+}
+
+@media (min-width: 700px) {
+  .project-vertigam-draudzibam .chat-bubbles {
+    right: 20px;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-vertigam-draudzibam .chat-bubbles {
+    width: 420px;
+    right: -40px;
+    top: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-vertigam-draudzibam .chat-bubbles {
+    width: 470px;
+    position: absolute;
+    top: 100px;
+    right: 5%;
+    height: auto;
+    display: block;
+  }
+}
+
+.project-vertigam-draudzibam .project-info {
+  padding: 3em 0 3em;
+}
+
+@media (min-width: 500px) {
+  .project-vertigam-draudzibam .project-info {
+    padding: 4em 0 4em;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-vertigam-draudzibam .project-info {
+    padding: 0;
+    bottom: 6em;
+  }
+}
+
+@media (min-width: 1100px) {
+  .project-vertigam-draudzibam .project-info {
+    bottom: 10em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-vertigam-draudzibam .project-info {
+    bottom: 11em;
+  }
+}
+
+.project-vertigam-draudzibam .project-title {
+  letter-spacing: 0;
+  font-size: 1.555em;
+  line-height: 1;
+  margin-bottom: .222em;
+}
+
+@media (min-width: 500px) {
+  .project-vertigam-draudzibam .project-title {
+    font-size: 2em;
+  }  
+}
+
+@media (min-width: 700px) {
+  .project-vertigam-draudzibam .project-title {
+    font-size: 2.444em;
+  }  
+}
+
+@media (min-width: 900px) {
+  .project-vertigam-draudzibam .project-title {
+    font-size: 2.888em;
+  }  
+}
+
+@media (min-width: 1100px) {
+  .project-vertigam-draudzibam .project-title {
+    font-size: 4em;
+    margin-bottom: .333em;
+  }  
+}
+
+.project-vertigam-draudzibam .project-subtitle {
+  letter-spacing: 0;
+  font-size: 1em;
+}
+
+@media (min-width: 500px) {
+  .project-vertigam-draudzibam .project-subtitle {
+    font-size: 1.111em;
+  }
+}
+
+@media (min-width: 700px) {
+  .project-vertigam-draudzibam .project-subtitle {
+    font-size: 1.222em;
+  }
+}
+
+@media (min-width: 1100px) {
+  .project-vertigam-draudzibam .project-subtitle {
+    font-size: 1.333em;
+  }
+}
+
+.featured-image .logo-draugiem {
+  width: 200px;
+  margin-bottom: .666em;
+}
+
+@media (min-width: 500px) {
+  .featured-image .logo-draugiem {
+    width: 244px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .featured-image .logo-draugiem {
+    width: 250px;
+  }
+}
+
+.project-vertigam-draudzibam .things-learned {
+  background-color: #fff;
+  background-attachment: fixed;
+  background-image: url("../img/portfolio/draugiem/chat-bubbles-things-learned.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 500px) {
+  .project-vertigam-draudzibam .things-learned {
+    background-size: 80%;
+  }
+}
+
+.project-vertigam-draudzibam .things-learned .divider-lg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,c9c9c9+14,747474+14,747474+28,1e1e1e+28,1e1e1e+42,ff6600+42,ff6600+58,1e1e1e+58,1e1e1e+72,747474+72,747474+86,c9c9c9+86,eaeaea+100,c9c9c9+100 */
+  background: #c9c9c9; /* Old browsers */
+  background: -moz-linear-gradient(left, #c9c9c9 0%, #c9c9c9 14%, #747474 14%, #747474 28%, #1e1e1e 28%, #1e1e1e 42%, #ff6600 42%, #ff6600 58%, #1e1e1e 58%, #1e1e1e 72%, #747474 72%, #747474 86%, #c9c9c9 86%, #eaeaea 100%, #c9c9c9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #c9c9c9 0%,#c9c9c9 14%,#747474 14%,#747474 28%,#1e1e1e 28%,#1e1e1e 42%,#ff6600 42%,#ff6600 58%,#1e1e1e 58%,#1e1e1e 72%,#747474 72%,#747474 86%,#c9c9c9 86%,#eaeaea 100%,#c9c9c9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #c9c9c9 0%,#c9c9c9 14%,#747474 14%,#747474 28%,#1e1e1e 28%,#1e1e1e 42%,#ff6600 42%,#ff6600 58%,#1e1e1e 58%,#1e1e1e 72%,#747474 72%,#747474 86%,#c9c9c9 86%,#eaeaea 100%,#c9c9c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#c9c9c9',GradientType=1 ); /* IE6-9 */
+  }
+
+  .project-vertigam-draudzibam .section-with-divider:before, .project-vertigam-draudzibam .section-with-divider:after {
+    border-color: #FF6600;
+  }
+  
+  .project-vertigam-draudzibam .section-with-divider:after {
+    background: #FF6600;
+  }
+
+  .project-vertigam-draudzibam .swatch-primary {
+    background-color: #FF6600;
+  }
+  .project-vertigam-draudzibam .swatch-secondary {
+    background-color: #205A9A;
+  }
+  .project-vertigam-draudzibam .swatch-tertiary {
+    background-color: #1E1E1E;
+  }
+  .project-vertigam-draudzibam .swatch-quaternary {
+    background-color: #565656;
+  }
+
+  .wrap-pre {
+    white-space:pre-line;
+  }
+
+  .project-vertigam-draudzibam .post-entry .checklist li:before {
+    color: #205A9A;
+  }
+
+  .project-vertigam-draudzibam .section-breather {
+    background-color: #A4CA39;
+    color: #fff;
+    background-image: url("../img/portfolio/draugiem/chat-bubbles-android.svg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  @media (min-width: 900px) {
+    .project-vertigam-draudzibam .section-breather {
+      background-size: auto;
+    }
+  }
+
+  .section-breather .logo-android {
+    display: block;
+    width: 5em;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 500px) {
+    .section-breather .logo-android {
+      width: 8em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .section-breather .logo-android {
+      width: 10em;
+      margin-top: 4em;
+      margin-bottom: 4em;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .section-breather .logo-android {
+      width: 12em;
+      margin-top: 7em;
+      margin-bottom: 7em;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .section-breather .logo-android {
+      width: 14em;
+      margin-top: 10em;
+      margin-bottom: 10em;
+    }
+  }
+
+  .section-android-msgs {
+    background: #F2F2F2;
+    background-image: url("../img/portfolio/draugiem/net-left.svg"), url("../img/portfolio/draugiem/net-right.svg");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: left center, right center;
+    overflow: hidden;
+    background-attachment: fixed;
+  }
+
+  
+  @media (min-width: 700px) {
+    .section-android-msgs {
+      background-position: left 55%, right 55%;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .section-android-msgs {
+      background-size: 36%;
+    }
+  }
 
 /* ==========================================================================
 
